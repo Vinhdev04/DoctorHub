@@ -1,0 +1,90 @@
+/* ====================== Base ======================*/
+
+.navbar-nav .nav-link:hover {
+  color: #0d6efd !important;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-item.active .nav-link {
+  color: #0d6efd !important;
+  font-weight: bold;
+}
+
+/* Chỉ dành cho hiển thị active */
+.navbar-nav .nav-item.active {
+  font-weight: bold;
+  color: #007bff;
+}
+
+/* @media (max-width: 768px) {
+  .banner__home {
+    padding: 4rem 1rem;
+  }
+
+  .banner__subtitle {
+    font-size: 1.2rem;
+  }
+
+  .banner__title {
+    font-size: 2rem;
+  }
+
+  .banner__description {
+    font-size: 1rem;
+  }
+
+  .col-md-5 {
+    flex: 1 1 100%;
+  }
+
+  .col-md-7 {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  .banner__wrap img {
+    width: 100%;
+    height: auto;
+  }
+
+  .banner__cta {
+    width: 100%;
+    font-size: 1rem;
+  }
+} */
+
+/* @media (min-width: 992px) {
+  .banner__home {
+    padding: 5rem 3rem;
+  }
+
+  .banner__subtitle {
+    font-size: 1.5rem;
+  }
+
+  .banner__title {
+    font-size: 3rem;
+  }
+
+  .banner__description {
+    font-size: 1.25rem;
+  }
+
+  .col-md-5 {
+    flex: 0 0 50%;
+  }
+
+  .col-md-7 {
+    flex: 0 0 50%;
+  }
+
+  .banner__wrap img {
+    width: 100%;
+    height: auto;
+  }
+
+  .banner__cta {
+    width: auto;
+    font-size: 1.2rem;
+  }
+} */
