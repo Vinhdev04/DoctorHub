@@ -17,6 +17,7 @@ Author: **@Vinhdev04**<br>
 - **CSS**: Định dạng giao diện người dùng, với các tệp `style.css`, `base.css`, và `responsive.css` để đảm bảo tính tương thích trên mọi thiết bị.
 - **JavaScript**: Thêm các chức năng động cho trang web, bao gồm các tính năng của Bootstrap như Navbar, Modal, v.v.
 - **Bootstrap**: Dự án sử dụng Bootstrap 5 để tạo ra giao diện responsive dễ sử dụng và thân thiện với người dùng.
+- **Lazysizes**: Tự động lazy load ảnh cho website
 
 ## Cài Đặt:
 
@@ -24,7 +25,7 @@ Author: **@Vinhdev04**<br>
 2. Mở file `index.html` trong trình duyệt web để xem dự án.
 
 ```bash
-git clone https://github.com/username/doctorhub.git
-cd doctorhub
+git clone https://github.com/Vinhdev04/DoctorHub.git
+cd DOCTORHUB
 open index.html
 ```
