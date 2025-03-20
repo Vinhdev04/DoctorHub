@@ -59,12 +59,17 @@
     <!-- *Splide CSS* -->
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.3/dist/css/splide.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/splidejs/4.1.4/js/splide.min.js"
     />
     <!-- *Fontawesome* -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <!-- *LazySizes* -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js"
     />
 
     <!-- *Stylesheets* -->
@@ -78,6 +83,56 @@
   <body>
     <!-- *Navbar* -->
     <header class="header">
+      <div class="topbar py-3 border-bottom bg-white">
+        <div
+          class="container d-flex justify-content-between align-items-center"
+        >
+          <div class="contact-info small text-muted d-flex">
+            <strong>Email:</strong>
+            <a
+              href="mailto:vaniizit.work@gmail.com?subject=Yêu%20cầu%20được%20hỗ%20trợ%20từ%20website%20DoctorHub"
+              class="topbar__mail"
+              >vaniizit.work@gmail.com</a
+            >
+            |
+            <strong class="ms-1 d-none d-md-flex"
+              >Hotline:
+              <a
+                href="tel:+84 252 032 375"
+                class="text-decoration-none cart__home--phone text-dark fw-bold"
+                >+84 252 032 375</a
+              >
+            </strong>
+          </div>
+          <div class="user-actions d-flex align-items-center gap-3">
+            <a
+              href="/pages/login.html"
+              class="topbar__home--login text-dark small d-none d-md-block"
+              >Đăng nhập</a
+            >
+            <a
+              href="/pages/register.html"
+              class="topbar__home--register text-dark small d-none d-md-block"
+              >Đăng ký</a
+            >
+            <a
+              href="/pages/cart.html"
+              class="position-relative text-dark small topbar__home--cart"
+            >
+              <i class="fas fa-shopping-cart"></i>
+              <span
+                class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-info"
+              >
+                0
+              </span>
+              <div class="cart__home--message shadow rounded-2">
+                Hiện tại chưa có sản phẩm ở trong giỏ hàng
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
       <div class="container">
         <nav class="navbar navbar-expand-lg navbar-light">
           <a
@@ -105,101 +160,113 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div
-            class="collapse navbar-collapse"
+            class="collapse navbar-collapse justify-content-end"
             id="navbarNav"
-            style="justify-content: end"
           >
             <ul class="navbar-nav ml-auto">
               <li class="nav-item active">
                 <a class="nav-link" href="index.html">Trang Chủ</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Đặt Lịch Khám</a>
+                <a class="nav-link" href="/pages/book.html">Đặt Lịch Khám</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Tư Vấn Sức Khỏe</a>
+                <a class="nav-link" href="/pages/consultation.html"
+                  >Tư Vấn Sức Khỏe</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Dịch Vụ Y Tế</a>
+                <a class="nav-link" href="/pages/services.html">Dịch Vụ Y Tế</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Liên Hệ</a>
+                <a class="nav-link" href="/pages/contact.html">Liên Hệ</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Blog</a>
+                <a class="nav-link" href="/pages/blog.html">Blog</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Bài Test</a>
+                <a class="nav-link" href="/pages/test.html">Bài Test</a>
               </li>
-              <!-- Search Form -->
-              <form class="d-flex ms-md-3 ms-0" role="search">
-                <div class="me-2">
-                  <input
-                    class="form-control me-2 w-100"
-                    type="search"
-                    placeholder="Search"
-                    aria-label="Search"
-                  />
-                </div>
-                <button class="btn btn-outline-success" type="submit">
-                  Search
-                </button>
-              </form>
             </ul>
+
+            <!-- Search Form -->
+            <form class="d-flex ms-3" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
           </div>
         </nav>
       </div>
     </header>
 
-    <!-- *Banner* -->
-    <div class="banner__home py-5">
+    <!-- *Banner-home* -->
+    <div class="banner__home py-5 border-bottom">
       <div class="container">
         <div class="row">
           <div
-            class="col-md-5 d-flex flex-column justify-content-center align-items-start"
+            class="col-md-5 d-flex flex-column justify-content-center align-items-start order-last order-md-first"
           >
-            <h4 class="banner__subtitle mb-3 text-warning-emphasis">
+            <h4 class="banner__home--subtitle mb-3 text-warning-emphasis">
               Khám bệnh trực tuyến, tiết kiệm thời gian
             </h4>
 
-            <h1 class="banner__title mb-4 text-primary">
+            <h1 class="banner__home--title mb-4 text-primary">
               Khám Bệnh và Tư Vấn Sức Khỏe Online
             </h1>
 
-            <p class="banner__description mb-4">
+            <p class="banner__home--description mb-4">
               Đặt lịch khám và nhận tư vấn trực tuyến từ các bác sĩ uy tín, giúp
               bạn chăm sóc sức khỏe một cách dễ dàng và nhanh chóng.
             </p>
             <!-- Nút Call-to-Action -->
-            <button class="btn btn-primary btn-lg banner__cta">
+            <a
+              href="/pages/book.html"
+              class="text-decoration-none btn btn-primary btn-lg banner__home--cta mb-3 mb-md-0"
+            >
               Đặt Lịch Ngay
               <i class="ri-arrow-right-line"></i>
-            </button>
+            </a>
           </div>
           <div class="col-md-7">
-            <div class="banner__wrap mt-3 mt-md-0">
+            <a
+              href="/pages/book.html"
+              class="text-decoration-none banner__home--wrap mt-3 mt-md-0"
+            >
               <img
                 data-src="./assets/images/Banner/BannerHome.png"
                 alt="Banner Image"
-                class="img-fluid w-100 shadow rounded-2 lazyload"
+                class="img-fluid w-100 shadow rounded-2 lazyload mb-md-0 mb-3"
               />
-            </div>
+            </a>
           </div>
         </div>
       </div>
     </div>
 
+    <!-- *About-home* -->
     <section class="about py-5 bg-light">
       <div class="container text-center">
         <div class="about__icon mb-3">
-          <i class="ri-stethoscope-line display-4 text-primary"></i>
+          <img
+            data-src="/assets/images/Icon/doctornurse-svgrepo-com.svg"
+            alt=""
+            class="img-fluid lazyload"
+            style="width: 50px"
+          />
         </div>
         <h2
           class="mb-3 text-primary position-relative section-title-underline animate-on-scroll"
         >
           Về DoctorHub
         </h2>
-        <p class="text-muted animate-on-scroll">
+        <p class="text-muted animate-on-scroll about__desc">
           DoctorHub là nền tảng kết nối giữa bệnh nhân và bác sĩ uy tín trên
           toàn quốc. Với sứ mệnh nâng cao trải nghiệm chăm sóc sức khỏe hiện
           đại, tiện lợi và nhanh chóng.
@@ -207,71 +274,157 @@
       </div>
     </section>
 
+    <!-- *Fetures-home* -->
     <section class="features py-5 bg-white">
       <div class="container">
         <div class="row text-center">
           <div class="col-md-4 mb-4 animate-on-scroll">
-            <div class="feature-card p-4 rounded shadow-sm h-100">
-              <i class="ri-calendar-check-line fs-2 text-primary mb-2"></i>
-              <h5 class="fw-semibold">Đặt lịch dễ dàng</h5>
-              <p>Chọn lịch khám phù hợp chỉ với vài bước đơn giản.</p>
-            </div>
+            <a
+              href="/pages/book.html"
+              class="d-flex flex-column align-items-center text-decoration-none feature-card p-4 rounded shadow-sm h-100"
+            >
+              <img
+                data-src="/assets/images/Icon/appointment-dentist-svgrepo-com.svg"
+                alt=""
+                class="lazyload features__icon"
+              />
+              <h5 class="features-title fw-semibold mt-1">Đặt lịch dễ dàng</h5>
+              <p class="text-secondary">
+                Chọn lịch khám phù hợp chỉ với vài bước đơn giản.
+              </p>
+            </a>
           </div>
           <div class="col-md-4 mb-4 animate-on-scroll">
-            <div class="feature-card p-4 rounded shadow-sm h-100">
-              <i class="ri-user-heart-line fs-2 text-success mb-2"></i>
-              <h5 class="fw-semibold">Tư vấn cùng bác sĩ</h5>
-              <p>Kết nối trực tuyến với bác sĩ mọi lúc, mọi nơi.</p>
-            </div>
+            <a
+              href="/pages/consultation.html"
+              class="d-flex flex-column align-items-center text-decoration-none feature-card p-4 rounded shadow-sm h-100"
+            >
+              <img
+                data-src="/assets/images/Icon/doctor-files-medical-svgrepo-com.svg"
+                alt=""
+                class="lazyload features__icon"
+              />
+              <h5 class="features-title fw-semibold mt-1">
+                Tư vấn cùng bác sĩ
+              </h5>
+              <p class="text-secondary">
+                Kết nối trực tuyến với bác sĩ mọi lúc, mọi nơi.
+              </p>
+            </a>
           </div>
           <div class="col-md-4 mb-4 animate-on-scroll">
-            <div class="feature-card p-4 rounded shadow-sm h-100">
-              <i class="ri-shield-cross-line fs-2 text-warning mb-2"></i>
-              <h5 class="fw-semibold">Bảo mật thông tin</h5>
-              <p>Cam kết bảo vệ dữ liệu sức khỏe của bạn tuyệt đối.</p>
-            </div>
+            <a
+              href="/pages/services.html"
+              class="d-flex flex-column align-items-center text-decoration-none feature-card p-4 rounded shadow-sm h-100"
+            >
+              <img
+                data-src="/assets/images/Icon/security-shield-svgrepo-com.svg"
+                alt=""
+                class="lazyload features__icon"
+              />
+              <h5 class="features-title fw-semibold mt-1">Bảo mật thông tin</h5>
+              <p class="text-secondary">
+                Cam kết bảo vệ dữ liệu sức khỏe của bạn tuyệt đối.
+              </p>
+            </a>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="testimonials py-5 bg-light">
-      <div class="container text-center">
-        <h2 class="mb-4 text-primary">Khách hàng nói gì?</h2>
-        <div class="splide animate-on-scroll" id="testimonial-slider">
-          <div class="splide__track">
-            <ul class="splide__list">
-              <li class="splide__slide">
-                <div class="card p-4 shadow-sm">
-                  <p class="mb-3">
-                    "Tôi đã đặt lịch và nhận tư vấn rất nhanh chóng, trải nghiệm
-                    cực kỳ tốt!"
-                  </p>
-                  <strong>- Nguyễn Thảo</strong>
-                </div>
-              </li>
-              <li class="splide__slide">
-                <div class="card p-4 shadow-sm">
-                  <p class="mb-3">
-                    "Giao diện dễ dùng, bác sĩ tận tâm. Rất đáng tin cậy!"
-                  </p>
-                  <strong>- Minh Khang</strong>
-                </div>
-              </li>
-              <li class="splide__slide">
-                <div class="card p-4 shadow-sm">
-                  <p class="mb-3">
-                    "Giúp tôi tiết kiệm thời gian và yên tâm hơn khi có vấn đề
-                    sức khỏe."
-                  </p>
-                  <strong>- Thu Hà</strong>
-                </div>
-              </li>
-            </ul>
+    <!-- <section class="splide banner-slider" aria-label="Banner trang chủ">
+      <div class="splide__track">
+        <ul class="splide__list">
+          <li class="splide__slide">
+            <img
+              src="/assets/images/Banner/BannerHome.png"
+              alt="Banner 1"
+              class="banner-img img-fluid"
+            />
+          </li>
+          <li class="splide__slide">
+            <img
+              src="/assets/images/Banner/1.png"
+              alt="Banner 2"
+              class="banner-img img-fluid"
+            />
+          </li>
+
+          <li class="splide__slide">
+            <img
+              src="/assets/images/Banner/4.png"
+              alt="Banner 3"
+              class="banner-img img-fluid"
+            />
+          </li>
+        </ul>
+      </div>
+    </section> -->
+
+    <!-- *Banner-home-X* -->
+    <section>
+      <div class="container">
+        <div class="row">
+          <div>
+            <img
+              data-src="/assets/images/Banner/4.png"
+              alt="Banner 3"
+              class="banner-img img-fluid lazyload"
+            />
           </div>
         </div>
       </div>
     </section>
+
+    <!-- *Sidebar* -->
+    <div class="contact-sidebar">
+      <button
+        class="contact-btn"
+        title="Đặt lịch"
+        data-bs-toggle="tooltip"
+        data-bs-placement="left"
+        title="Đặt lịch"
+      >
+        <i class="fa-solid fa-calendar-check"></i>
+      </button>
+      <button
+        class="contact-btn"
+        title="Gọi điện"
+        data-bs-toggle="tooltip"
+        data-bs-placement="left"
+        title="Gọi điện"
+      >
+        <i class="fa-solid fa-phone"></i>
+      </button>
+      <button
+        class="contact-btn"
+        title="Chat"
+        data-bs-toggle="tooltip"
+        data-bs-placement="left"
+        title="Chat với bác sĩ"
+      >
+        <i class="fa-solid fa-comments"></i>
+      </button>
+      <button
+        class="contact-btn"
+        title="Email"
+        data-bs-toggle="tooltip"
+        data-bs-placement="left"
+        title="Gửi email"
+      >
+        <i class="fa-solid fa-envelope"></i>
+      </button>
+      <button
+        id="scrollTopBtn"
+        class="contact-btn d-none"
+        data-bs-toggle="tooltip"
+        data-bs-placement="left"
+        title="Lên đầu trang"
+        onclick="scrollToTop()"
+      >
+        <i class="fa-solid fa-chevron-up"></i>
+      </button>
+    </div>
 
     <section class="features py-5 bg-light">
       <div class="container">
@@ -383,8 +536,8 @@
             <ul class="splide__list">
               <li class="splide__slide text-center">
                 <img
-                  src="/assets/images/155630-bs-thanh.png"
-                  class="rounded-circle mb-2"
+                  data-src="/assets/images/155630-bs-thanh.png"
+                  class="rounded-circle mb-2 lazyload"
                   width="100"
                 />
                 <h5>BS. Nguyễn Văn A</h5>
@@ -392,8 +545,8 @@
               </li>
               <li class="splide__slide text-center">
                 <img
-                  src="/assets/images/155630-bs-thanh.png"
-                  class="rounded-circle mb-2"
+                  data-src="/assets/images/155630-bs-thanh.png"
+                  class="rounded-circle mb-2 lazyload"
                   width="100"
                 />
                 <h5>BS. Trần Thị B</h5>
@@ -640,8 +793,8 @@
             <ul class="splide__list">
               <li class="splide__slide text-center">
                 <img
-                  src="doctor1.jpg"
-                  class="rounded-circle mb-2"
+                  data-src="doctor1.jpg"
+                  class="rounded-circle mb-2 lazyload"
                   width="100"
                 />
                 <h6>Bác sĩ Trần Hữu</h6>
@@ -720,7 +873,89 @@
         </div>
       </div>
     </section>
+
+    <!-- *Footer* -->
+    <footer class="bg-light pt-5 pb-3 border-top">
+      <div class="container">
+        <div class="row">
+          <!-- Cột 1 -->
+          <div class="col-md-3 col-sm-6 mb-4">
+            <h5 class="fw-bold mb-3">LIÊN KẾT WEB</h5>
+            <ul class="list-unstyled text-muted">
+              <li>Bộ y tế</li>
+              <li>Tổ chức y tế thế giới</li>
+              <li>Viện vệ sinh dịch tễ TW</li>
+              <li>Hội nghị bệnh viện Châu Á</li>
+              <li>Bảo hiểm y tế ở nước ngoài</li>
+              <li>Bảo hiểm y tế quốc tế</li>
+            </ul>
+          </div>
+
+          <!-- Cột 2 -->
+          <div class="col-md-3 col-sm-6 mb-4">
+            <h5 class="fw-bold mb-3">HỎI BÁC SĨ</h5>
+            <ul class="list-unstyled text-muted">
+              <li>Chuyên mục Hỏi bác sĩ</li>
+              <li>Gửi câu hỏi</li>
+              <li>Câu hỏi đã trả lời</li>
+              <li>Câu hỏi đáng chú ý</li>
+              <li>Tra cứu</li>
+              <li>Tra cứu bệnh</li>
+            </ul>
+          </div>
+
+          <!-- Cột 3 -->
+          <div class="col-md-3 col-sm-6 mb-4">
+            <h5 class="fw-bold mb-3">MEDICAL CARE</h5>
+            <ul class="list-unstyled text-muted">
+              <li>Về chúng tôi</li>
+              <li>Tuyển dụng</li>
+              <li>Liên hệ</li>
+              <li>Quy trình giải quyết tranh chấp</li>
+              <li>Chính sách bảo mật thông tin</li>
+            </ul>
+          </div>
+
+          <!-- Cột 4 -->
+          <div class="col-md-3 col-sm-6 mb-4">
+            <h5 class="fw-bold mb-3">FACEBOOK</h5>
+            <ul class="list-unstyled text-muted">
+              <li>Trang chủ</li>
+              <li>Sản phẩm</li>
+              <li>Giới thiệu</li>
+              <li>Tin tức</li>
+              <li>Liên hệ</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="text-center border-top pt-3 mt-3 small text-muted">
+          © Bản quyền thuộc về <strong>DoctorHub</strong> | Cung cấp bởi
+          <a
+            href="https://www.instagram.com/viinhneee/"
+            class="fw-semibold text-decoration-none"
+            style="color: var(--primary-color)"
+            >VaniizIT</a
+          >
+        </div>
+      </div>
+    </footer>
   </body>
+  <script>
+    // Cuộn lên đầu trang
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+    const scrollTopBtn = document.getElementById("scrollTopBtn");
+
+    window.addEventListener("scroll", function () {
+      if (window.scrollY > 100) {
+        scrollTopBtn.classList.remove("d-none");
+      } else {
+        scrollTopBtn.classList.add("d-none");
+      }
+    });
+  </script>
   <!-- *SplideJS Scripts* -->
   <link
     rel="stylesheet"
@@ -747,5 +982,6 @@
     async=""
   ></script>
   <!-- *Splide JS* -->
-  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.3/dist/js/splide.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
 </html>

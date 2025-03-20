@@ -92,3 +92,15 @@ const tooltipTriggerList = document.querySelectorAll(
 const tooltipList = [...tooltipTriggerList].map(
   (tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl)
 );
+
+document.addEventListener("DOMContentLoaded", function () {
+  new Splide(".banner-slider", {
+    type: "loop",
+    autoplay: true,
+    interval: 4000,
+    pauseOnHover: false,
+    arrows: true,
+    pagination: true,
+    speed: 800,
+  }).mount();
+});
