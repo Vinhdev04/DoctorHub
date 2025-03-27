@@ -1,4 +1,6 @@
-/* ====================== HOME ======================*/
+/* ====================== 
+          HOME 
+====================== */
 .navbar__logo {
   border-radius: 50%;
   width: 40px;
@@ -50,17 +52,6 @@
   transform: translateY(0);
 }
 
-@keyframes fadeInTitle {
-  0% {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
 .topbar a {
   text-decoration: none;
 }
@@ -98,33 +89,9 @@
   animation: ShowIn 0.3s ease-in forwards;
 }
 
-@keyframes ShowIn {
-  0% {
-    transform: translateX(-50%) translateY(-20px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(-50%) translateY(0);
-    opacity: 1;
-  }
-}
 .topbar__mail {
   animation: shakeMail 1.2s ease-in-out infinite;
   opacity: 1;
-}
-@keyframes shakeMail {
-  0% {
-    transform: scale(0.9);
-    opacity: 0.8;
-  }
-  50% {
-    transform: scale(1);
-    opacity: 1;
-  }
-  100% {
-    transform: scale(0.9);
-    opacity: 1;
-  }
 }
 
 .about__desc {
@@ -187,6 +154,9 @@
   background-color: var(--bg-primary);
 }
 
+/* ====================== 
+          FOOTER 
+====================== */
 footer ul li {
   margin-bottom: 6px;
   cursor: pointer;
@@ -196,7 +166,6 @@ footer ul li:hover {
   color: #007bff;
 }
 
-/*  */
 /* Underline động dưới tiêu đề */
 .section-title-underline::after {
   content: "";
@@ -227,7 +196,6 @@ footer ul li:hover {
   transform: translateY(0);
 }
 
-/* Hiệu ứng card khi hover */
 .feature-card {
   background-color: #fff;
   transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease-in;
@@ -335,29 +303,8 @@ footer ul li:hover {
   animation-delay: 0.3s; /* Delay cho Phone */
 }
 
-/* Hiệu ứng slide-up cho từng item */
-@keyframes slideUpItem {
-  0% {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
 
-/* Hiệu ứng slide-up cho cả box */
-@keyframes slideUp {
-  0% {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
+
 
 /* Hiệu ứng hover cho các icon */
 .contact__link:hover {
