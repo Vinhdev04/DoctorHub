@@ -1,1 +1,13 @@
 /* ====================== Responsive ======================*/
+@media (max-width: 768px) {
+  .splide-shop img,
+  .static-banner {
+    height: auto;
+  }
+  .splide__arrow {
+    width: 35px;
+  }
+  .banner-slider .banner-img {
+    height: 250px;
+  }
+}

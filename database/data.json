@@ -2,12 +2,636 @@
   "test": [],
   "users": [],
   "doctors": [],
-  "medicine": [
+
+  "medicines": [
     {
-      "name": "Ibuprofen",
-      "description": "Ibuprofen is a nonsteroidal anti-inflammatory drug (NSAID) used to reduce inflammation, pain, and swelling in the body. It is typically taken orally by mouth and may be given in a tablet, capsule, or pill form.",
-      "price": 10.99,
-      "stock": 500
+      "id": 1,
+      "title": "Kem Chống Nắng Vật Lý Kiềm Dầu Make p:rem",
+      "description": {
+        "overview": "Kem Chống Nắng Vật Lý Kiềm Dầu Make p:rem Uv Defense Me. No Sebum Sun Cream 50ml là sản phẩm chống nắng da mặt đến từ thương hiệu Make p:rem Hàn Quốc. Với khả năng bảo vệ da khỏi tia cực tím đã được kiểm nghiệm cùng các thành phần được cấp bằng sáng chế giúp kiểm soát bã nhờn hiệu quả, cho làn da mịn màng không bóng nhờn.",
+        "ingredients": [
+          "Water",
+          "Zinc Oxide",
+          "Cyclohexasiloxane",
+          "Butyloctyl Salicylate",
+          "Propanediol",
+          "Propylheptyl",
+          "Caprylate",
+          "Isododecane",
+          "Caprylyl Methicone",
+          "Polyglyceryl",
+          "Polydimethylsiloxyethyl Dimethicone",
+          "Methyl Methacrylate Crosspolymer",
+          "Methyl Trimethicone",
+          "Pelargonium Graveolens Extract",
+          "Oenothera Biennis (Evening Primrose) Flower Extract",
+          "Ulmus Davidiana Root Extract",
+          "Pinus Palustris Leaf Extract",
+          "Pueraria Lobata Root Extract",
+          "acillus/Soybean Ferment Extract",
+          "Juniperus Virginiana Oil",
+          "Litsea Cubeba Fruit Oil",
+          "Sodium Hyaluronate",
+          "Vetiveria Zizanoides Root Oil",
+          "Elettaria Cardamomum Seed Oil",
+          "Nymphaea Caerulea Flower Water",
+          "Disteardimonium Hectorite",
+          "Magnesium Sulfate",
+          "Triethoxycaprylylsilane",
+          "2-Hexanediol",
+          " Polyglyceryl",
+          "Dipolyhydroxystearate",
+          "Polymethylsilsesquioxane",
+          "Lauryl Polyglyceryl",
+          "Polydimethylsiloxyethyl Dimethicone",
+          "Glyceryl Caprylate",
+          "Caprylyl Glycol",
+          "Ethylhexylglycerin",
+          "Tocopherol",
+          "Butylene Glycol",
+          "Folic Acid."
+        ],
+        "benefits": [
+          "Hiệu quả kiềm dầu lên đến 6 giờ, giữ cho làn da thoáng mịn suốt ngày dài.",
+          "Kết cấu dạng kem dễ tán, finish lì mịn không bóng nhờn, không gây nặng mặt.",
+          "An toàn cho làn da nhạy cảm, không gây bít tắc lỗ chân lông."
+        ],
+        "usage": [
+          "Dùng vào ban ngày, ở bước cuối cùng của quy trình dưỡng da.",
+          "Thoa đều lên những vùng dễ tiếp xúc với tia cực tím như mặt, cổ, tay và chân.",
+          "Tẩy trang sạch bằng sản phẩm tẩy trang sau khi về nhà."
+        ]
+      },
+      "images": [
+        "/assets/images/Shop/Medical/medical01.avif",
+        "/assets/images/Shop/Medical/medical01.01.avif",
+        "/assets/images/Shop/Medical/medical01.02.avif",
+        "/assets/images/Shop/Medical/medical01.03.avif",
+        "/assets/images/Shop/Medical/medical01.04.avif"
+      ],
+      "discount": 10,
+      "price_old": 480000,
+      "price_new": 290000,
+      "brand": "Make p:rem",
+      "likes": 7000,
+      "sold_quantity": 200,
+      "stock_quantity": 800,
+      "category_name": "Kem chống nắng",
+      "weight": "50ml",
+      "rating": 4.8,
+      "feedback": [
+        "Tự vấn thêm về sản phẩm đi ạ",
+        "Xuất xứ là của nước nào mà không thấy ghi trên báo bì vậy?.",
+        "Sản phẩm sử dụng có bị kích ứng không ạ?"
+      ],
+      "reply": [
+        "Cảm ơn bạn đã đánh giá sản phẩm, chúng tôi sẻ cập nhật thông tin thêm về sản phẩm cho bạn. Xin cảm ơn.",
+        "Tôi tin rằng sản phẩm của bạn đã đúng với những thông tin mà bạn cung cấp. Nếu bạn có thắc mắc nào, vui lòng liên hệ với chúng tôi."
+      ]
+    },
+
+    {
+      "id": 2,
+      "title": "Nước uống collagen Elasten 2500mg hỗ trợ làm giảm lão hoá da, giúp tăng độ đàn hồi và giữ độ ẩm cho da (Hộp 28 ống x 25ml)",
+      "description": {
+        "overview": "Nước uống collagen Elasten 2500mg hỗ trợ làm giảm lão hoá da, giúp tăng độ đàn hồi và giữ độ ẩm cho da (Hộp 28 ống x 25ml).Bổ sung Collagen Peptidem Vitamin C và kẽm, hỗ trợ làm giảm lão hoá da, giúp tăng độ đàn hồi và giữ độ ẩm cho da, giúp da sáng mịn.",
+        "ingredients": [
+          "ELASTEN® chứa công thức độc quyền [HC] Collagen Complex® với cấu trúc thuỷ phân và tương thích tối đa với collagen trong cơ thể người, giúp tăng khả năng hấp thu và kích thích cơ thể sản sinh collagen từ đó giúp da săn chắc,căng bóng đem lại hiệu quả trẻ hoá làn da. ",
+          "[HC] Collagen Complex® là các peptide collagen gốc bò giống với collagen tự nhiên của con người, giúp hấp thụ tốt hơn và không gây ra tác dụng phụ. Peptide Collagen có lượng các axit amin, glycine, proline và hydroxyproline cao hơn 10-20 lần so với những loại protein thông thường.",
+          "Được thủy phân thành các phân tử cực nhỏ giúp quá trình hấp thụ vào cơ thể tối ưu, Peptide Collagen mang lại hiệu quả nhanh chóng hơn collagen thông thường.",
+          "Collagen là protein cấu trúc quan trọng nhất trong da và rất quan trọng đối với độ ẩm và độ đàn hồi của da. Các sợi Collagen tạo thành một loại mạng lưới ba chiều (ma trận) trong các lớp sâu của da và cung cấp cấu trúc, sức mạnh và khả năng lưu giữ độ ẩm cho da đặc biệt tốt. Các chất lưu trữ nước khác (ví dụ như axit hyaluronic) chỉ có thể được lưu trữ trong một cấu trúc Collagen nguyên vẹn, giúp làm đầy đặn làn da từ bên trong và mang lại vẻ mịn màng và tươi trẻ hơn.",
+          "VITAMIN Chiết xuất acerola tự nhiên có trong ELASTEN® rất giàu vitamin C, có thể bảo vệ tế bào khỏi các gốc tự do (stress oxy hóa) do tác dụng chống oxy hóa của nó. Vitamin C cũng hỗ trợ sự hình thành Collagen của chính cơ thể ở các vùng sâu hơn của da và do đó hỗ trợ duy trì khỏe mạnh chức năng của các mô liên kết.",
+          "VITAMIN E ngăn chặn các hợp chất tích cực trong da do bức xạ UV gây ra và do đó giúp ngăn ngừa lão hóa da sớm. Nó bảo vệ màng tế bào và lipoprotein khỏi bị phá hủy bởi quá trình oxy hóa. Do đó, vitamin hỗ trợ bảo vệ tế bào và tái tạo da.",
+          "Biotin (vitamin H) góp phần cải thiện làn da và mái tóc nguyên bản. Ngoài ra, nó đóng một vai trò quan trọng trong quá trình trao đổi chất của vi chất dinh dưỡng và góp phần vào quá trình chuyển hóa năng lượng lành mạnh.",
+          "KẼMtham gia vào hơn 200 quá trình sinh hóa và rất quan trọng để duy trì làn da và mái tóc khỏe mạnh. Vì các tế bào của da và chân tóc có quá trình trao đổi chất đặc biệt chuyên sâu và phân chia nhanh chóng, những khu vực này được hưởng lợi đặc biệt từ nguyên tố vi lượng kẽm. Kết hợp với vitamin C, các đặc tính chăm sóc được tăng lên đáng kể."
+        ],
+        "benefits": [
+          "Bổ sung Collagen Peptidem Vitamin C và kẽm, hỗ trợ làm giảm lão hoá da, giúp tăng độ đàn hồi và giữ độ ẩm cho da, giúp da sáng mịn."
+        ],
+        "usage": [
+          "Uống 01 ống mỗi ngày trong hoặc sau bữa ăn",
+          "Đối tượng sử dụng: Người trưởng thành bị lão hoá da, cần chăm sóc làm đẹp da",
+          "Độ tuổi sử dụng: Người trưởng thành từ 18 tuổi trở lên"
+        ]
+      },
+      "images": [
+        "/assets/images/Shop/Medical/medical02.avif",
+        "/assets/images/Shop/Medical/medical02.01.avif",
+        "/assets/images/Shop/Medical/medical02.02.avif",
+        "/assets/images/Shop/Medical/medical02.03.avif"
+      ],
+      "discount": 10,
+      "price_old": 2500000,
+      "price_new": 2000000,
+      "brand": "Make p:rem",
+      "likes": 2300,
+      "sold_quantity": 500,
+      "stock_quantity": 1200,
+      "category_name": "Hỗ trợ đẹp da",
+      "weight": "25g",
+      "rating": 4.0,
+      "feedback": [
+        "Tự vấn thêm về sản phẩm đi ạ",
+        "Phụ nữ mang thai và cho con bú dùng được k ạ",
+        "sao e vao mua thi k dc gia 1930k"
+      ],
+      "reply": [
+        "Cảm ơn bạn đã đánh giá sản phẩm, chúng tôi sẻ cập nhật thông tin thêm về sản phẩm cho bạn. Xin cảm ơn.",
+        "Tôi tin rằng sản phẩm của bạn đã đúng với những thông tin mà bạn cung cấp. Nếu bạn có thắc mắc nào, vui lòng liên hệ với chúng tôi."
+      ]
+    },
+
+    {
+      "id": 3,
+      "title": "Gel Actidem Derma Gel hỗ trợ ngăn ngừa mụn, làm mờ vết thâm (40g)",
+      "description": {
+        "overview": "Giúp hỗ trợ giảm tình trạng mụn, ngăn ngừa mụn, giúp làm mờ thâm mụn. Đồng thời giúp dưỡng ẩm da, phục hồi da, mang lại làn da mịn màng. ",
+        "ingredients": [
+          "Aqua",
+          "Carbomer",
+          "Glycolic Acid",
+          "Sodium Hydroxide",
+          "EDTA",
+          "Hyaluronic Acid",
+          "Pantothenic Acid",
+          "Lactic Acid",
+          "Zinc PCA",
+          "Phenoxyethanol",
+          "BHA",
+          "Centella Asiatica Extract",
+          "Parfum",
+          "Sodium",
+          "Citrate",
+          "Ethylhexylglycerin",
+          "Polysorbate."
+        ],
+        "benefits": [
+          "Giúp hỗ trợ giảm tình trạng mụn, ngăn ngừa mụn, giúp làm mờ thâm mụn. Đồng thời giúp dưỡng ẩm da, giúp phục hồi da, mang lại làn da mịn màng."
+        ],
+        "usage": [
+          "Sử dụng 1 - 2 lần vào mỗi sáng và tối, dùng 1 lượng vừa đủ, thoa trực tiếp vào vùng da cần thiết sau khi hoàn thành các bước dưỡng da.",
+          "Phù hợp sử dụng cho các tình trạng mụn. Ngoài ra, giúp giảm thâm sau mụn.",
+          "Khuyến cáo không khuyên dùng cho mẹ mang thai và mẹ cho con bú."
+        ]
+      },
+      "images": [
+        "/assets/images/Shop/Medical/medical03.avif",
+        "/assets/images/Shop/Medical/medical03.01.avif",
+        "/assets/images/Shop/Medical/medical03.02.avif",
+        "/assets/images/Shop/Medical/medical03.03.avif"
+      ],
+      "discount": 10,
+      "price_old": 3800000,
+      "price_new": 2970000,
+      "brand": "Make p:rem",
+      "likes": 4300,
+      "sold_quantity": 5000,
+      "stock_quantity": 3200,
+      "category_name": "Sản phẩm hỗ trợ giảm mụn",
+      "weight": "40g",
+      "rating": 5,
+      "feedback": [
+        "Mụn ẩn với thâm sau mụn có xài được không shop?",
+        "Bé nhà m 10tuổi da nhờn nên bị mụn có dùng được sản phẩm này k ạ",
+        "sao e vao mua thi k dc gia 1930k"
+      ],
+      "reply": [
+        "Sản phẩm Gel Actidem Derma Gel hỗ trợ ngăn ngừa mụn, làm mờ vết thâm (40g) là dòng sản phẩm chăm sóc da với công năng giúp hỗ trợ giảm tình trạng mụn, ngăn ngừa mụn, giúp làm mờ thâm mụn, đồng thời giúp dưỡng ẩm da, giúp phục hồi da, mang lại làn da mịn màng. Nếu cần hỗ trợ thêm thông tin, anh/chị vui lòng liên hệ hotline 1800.6821 (miễn phí). Để chuyên viên hỗ trợ mình kiểm tra chi tiết và nhanh chóng nhé.Chúc anh/chị nhiều sức khỏe!",
+        "Tôi tin rằng sản phẩm của bạn đã đúng với những thông tin mà bạn cung cấp. Nếu bạn có thắc mắc nào, vui lòng liên hệ với chúng tôi.",
+        "Dạ, với tình trạng mụn anh/chị có thể đặt lịch khám tại link: https://www.vn/, để được bác sĩ kiểm tra nguyên nhân và đưa ra chỉ định phù hợp nhất ạ.Nếu có bất kỳ thắc mắc gì, anh/chị vui lòng liên hệ hotline 1800.6821 (miễn cước phí), để chuyên viên hỗ trợ nhanh chóng nhé.Chúc anh/chị nhiều sức khỏe!"
+      ]
+    },
+
+    {
+      "id": 4,
+      "title": "Tinh dầu hoa anh thảo Blackmores Evening Primrose Oil hỗ trợ nội tiết tố nữ (Chai 190 viên)",
+      "description": {
+        "overview": "Blackmores Evening Primrose Oil cung cấp một nguồn giàu axit gamma - linolenic (GLA) - acid béo omega - 6, có tác dụng chống oxy hóa, hỗ trợ làm giảm các triệu chứng tiền kinh nguyệt.  ",
+        "ingredients": [
+          "Blackmores Evening Primrose Oil (Chai 190 Viên) cung cấp axit gamma - linolenic (GLA).Omega 6: Tham gia vào quá trình xây dựng các cấu trúc và hàng loạt các quá trình chuyển hóa khác.",
+          "Giúp cân bằng các hormone sinh sản của phụ nữ, đồng thời cải thiện tình trạng da, tóc và móng tay.",
+          "Axit gamma - linolenic (GLA): Tăng cường hấp thụ khoáng chất và tham gia vào nhiều quá trình khác.",
+          "Phụ liệu: Gelatin, glycerol, nước tinh khiết, d-alpha-tocopherol (chứa dầu đậu nành)."
+        ],
+        "benefits": [
+          "Sản phẩm chuyên dùng để cung cấp axit béo omega-6 và axit gamma - linolenic thiết yếu cho cơ thể.",
+          "Hỗ trợ quá trình cân bằng hormone sinh sản của phụ nữ.",
+          "Cải thiện sức khỏe làn da.",
+          "Giúp bảo vệ và duy trì sức khỏe người dùng.",
+          "Chống oxy hóa, hỗ trợ làm giảm các triệu chứng tiền kinh nguyệt ở phụ nữ"
+        ],
+        "usage": [
+          "Người lớn: Dùng từ 1 đến 3 viên/ngày hoặc theo chỉ dẫn của bác sĩ.",
+          "Phụ nữ thời kỳ tiền kinh nguyệt.",
+          "Người cần bổ sung chất chống oxy hóa.",
+          "Sản phẩm có thể dùng cho người lớn không có đủ GLA và cần bổ sung omega-6."
+        ]
+      },
+      "images": [
+        "/assets/images/Shop/Medical/medical04.avif",
+        "/assets/images/Shop/Medical/medical04.01.avif",
+        "/assets/images/Shop/Medical/medical04.02.avif",
+        "/assets/images/Shop/Medical/medical04.03.avif"
+      ],
+      "discount": 30,
+      "price_old": 9800000,
+      "price_new": 6970000,
+      "brand": "Blackmores",
+      "likes": 1300,
+      "sold_quantity": 2000,
+      "stock_quantity": 790,
+      "category_name": "Thực phẩm chức năng hỗ trợ sinh lý nữ",
+      "weight": "190 viên",
+      "rating": 5,
+      "feedback": [
+        "25 tuổi ngày uống 2 viên thôi được không ạ hay phải 3 viên ạ?",
+        "Xin chào. Bị cường giáp có uống được không ạ.",
+        "Dạ cho mình hỏi nữ 25t bị rối loạn kinh nguyệt dùng thuốc này được không ạ?"
+      ],
+      "reply": [
+        "Trường hợp anh/chị cần sử dụng sản phẩm Tinh dầu hoa anh thảo Blackmores Evening Primrose Oil hỗ trợ nội tiết tố nữ (Chai 190 viên) cho đối tượng đang bị cường giáp, mình cần tham khảo thêm ý kiến bác sĩ/ chuyên gia y tế để đảm bảo an toàn cho sức khỏe! Nếu cần hỗ trợ thêm thông tin, anh/chị vui lòng liên hệ hotline 1800.6821 (miễn cước phí). Để chuyên viên hỗ trợ mình kiểm tra chi tiết và nhanh chóng nhé.Chúc anh/chị nhiều sức khỏe!",
+        "Sản phẩm Blackmores Evening Primrose Oil chỉ định cho phụ nữ thời kỳ tiền kinh nguyệt.Trường hợp rối loạn kinh nguyệt, anh/chị nên hỏi thêm ý kiến bác sĩ/ chuyên gia y tế trước khi sử dụng để đảm bảo an toàn cho sức khỏe ạ.Nếu cần hỗ trợ thêm thông tin, anh/chị vui lòng liên hệ hotline 1800.6821 (miễn cước phí), để chuyên viên hỗ trợ mình kiểm tra chi tiết và nhanh chóng nhé.Chúc anh/chị nhiều sức khỏe!"
+      ]
+    },
+
+    {
+      "id": 5,
+      "title": "Viên uống Nature Gift Fish Oil Omega 369 hỗ trợ bổ não, mắt và tim (Hộp 100 viên)",
+      "description": {
+        "overview": "Nature Gift Fish Oil Omega 369 là một sản phẩm có chứa hàm lượng axit béo rất cao, cung cấp tổng hợp Omega 3,Omega 6 và Omega 9 trong cơ thể cùng lúc mà không cần thêm thực phẩm bổ trợ khác vừa an toàn vừa mang lại hiệu quả thiết thực. Là một trong những sự lựa chọn hoàn hảo để bảo vệ sức khỏe cho bạn và gia đình trong thời buổi hiện nay.",
+        "ingredients": [
+          "Nature Gift Fish Oil Omega 369 được chiết xuất từ dầu cá hồi thuần thiên nhiên, giàu dưỡng chất DocosaHexaenoic Acid (DHA) và Eicosapentaenoic Acid (EPA) khi có quy trình chọn lọc khắt khe đạt tiêu chuẩn y tế thế giới vì cá hồi được sử dụng phải đảm bảo tiêu chuẩn không được chứa các hoạt chất của kim loại nặng như: Thủy ngân, chì,...Sản phẩm này được chứng nhận là an toàn đối với sức khỏe và đặc biệt cần thiết cho gia đình bạn. Được sản xuất hoàn toàn và xuất nhập khẩu trực tiếp từ Mỹ, cùng công nghệ tinh luyện hiện đại, thành phần chiết xuất tinh khiết và chuẩn hóa hơn để cho ra đời thành phẩm viên nang dầu cá không bị dính và không bị chảy với màu sắc vàng bắt mắt và rất dễ uống.",
+          "Đó chính là về mặt sức khỏe của người sử dụng. Mỗi ngày khi uống bổ sung viên dầu cá Omega 369 Nature Gift Fish sẽ giúp cơ thể của bạn cải thiện về sức khỏe rõ rệt. Bạn sẽ giảm được nguy cơ mắc các bệnh thường gặp như: Cao huyết áp, mỡ trong máu, xơ vữa động mạch,... một số bệnh lý khác liên quan đến tim mạch.Bên cạnh đó còn giúp hạn chế tối đa các bệnh phổ biến khác như: Viêm khớp, tiểu đường hay béo phì. Ngoài ra còn giúp tăng sự tập trung và nâng cao sức khỏe cho bộ não, hệ miễn dịch và sức đề kháng cũng được tăng cường. Công dụng đặc biệt của dầu cá Omega 369 này còn làm giảm nguy cơ mắc ung thư, giúp mắt sáng và bảo vệ thị lực cho người dùng.",
+          "Axit gamma - linolenic (GLA): Tăng cường hấp thụ khoáng chất và tham gia vào nhiều quá trình khác.",
+          "Phụ liệu: Gelatin, glycerol, nước tinh khiết, d-alpha-tocopherol (chứa dầu đậu nành)."
+        ],
+        "benefits": [
+          "Các câu hỏi thường gặp về viên uống Nature Gift Fish Oil Omega 369Nature Gift Oil Omega 369 (Hop/100Vien) dùng quá liều lượng có tác dụng phụ không?Dầu cá Omega 369 mặc dù có thành phần là dầu cá hồi hoàn toàn tự nhiên, được chứng nhận là an toàn đối với cơ thể con người. Tuy nhiên khi dùng quá nhiều hoặc không tuân thủ khuyến cáo về liều lượng sử dụng sẽ có nguy cơ rất cao gây chảy máu cam, tiểu ra máu, chảy máu không báo trước do cơ thể phải liên tục tiêu thụ cùng lúc axit béo omega 369 mỗi ngày. Cũng có thể dẫn đến đau đầu, hôi miệng, ợ nóng, buồn nôn, tiêu chảy, tăng huyết áp, đau tim, thở gấp và dễ dẫn đến tình trạng đột quỵ. Hơn nữa khi sử dụng quá nhiều Nature Gift Oil Omega 369 (Hop/100Vien) dễ mắc phải bệnh tim mạch trong đó tiêu biểu phải kể đến hệ lụy là bệnh béo phì.",
+          "Là một trong những chuỗi hệ thống chuyên cung cấp dược phẩm lớn nhất cả nước, Pharmacity luôn tạo được sự tin tưởng cho khách hàng từ chất lượng sản phẩm cho đến dịch vụ chăm sóc sức khỏe người tiêu dùng. Với mạng lưới trải dài trên khắp đất nước, đơn vị Pharmacity luôn nằm trong top những nhà thuốc uy tín đạt chuẩn GPP hàng đầu hiện nay.",
+          "Hỗ trợ quá trình cân bằng hormone sinh sản của phụ nữ.",
+          "Cải thiện sức khỏe làn da.",
+          "Giúp bảo vệ và duy trì sức khỏe người dùng.",
+          "Chống oxy hóa, hỗ trợ làm giảm các triệu chứng tiền kinh nguyệt ở phụ nữ",
+          "Hỗ trợ bổ sung Vitamin E, EPA, DHA cho cơ thể. Hỗ trợ giảm mỡ máu, hỗ trợ tăng cường sức khỏe. Tốt cho não, mắt và tim mạch"
+        ],
+        "usage": [
+          "Liều lượng uống là: 1 viên/lần mỗi ngày dùng 2 lần",
+          "Thời điểm tốt nhất hấp thu hiệu quả nhất là nên uống vào buổi sáng.",
+          "Sản phẩm phù hợp cho người từ 18 tuổi trở lên."
+        ]
+      },
+      "images": [
+        "/assets/images/Shop/Medical/medical05.avif",
+        "/assets/images/Shop/Medical/medical005.01.avif",
+        "/assets/images/Shop/Medical/medical005.02.avif",
+        "/assets/images/Shop/Medical/medical005.03.avif"
+      ],
+      "discount": 30,
+      "price_old": 425000,
+      "price_new": 297000,
+      "brand": "Nature Gift",
+      "likes": 3000,
+      "sold_quantity": 900,
+      "stock_quantity": 290,
+      "category_name": "Thực phẩm chức năng nhóm Omega",
+      "weight": "100 viên",
+      "rating": 4,
+      "feedback": [
+        "Cái này có cải thiện mất ngủ không ạ, em 20 tuổi",
+        "Nhập khẩu trực tiếp ở Mỹ phải không?",
+        "DLoại này dùng đc cho trẻ 7 tuoi ko ạ"
+      ],
+      "reply": [
+        "Sản phẩm Viên uống Nature Gift Fish Oil Omega 369 hỗ trợ bổ não, mắt và tim (Hộp 100 viên) theo thông tin từ nhà sản xuất để trên sản phẩm: Sản phẩm phù hợp cho người từ 18 tuổi trở lên.Nếu cần hỗ trợ thêm thông tin, anh/chị vui lòng liên hệ hotline 1800.6821 (miễn cước phí), để chuyên viên hỗ trợ mình kiểm tra chi tiết và nhanh chóng nhé.Chúc anh/chị nhiều sức khỏe!",
+        "Sản phẩm Viên uống Nature Gift Fish Oil Omega 369 hỗ trợ bổ não, mắt và tim (Hộp 100 viên) có xuất xứ ở Mỹ ạ . Nếu cần hỗ trợ thêm thông tin, anh/chị vui lòng liên hệ hotline 1800.6821 (miễn cước phí). Để chuyên viên hỗ trợ mình kiểm tra chi tiết và nhanh chóng nhé.Chúc anh/chị nhiều sức khỏe!"
+      ]
+    },
+
+    {
+      "id": 6,
+      "title": "Kem dưỡng siêu cấp ẩm căng mịn da L'oreal Revitalift Hyaluronic Acid Plumping Cream Day (Hộp 50ml)",
+      "description": {
+        "overview": "Kem dưỡng da ban ngày, cung cấp độ ẩm cho da, giúp làm giảm nếp nhăn da, giúp da sáng mịn, trông căng mướt, rạng rỡ và trẻ trung hơn.",
+        "ingredients": [
+          "Aqua / Water",
+          "Glycerin",
+          " Dimethicone",
+          " Hydroxyethylpiperazine Ethane Sulfonic Acid",
+          "Alcohol Denat",
+          "Dipropylene Glycol",
+          " Synthetic Wax",
+          "Oxychloride",
+          "Secale Cereale Extract",
+          "Sodium Acrylates Copolymer",
+          "Sodium Hyaluronate",
+          "Adenosine",
+          "Peg",
+          "Dimethicone",
+          " Ethylhexyl Hydroxystearate",
+          "Nylon",
+          "Dimethicone/Peg",
+          " Crosspolymer",
+          "Dimethicone/Polyglycerin",
+          "Crosspolymer",
+          "Pentylene Glycol",
+          "Synthetic Fluorphlogopite",
+          "Benzyl Salicylate",
+          "Benzyl Alcohol",
+          " Linalool",
+          "Benzyl Benzoate",
+          " Caprylic/Capric ",
+          "riglyceride",
+          "Caprylyl Glycol",
+          "Dipotassium Glycyrrhizate",
+          "Alpinia Galanga Leaf Extract",
+          "Disteardimonium Hectorite",
+          "Disodium Edta",
+          "Citronellol",
+          "Parfum / Fragrance"
+        ],
+        "benefits": [
+          "Kem dưỡng da ban ngày, cung cấp độ ẩm cho da, giúp làm giảm nếp nhăn da, giúp da sáng mịn, trông căng mướt, rạng rỡ và trẻ trung hơn.",
+          "Là một trong những chuỗi hệ thống chuyên cung cấp dược phẩm lớn nhất cả nước, Pharmacity luôn tạo được sự tin tưởng cho khách hàng từ chất lượng sản phẩm cho đến dịch vụ chăm sóc sức khỏe người tiêu dùng. Với mạng lưới trải dài trên khắp đất nước, đơn vị Pharmacity luôn nằm trong top những nhà thuốc uy tín đạt chuẩn GPP hàng đầu hiện nay.",
+          "Kem dưỡng da ban ngày, cung cấp độ ẩm cho da, giúp làm giảm nếp nhăn da, giúp da sáng mịn, trông căng mướt, rạng rỡ và trẻ trung hơn."
+        ],
+        "usage": [
+          "Làm sạch da sau đó cân bằng với nước hoa hồng.",
+          "Lấy một lượng kem dưỡng L'Oréal Paris Revitalift Hyaluronic Acid Plumping Day Cream bằng hạt đậu và chấm đều lên da mặt và cổ vừa được làm sạch.",
+          "Nhẹ nhàng tán đều và massage kem theo chuyển động tròn cho đến khi kem hấp thụ hoàn toàn vào da.",
+          "Để có kết quả tốt nhất, hãy kết hợp sử dụng với tinh chất L’Oréal Paris Revitalift 1.5% Hyaluronic Acid Serum."
+        ]
+      },
+      "images": [
+        "/assets/images/Shop/Medical/medical06.avif",
+        "/assets/images/Shop/Medical/medical06.01.avif",
+        "/assets/images/Shop/Medical/medical06.02.avif",
+        "/assets/images/Shop/Medical/medical06.03.avif"
+      ],
+      "discount": 310,
+      "price_old": 399000,
+      "price_new": 281000,
+      "brand": "L'oreal",
+      "likes": 13000,
+      "sold_quantity": 9100,
+      "stock_quantity": 2902,
+      "category_name": "Kem dưỡng ẩm và dưỡng da",
+      "weight": "50ml",
+      "rating": 4.8,
+      "feedback": [],
+      "reply": []
+    },
+
+    {
+      "id": 7,
+      "title": "Nước Uống Hồng Sâm Đông Trùng Hạ Thảo Hàn Quốc - Welson Cordyceps Gold (Hộp 10 chai)",
+      "description": {
+        "overview": "Nature Gift Fish Oil Omega 369 là một sản phẩm có chứa hàm lượng axit béo rất cao, cung cấp tổng hợp Omega 3,Omega 6 và Omega 9 trong cơ thể cùng lúc mà không cần thêm thực phẩm bổ trợ khác vừa an toàn vừa mang lại hiệu quả thiết thực. Là một trong những sự lựa chọn hoàn hảo để bảo vệ sức khỏe cho bạn và gia đình trong thời buổi hiện nay.",
+        "ingredients": [
+          "Thành phần từ thiên nhiên gồm: Chiết xuất Đông Trùng Hạ Thảo, chiết xuất Hồng Sâm 6 Năm Tuổi, chiết xuất Đương Quy Hàn Quốc, chiết xuất Xà Sàng, chiết xuất Táo Đỏ (Hàn Quốc), nước tinh khiết..."
+        ],
+        "benefits": [
+          "Nước Uống Hồng Sâm Đông Trùng Hạ Thảo Welson Cordyceps Gold mang đến nguồn dưỡng chất cần thiết giúp tăng cường sức đề kháng, bồi bổ cơ thể và giảm stress. Đặc biệt phù hợp cho người ăn kiêng, bệnh nhân tiểu đường, giúp cải thiện sức khỏe tổng thể.",
+          "Là một trong những chuỗi hệ thống chuyên cung cấp dược phẩm lớn nhất cả nước, Pharmacity luôn tạo được sự tin tưởng cho khách hàng từ chất lượng sản phẩm cho đến dịch vụ chăm sóc sức khỏe người tiêu dùng. Với mạng lưới trải dài trên khắp đất nước, đơn vị Pharmacity luôn nằm trong top những nhà thuốc uy tín đạt chuẩn GPP hàng đầu hiện nay.",
+          "Hỗ trợ quá trình cân bằng hormone sinh sản của phụ nữ.",
+          "Cải thiện sức khỏe làn da.",
+          "Giúp bảo vệ và duy trì sức khỏe người dùng.",
+          "Chống oxy hóa, hỗ trợ làm giảm các triệu chứng tiền kinh nguyệt ở phụ nữ",
+          "Hỗ trợ bổ sung Vitamin E, EPA, DHA cho cơ thể. Hỗ trợ giảm mỡ máu, hỗ trợ tăng cường sức khỏe. Tốt cho não, mắt và tim mạch"
+        ],
+        "usage": [
+          "Dùng trực tiếp, uống mỗi ngày 1 chai sau bữa ăn sáng. Ngon hơn khi uống lạnh ",
+          "Không sử dụng cho người có mẫn cảm với bất kỳ thành phần nào của sản phẩm.Sản phẩm không thay thế cho chế độ ăn uống cân bằng, đa dạng và lối sống lành mạnh.",
+          "Sản phẩm này không phải là thuốc và không có tác dụng thay thế thuốc chữa bệnh"
+        ]
+      },
+      "images": [
+        "/assets/images/Shop/Medical/medical07.avif",
+        "/assets/images/Shop/Medical/medical07.01.avif",
+        "/assets/images/Shop/Medical/medical07.02.avif",
+        "/assets/images/Shop/Medical/medical07.03.avif"
+      ],
+      "discount": 30,
+      "price_old": 780000,
+      "price_new": 2395000,
+      "brand": "Welson",
+      "likes": 1200,
+      "sold_quantity": 900,
+      "stock_quantity": 290,
+      "category_name": "Vitamin & Khoáng chất",
+      "weight": "Hộp 10 chai",
+      "rating": 4,
+      "feedback": [
+        "Xin hỏi trẻ em có uống được không?",
+        "Bị u mỡ dưới da với nhân giảm âm birads3 bên ngực trái có uống được sản phẩm này k ạ",
+        "Cho xin hàm lượng , thành phần với ạ"
+      ],
+      "reply": [
+        "Sản phẩm Nước Uống Hồng Sâm Đông Trùng Hạ Thảo Hàn Quốc - Welson Cordyceps Gold (Hộp 10 chai) phù hợp sử dụng cho người trưởng thành từ 18 tuổi trở lên. Nếu cần hỗ trợ thêm thông tin, anh/chị vui lòng liên hệ hotline 1800.6821 (miễn phí). Để chuyên viên hỗ trợ mình kiểm tra chi tiết và nhanh chóng nhé.Chúc anh/chị nhiều sức khỏe!",
+        "Trường hợp anh/chị cần sử dụng sản phẩm Nước Uống Hồng Sâm Đông Trùng Hạ Thảo Hàn Quốc - Welson Cordyceps Gold (Hộp 10 chai) cho tình trạng có bệnh lý nền có khối U mình cần tham khảo thêm ý kiến bác sĩ/ chuyên gia y tế để đảm bảo an toàn cho sức khỏe! Nếu cần hỗ trợ thêm thông tin, anh/chị vui lòng liên hệ hotline 1800.6821 (miễn cước phí). Để chuyên viên hỗ trợ mình kiểm tra chi tiết và nhanh chóng nhé.Chúc anh/chị nhiều sức khỏe!",
+        "ản phẩm Nước Uống Hồng Sâm Đông Trùng Hạ Thảo Hàn Quốc - Welson Cordyceps Gold (Hộp 10 chai) có thành phẩn nước tinh khiết, chất tạo ngọt tự nhiên (INS 968), hương liệu tự nhiên (hương thảo mộc, chất điều chỉnh độ acid (INS 330), INS 331(iii), chiếc xuất dương quy Hàn Quốc, chiết xuất xà xàng, chiếc xuất táo đỏ (Hàn Quốc), phẩm màu tự nhiên (INS 150a), bột đông trùng hạ thảo (Hàn Quốc) 0,06%, chất tạo ngọt tự nhiên (INS 960a), chiếc xuất hồng sâm 6 năm tuổi, chất tạo ngọt nhân tạo (NS 955).Nếu cần hỗ trợ thêm thông tin, anh/chị vui lòng liên hệ hotline 1800.6821 (miễn phí). Để chuyên viên hỗ trợ mình kiểm tra chi tiết và nhanh chóng nhé.Chúc anh/chị nhiều sức khỏe!"
+      ]
+    },
+
+    {
+      "id": 8,
+      "title": "Viên uống VITABIOTICS Visionace Original hỗ trợ cải thiện thị lực (Hộp 2 vỉ x 15viên)",
+      "description": {
+        "overview": "Bổ sung các vi chất dinh dưỡng như vitamin, khoáng chất, lutein, hỗ trợ cải thiện thị lực. ",
+        "ingredients": [
+          "Mỗi viên chứa: Vitamin C (Acid L-ascorbic) 150 mg, Vitamin E (D-alphatocopheryl acid Succinat) (từ đậu nành) 60 mg α-TE, Magie (Magnesi Oxyd) 60 mg, Chiết xuất việt quất 60 mg, Acid pantothenic (D-pantothenat, calci) 20 mg, Niacin (Nicotinamid) 18 mg NE, Kẽm (Kẽm sulfat) 15 mg, Citrus Bioflavonoids 15 mg, Vitamin B1 (Thiamin mononitrat) 12 mg, Vitamin B6 (Pyridoxin Hydroclorid) 10 mg, Sắt (Sắt (II) fumarat) 6 mg, Vitamin B2 (Riboflavin) 4,8 mg, Mangan (Mangan sulfat) 4 mg, Lutein (Chất chống oxy hóa: Vitamin E tự nhiên & Ascorbyl Palmitate) 4 mg, Betacaroten (Chất chống oxy hóa: DL-Alpha Tocopherol) 3 mg, Đồng (Đồng sulfat) 1 mg, Acid folic (Acid pteroylmonoglutamic) 400 mcg, Vitamin A (Retinyl acetat [Chất chống oxy hóa: DL-Alpha Tocopherol]) 300 mcg RE, Selen (Natri selenat) 150 mcg, Iod (Kali Iodid) 100 mcg, Crom (Crom clorid và hexahydrat của nó) 50 mcg, Vitamin B12 (Cyanocobalamin) 9 mcg, Vitamin D3 (Cholecalciferol [Chất chống oxy hóa: DL-Alpha Tocopherol]) 2,5 mcg."
+        ],
+        "benefits": [
+          "Bổ sung các vi chất dinh dưỡng như vitamin, khoáng chất, lutein, hỗ trợ cải thiện thị lực. ",
+          "Sản phẩm này không phải là thuốc, không có tác dụng thay thế thuốc chữa bệnh. Đọc kỹ tờ hướng dẫn sử dụng trước khi dùng.",
+          "Cải thiện sức khỏe làn da.",
+          "Giúp bảo vệ và duy trì sức khỏe người dùng."
+        ],
+        "usage": [
+          "Uống 1 viên mỗi ngày, sau khi ăn, uống nguyên viên, không được nhai",
+          "Đối tượng sử dụng: Người trưởng thành",
+          "Thực phẩm bảo vệ sức khỏe không thay thế một chế độ ăn uống đa dạng và cân bằng, cũng như lối sống lành mạnh. Cũng giống như các thực phẩm bảo vệ sức khoẻ khác, hãy tham khảo ý kiến chuyên gia y tế trước khi sử dụng nếu bạn đang cần phải theo dõi y tế, có thai,cho con bú, bị động kinh, bệnh tuyến giáp, bệnh tan máu bẩm sinh, bị dị ứng thực phẩm hay dị ứng với bất kỳ thành phần nào của sản phẩm.",
+          "Sản phẩm có chứa vitamin A, không dùng nếu bạn đang có thai hoặc có khả năng có thai trừ khi đã hỏi ý kiến của bác sỹ."
+        ]
+      },
+      "images": [
+        "/assets/images/Shop/Medical/medical08.avif",
+        "/assets/images/Shop/Medical/medical08.01.avif",
+        "/assets/images/Shop/Medical/medical08.02.avif",
+        "/assets/images/Shop/Medical/medical08.03.avif"
+      ],
+      "discount": 30,
+      "price_old": 780000,
+      "price_new": 423000,
+      "brand": "Vitabiotics",
+      "likes": 1100,
+      "sold_quantity": 900,
+      "stock_quantity": 290,
+      "category_name": "Thực phẩm chức năng cho mắt",
+      "weight": "Hộp 2 vỉ x 15 viên",
+      "rating": 4,
+      "feedback": [
+        "17 tuổi bị cận thị nặng uống được không ?",
+        "Đục thủy  tinh thể uống được không."
+      ],
+      "reply": [
+        "Sản phẩm Viên uống VITABIOTICS Visionace Original (Hộp 2 vỉ x 15 viên) có khuyến cáo sử dụng được cho Người trưởng thành, sản phẩm bổ sung các vi chất dinh dưỡng như vitamin, khoáng chất, lutein, hỗ trợ cải thiện thị lực. Nếu cần hỗ trợ thêm thông tin, anh/chị vui lòng liên hệ hotline 1800.6821 (miễn cước phí). Để chuyên viên hỗ trợ mình kiểm tra chi tiết và nhanh chóng nhé.Chúc anh/chị nhiều sức khỏe!",
+        "Trường hợp anh/chị cần sử dụng sản phẩm Nước Uống Hồng Sâm Đông Trùng Hạ Thảo Hàn Quốc - Welson Cordyceps Gold (Hộp 10 chai) cho tình trạng có bệnh lý nền có khối U mình cần tham khảo thêm ý kiến bác sĩ/ chuyên gia y tế để đảm bảo an toàn cho sức khỏe! Nếu cần hỗ trợ thêm thông tin, anh/chị vui lòng liên hệ hotline 1800.6821 (miễn cước phí). Để chuyên viên hỗ trợ mình kiểm tra chi tiết và nhanh chóng nhé.Chúc anh/chị nhiều sức khỏe!",
+        "Sản phẩm Viên uống VITABIOTICS Visionace Original hỗ trợ cải thiện thị lực (Hộp 2 vỉ x 15 viên) vẫn có thể sử dụng được cho người đục thủy tinh thể.Tuy nhiên, trong trường hợp có tình trạng bệnh lý,nên tham khảo ý kiến bác sĩ để được tư vấn và kết hợp với phác đồ điều trị thích hợp.Nếu cần hỗ trợ thêm thông tin, anh/chị vui lòng liên hệ hotline 1800.6821 (miễn cước phí). Để chuyên viên hỗ trợ mình kiểm tra chi tiết và nhanh chóng nhé.Chúc anh/chị nhiều sức khỏe!"
+      ]
+    },
+
+    {
+      "id": 9,
+      "title": "Viên uống Healthy Life Celery hỗ trợ  điều trị gout (Hộp 60 viên)",
+      "description": {
+        "overview": "Hỗ trợ cải thiện chỉ số acid uric, hỗ trợ giảm các triệu chứng: đau nhức xương khớp, đặc biệt là các khớp ngón tay, ngón chân do gout ",
+        "ingredients": [
+          "Các thành phần được chiết xuất từ ​​thiên nhiên nên cực kỳ an toàn và vô hại.",
+          "Một viên chứa tới 120 mg chiết xuất hạt cần tây.",
+          "Ngoài ra, sản phẩm còn được bổ sung thêm một số thành phần khác như cellulose-microcellulose, canxi hydro photphat, silicon khan, magie stearat, vỏ nang gelatin."
+        ],
+        "benefits": [
+          "Giảm axit uric trong máu và cân bằng axit uric Axit uric là sản phẩm của quá trình chuyển hóa protein. ",
+          "Nồng độ axit uric trong máu cao có thể do người ta tiêu thụ quá nhiều nội tạng động vật, hải sản, đồ uống có cồn và bia.",
+          "Chăm sóc sức khỏe khớp và giảm đau Triệu chứng bệnh gút Bên cạnh khả năng ức chế sản xuất axit uric, Tốt cho sức khỏe Thuốc giảm axit uric cần tây cho người bị bệnh gút cũng có thể làm giảm các triệu chứng sưng, viêm và đau khớp.",
+          "Thúc đẩy hoạt động của đường tiết niệu Thuốc giảm axit uric cho người bị bệnh gút Cần tây tốt cho sức khỏe sẽ giúp giảm axit uric và kích thích sản xuất nước tiểu hiệu quả"
+        ],
+        "usage": [
+          "Người tăng acid uric, người bị bệnh gút",
+          "Cách dùng Uống 1 viên/ngày với khoảng 250ml nước, trong bữa ăn hoặc khi bụng đói, hoặc tham khảo ý kiến ​​bác sĩ.",
+          "Uống 1 viên/ngày với khoảng 250ml nước, cùng với bữa ăn hoặc uống khi đói, hoặc tham khảo ý kiến của chuyên gia y tế.",
+          "Chống chỉ định trong trường hợp suy thận."
+        ]
+      },
+      "images": [
+        "/assets/images/Shop/Medical/medical09.avif",
+        "/assets/images/Shop/Medical/medical09.01.avif",
+        "/assets/images/Shop/Medical/medical09.02.avif",
+        "/assets/images/Shop/Medical/medical09.03.avif"
+      ],
+      "discount": 30,
+      "price_old": 625000,
+      "price_new": 437000,
+      "brand": "Healthy Life",
+      "likes": 1100,
+      "sold_quantity": 900,
+      "stock_quantity": 290,
+      "category_name": "Thực phẩm chức năng hỗ trợ gút",
+      "weight": "Hộp 60 viên",
+      "rating": 4,
+      "feedback": [
+        "Uống này có bị sỏi thận không vậy?",
+        "Thành phần của sản phẩm gồm những gì vậy? Uống thời gian bao lâu thì ngưng và uống lại?",
+        "Thuốc này có thải trừ qua thận không ạ?"
+      ],
+      "reply": [
+        "Sản phẩm Viên uống Healthy Life Celery hỗ trợ điều trị gout (Hộp 60 viên) chưa có thông tin tác dụng phụ gây sỏi thận từ nhà sản xuất.Ngoài ra, tác dụng phụ của sản phẩm phụ thuộc vào cơ địa  của mỗi người và tình trạng hiện tại của mình.Trường hợp có bệnh lý nền, mình nên tham khảo thêm ý kiến bác sĩ để đảm bảo an toàn cho sức khỏe nhé.Chúc anh/chị nhiều sức khỏe!",
+        "Trường hợp anh/chị cần sử dụng sản phẩm Nước Uống Hồng Sâm Đông Trùng Hạ Thảo Hàn Quốc - Welson Cordyceps Gold (Hộp 10 chai) cho tình trạng có bệnh lý nền có khối U mình cần tham khảo thêm ý kiến bác sĩ/ chuyên gia y tế để đảm bảo an toàn cho sức khỏe! Nếu cần hỗ trợ thêm thông tin, anh/chị vui lòng liên hệ hotline 1800.6821 (miễn cước phí). Để chuyên viên hỗ trợ mình kiểm tra chi tiết và nhanh chóng nhé.Chúc anh/chị nhiều sức khỏe!",
+        "Sản phẩm có các thành phần được chiết xuất từ ​​thiên nhiên nên cực kỳ an toàn và vô hại.Một viên chứa tới 120 mg chiết xuất hạt cần tây.Ngoài ra, sản phẩm còn được bổ sung thêm một số thành phần khác như cellulose-microcellulose, canxi hydro photphat, silicon khan, magie stearat, vỏ nang gelatin.Nếu cần hỗ trợ thêm thông tin, anh/chị vui lòng liên hệ hotline 1800.6821 (miễn phí). Để chuyên viên hỗ trợ mình kiểm tra chi tiết và nhanh chóng nhé.Chúc anh/chị nhiều sức khỏe!",
+        "Dạ sản phẩm Viên uống Healthy Life Celery hỗ trợ điều trị gout (Hộp 60 viên) có chiết xuất hạt cần tây mang lại nhiều lợi ích sức khỏe, bao gồm hỗ trợ điều trị gout, giảm viêm, lợi tiểu... ạ.  Chống chỉ định trong trường hợp suy thận.Tuy nhiên, trường hợp anh/chị cần sử dụng này cho bệnh nhân có tiền sử bệnh lý về thận , mình cần tham khảo thêm ý kiến bác sĩ/ chuyên gia y tế để đảm bảo an toàn cho sức khỏe! Nếu cần hỗ trợ thêm thông tin, anh/chị vui lòng liên hệ hotline 1800.6821 (miễn cước phí). Để chuyên viên hỗ trợ mình kiểm tra chi tiết và nhanh chóng nhé.Chúc anh/chị nhiều sức khỏe!"
+      ]
+    },
+
+    {
+      "id": 10,
+      "title": "Viên đông trùng hạ thảo Wellness Nutrition tăng cường sức khỏe (Hộp 90 viên)",
+      "description": {
+        "overview": "Hỗ trợ tăng cường sức khỏe, bồi bổ cơ thể   Viên uống Đông Trùng Hạ Thảo Wellness Nutrition được sản xuất và đóng gói tại Mỹ trên dây chuyền khép kín sử dụng công nghệ chiết xuất mới, tiên tiến đảm bảo duy trì 100% hoạt tính của Đông Trùng Hạ Thảo. ",
+        "ingredients": [
+          "Thành phần chính: đông trùng hạ thảo (Cordycep Sinensis)",
+          "Thành phần khác: Cám gạo, Gelatin, Magnesium Stearate vừa đủ 1 viên.",
+          "Ngoài ra, sản phẩm còn được bổ sung thêm một số thành phần khác như cellulose-microcellulose, canxi hydro photphat, silicon khan, magie stearat, vỏ nang gelatin."
+        ],
+        "benefits": [
+          "Hỗ trợ tăng cường sức khỏe, bồi bổ cơ thể",
+          "Đông trùng hạ thảo Wellness Nutrition là một loại nấm sống ký sinh trên ấu trùng. Sau khi ký sinh vào cơ thể vật chủ, nó sẽ tấn công và hút chất dinh dưỡng để phát triển. Vào mùa hè, các sợi đông trùng hạ thảo sẽ dài ra và thoát ra khỏi cơ thể ấu trùng để trồi lên khỏi đất. Hình thành đông trùng hạ thảo.  ",
+          "Hỗ trợ tăng cường sức khỏe, bồi bổ cơ thể   ",
+
+          "Thúc đẩy hoạt động của đường tiết niệu Thuốc giảm axit uric cho người bị bệnh gút Cần tây tốt cho sức khỏe sẽ giúp giảm axit uric và kích thích sản xuất nước tiểu hiệu quả"
+        ],
+        "usage": [
+          "Người trưởng thành cần bồi bổ sức khỏe",
+          "Uống 1 viên/lần cùng với bữa ăn",
+          "Tránh xa tầm tay trẻ em",
+          "Không sử dụng nếu dấu niêm phong in trên nắp bị vỡ hoặc bị thiếu",
+          "Phụ nữ có thai, cho con bú hoặc đang sử dụng các loại thuốc khác phải xin ý kiến bác sĩ trước khi sử dụng.",
+          "Dừng uống và xin ý kiến bác sĩ nếu mẫn cảm với bất cứ thành phần nào của sản phẩm."
+        ]
+      },
+      "images": [
+        "/assets/images/Shop/Medical/medical10.avif",
+        "/assets/images/Shop/Medical/medical10.01.avif",
+        "/assets/images/Shop/Medical/medical10.02.avif",
+        "/assets/images/Shop/Medical/medical10.03.avif"
+      ],
+      "discount": 30,
+      "price_old": 1480000,
+      "price_new": 785000,
+      "brand": "Nature Gift",
+      "likes": 2100,
+      "sold_quantity": 7900,
+      "stock_quantity": 21190,
+      "category_name": "Vitamin & Khoáng chất",
+      "weight": "Hộp 90 viên",
+      "rating": 4.2,
+      "feedback": [
+        "Ad cho mình hỏi viên uống này uống chung với vitamin Pharmacity Advanced Formula multivitamin & mineral trong 6 tháng/ liệu trình để hỗ trợ sức khỏe được khum? Mình chỉ muốn uống để cải thiện sức khỏe chứ mình không bị bệnh gì",
+        "Sao không để thành phần của sản phẩm gồm có những gì trong 1 viên",
+        "Viên uống này uống trước hay sau bữa ăn vậy"
+      ],
+      "reply": [
+        "Tùy theo thể trạng/tình trạng sức khỏe và khả năng dung nạp/chế độ ăn của từng cá thể. Nên khi dùng phối hợp 2 sản phẩm Viên đông trùng hạ thảo Wellness Nutrition và Pharmacity Advanced Formula Mutivitamin & Minerals cùng công dụng (đều là Hỗ trợ tăng cường sức khỏe), anh/chị nên tham vấn thêm ý kiến bác sĩ trước khi sử dụng kết hợp các sản phẩm bổ sung để đảm bảo an toàn cho sức khỏe ạ.Nếu cần hỗ trợ thêm thông tin, anh/chị vui lòng liên hệ hotline 1800.6821 (miễn cước phí). Để chuyên viên hỗ trợ mình kiểm tra chi tiết và nhanh chóng nhé.Chúc anh/chị nhiều sức khỏe!",
+        "Sản phẩm Viên đông trùng hạ thảo Wellness Nutrition tăng cường sức khỏe (Hộp 90 viên)có thành phần chính là đông trùng hạ thảo (Cordycep Sinensis). Thành phần khác là Cám gạo,Gelatin, Magnesium Stearate vừa đủ 1 viên.  Nếu cần hỗ trợ thêm thông tin, anh/chị vui lòng liên hệ hotline 1800.6821 (miễn cước phí). Để chuyên viên hỗ trợ mình kiểm tra chi tiết và nhanh chóng nhé.Chúc anh/chị nhiều sức khỏe!",
+        "Sản phẩm có các thành phần được chiết xuất từ ​​thiên nhiên nên cực kỳ an toàn và vô hại.Một viên chứa tới 120 mg chiết xuất hạt cần tây.Ngoài ra, sản phẩm còn được bổ sung thêm một số thành phần khác như cellulose-microcellulose, canxi hydro photphat, silicon khan, magie stearat, vỏ nang gelatin.Nếu cần hỗ trợ thêm thông tin, anh/chị vui lòng liên hệ hotline 1800.6821 (miễn phí). Để chuyên viên hỗ trợ mình kiểm tra chi tiết và nhanh chóng nhé.Chúc anh/chị nhiều sức khỏe!",
+        "Sản phẩm Viên đông trùng hạ thảo Wellness Nutrition tăng cường sức khỏe (Hộp 90 viên) uống 1 viên/lần cùng với bữa ăn. Nếu cần hỗ trợ thêm thông tin, anh/chị vui lòng liên hệ hotline 1800.6821 (miễn cước phí). Để chuyên viên hỗ trợ mình kiểm tra chi tiết và nhanh chóng nhé.Chúc anh/chị nhiều sức khỏe!"
+      ]
+    }
+  ],
+
+  "categories": [
+    {
+      "id": 1,
+      "name": "Thuốc giảm đau"
+    },
+    {
+      "id": 2,
+      "name": "Thuốc cảm cúm"
+    },
+    {
+      "id": 3,
+      "name": "Vitamin & Khoáng chất"
+    },
+    {
+      "id": 4,
+      "name": "Kem chống nắng"
+    },
+    {
+      "id": 5,
+      "name": "Hỗ trợ đẹp da"
+    },
+    {
+      "id": 6,
+      "name": "Sản phẩm hỗ trợ giảm mụn"
+    },
+    {
+      "id": 7,
+      "name": "Thực phẩm chức năng hỗ trợ sinh lý nữ"
+    },
+    {
+      "id": 8,
+      "name": "Thực phẩm chức năng nhóm Omega"
+    },
+    {
+      "id": 9,
+      "name": "Kem dưỡng ẩm và dưỡng da"
+    },
+    {
+      "id": 10,
+      "name": "Thực phẩm chức năng cho mắt"
+    },
+    {
+      "id": 11,
+      "name": "Thực phẩm chức năng hỗ trợ gút"
     }
   ]
 }

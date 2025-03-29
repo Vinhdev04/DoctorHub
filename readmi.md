@@ -29,3 +29,7 @@ git clone https://github.com/Vinhdev04/DoctorHub.git
 cd DOCTORHUB
 open index.html
 ```
+
+## Công Nghệ Sư Dụng:
+
+**API Vietnam Open Data** `để tự động tải tỉnh/thành, quận/huyện và phường/xã`

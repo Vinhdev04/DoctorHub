@@ -66,6 +66,11 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     />
+    <!-- *RemixIcon* -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"
+    />
     <!-- *LazySizes* -->
     <link
       rel="stylesheet"
@@ -80,137 +85,6 @@
     <!-- *Mobile Optimization* -->
     <meta name="mobile-web-app-capable" content="yes" />
     <meta name="theme-color" content="#0d6efd" />
-    <style>
-      .banner-container {
-        margin-top: 20px;
-      }
-
-      .splide__track {
-        border-radius: 10px;
-        overflow: hidden;
-      }
-
-      .static-banner {
-        border-radius: 10px;
-        width: 100%;
-        object-fit: cover;
-      }
-
-      .banner-container .row {
-        height: 100%;
-      }
-
-      .splide-shop .splide__track,
-      .static-banner {
-        height: 100%;
-      }
-
-      .splide-shop img,
-      .static-banner {
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-        border-radius: 10px;
-      }
-
-      @media (max-width: 768px) {
-        .splide-shop img,
-        .static-banner {
-          height: auto;
-        }
-        .splide__arrow {
-          width: 35px;
-        }
-      }
-
-      .splide__arrow {
-        background-color: #ebebeb !important;
-        transition: background-color 0.2s ease-in-out;
-        cursor: pointer;
-      }
-      .splide__arrow:hover {
-        background-color: var(--bg-white);
-      }
-
-      .splide__arrow--prev {
-        left: -50px;
-      }
-
-      .splide__arrow--next {
-        right: -50px;
-      }
-
-      .sale-wrap {
-        background-color: var(--bg-primary);
-        padding: 10px;
-        clip-path: polygon(0% 0, 100% 0, 98% 100%, 2% 100%);
-        border-radius: 5px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        border-top-left-radius: 39px;
-        border-top-right-radius: 39px;
-      }
-      .countdown {
-        gap: 5px;
-        font-weight: bold;
-      }
-
-      .countdown-box {
-        background: white;
-        color: red;
-        padding: 14px;
-        border-radius: 5px;
-      }
-      .text-truncate--ellipse {
-        display: -webkit-box;
-        -webkit-line-clamp: 3;
-        -webkit-box-orient: vertical;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        max-width: 170px;
-      }
-
-      .splide-shop .splide__slide {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-
-      .splide-shop .card {
-        width: 100%;
-        border-radius: 12px;
-        overflow: hidden;
-        border: 1px solid #ddd;
-      }
-
-      .splide-shop .card-img img {
-        width: 100%;
-        height: 150px; /* Điều chỉnh theo mong muốn */
-        object-fit: cover;
-      }
-
-      .splide-shop .card-body {
-        padding: 10px;
-        text-align: center;
-      }
-
-      .splide-shop .card-price {
-        font-size: 16px;
-        color: red;
-        font-weight: bold;
-      }
-
-      .splide-shop .btn {
-        background-color: #0056b3;
-        color: white;
-        font-weight: bold;
-        border-radius: 8px;
-      }
-      .badge-discount {
-        top: 10px;
-        left: 10px;
-        opacity: 0.8;
-      }
-    </style>
   </head>
   <body>
     <!-- *Navbar* -->
@@ -430,14 +304,26 @@
               <div class="splide splide-medical">
                 <div class="splide__track">
                   <ul class="splide__list">
+                    <!-- *Item 01* -->
                     <li class="splide__slide">
                       <div class="card overflow-hidden">
-                        <div class="card-img position-relative">
+                        <div class="card-img position-relative card__img">
                           <img
                             data-src="/assets/images/Shop/Medical/medical01.avif"
                             alt=""
                             class="img-fluid lazyload w-100"
                           />
+                          <div class="card__wrap">
+                            <div class="card__wrap--icon">
+                              <i class="ri-heart-line"></i>
+                            </div>
+                            <div class="card__wrap--icon">
+                              <i class="ri-shopping-cart-line"></i>
+                            </div>
+                            <div class="card__wrap--icon">
+                              <i class="ri-eye-line"></i>
+                            </div>
+                          </div>
                         </div>
                         <div class="card-body">
                           <span
@@ -458,234 +344,613 @@
                               >297.000đ</span
                             >
                           </p>
-                          <progress
-                            value="90"
-                            max="100"
-                            class="py-1"
-                          ></progress>
-                          <a href="#" class="btn btn-primary">Chọn sản phẩm</a>
+                          <div
+                            class="progress mb-2"
+                            role="progressbar"
+                            aria-label="Example with label"
+                            aria-valuenow="25"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                          >
+                            <div
+                              class="progress-bar bg-danger fw-bolder"
+                              style="width: 95%"
+                            >
+                              Đang bán chạy
+                            </div>
+                          </div>
+
+                          <a
+                            href="/pages/detailMedicines.html?id="
+                            class="btn btn-primary medical-btn w-100"
+                            >Chọn sản phẩm</a
+                          >
                         </div>
                       </div>
                     </li>
+
+                    <!-- *Item 02* -->
                     <li class="splide__slide">
                       <div class="card overflow-hidden">
-                        <div class="card-img">
+                        <div class="card-img position-relative card__img">
                           <img
-                            data-src="/assets/images/Shop/Medical/medical01.avif"
+                            data-src="/assets/images/Shop/Medical/medical02.avif"
                             alt=""
                             class="img-fluid lazyload w-100"
                           />
+                          <div class="card__wrap">
+                            <div class="card__wrap--icon">
+                              <i class="ri-heart-line"></i>
+                            </div>
+                            <div class="card__wrap--icon">
+                              <i class="ri-shopping-cart-line"></i>
+                            </div>
+                            <div class="card__wrap--icon">
+                              <i class="ri-eye-line"></i>
+                            </div>
+                          </div>
                         </div>
                         <div class="card-body">
                           <span
-                            class="badge bg-danger badge-discount position-absolute"
-                            >Giảm 30%</span
+                            class="badge bg-danger position-absolute badge-discount"
+                            >Giảm 10%</span
                           >
                           <h5 class="card-title text-truncate--ellipse">
-                            Kem Chống Nắng Make p:rem Vật Lý Kiềm Dầu Khô Ráo Uv
-                            Defense Me. No Sebum (Tuýp 50ml)
+                            Nước uống collagen Elasten 2500mg hỗ trợ làm giảm
+                            lão hoá da, giúp tăng độ đàn hồi và giữ độ ẩm cho da
+                            (Hộp 28 ống x 25ml)
                           </h5>
                           <p class="card-price d-flex flex-column">
                             <span
                               class="card-price--old text-decoration-line-through opacity-50 text-primary"
-                              >480.000đ</span
+                              >2.500.000đ</span
+                            >
+                            <span
+                              class="card-price--new fw-semibold text-primary"
+                              >2.000.000đ</span
+                            >
+                          </p>
+                          <div
+                            class="progress mb-2"
+                            role="progressbar"
+                            aria-label="Example with label"
+                            aria-valuenow="25"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                          >
+                            <div
+                              class="progress-bar bg-danger fw-bolder"
+                              style="width: 95%"
+                            >
+                              Đang bán chạy
+                            </div>
+                          </div>
+
+                          <a
+                            href="/pages/detailMedicines.html?id="
+                            class="btn btn-primary medical-btn w-100"
+                            >Chọn sản phẩm</a
+                          >
+                        </div>
+                      </div>
+                    </li>
+
+                    <!-- *Item 03* -->
+                    <li class="splide__slide">
+                      <div class="card overflow-hidden">
+                        <div class="card-img position-relative card__img">
+                          <img
+                            data-src="/assets/images/Shop/Medical/medical03.avif"
+                            alt=""
+                            class="img-fluid lazyload w-100"
+                          />
+                          <div class="card__wrap">
+                            <div class="card__wrap--icon">
+                              <i class="ri-heart-line"></i>
+                            </div>
+                            <div class="card__wrap--icon">
+                              <i class="ri-shopping-cart-line"></i>
+                            </div>
+                            <div class="card__wrap--icon">
+                              <i class="ri-eye-line"></i>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card-body">
+                          <span
+                            class="badge bg-danger position-absolute badge-discount"
+                            >Giảm 30%</span
+                          >
+                          <h5 class="card-title text-truncate--ellipse">
+                            Gel Actidem Derma Gel hỗ trợ ngăn ngừa mụn, làm mờ
+                            vết thâm (40g)
+                          </h5>
+                          <p class="card-price d-flex flex-column">
+                            <span
+                              class="card-price--old text-decoration-line-through opacity-50 text-primary"
+                              >380.000đ</span
                             >
                             <span
                               class="card-price--new fw-semibold text-primary"
                               >297.000đ</span
                             >
                           </p>
-                          <progress
-                            value="90"
-                            max="100"
-                            class="py-1"
-                          ></progress>
-                          <a href="#" class="btn btn-primary">Chọn sản phẩm</a>
+                          <div
+                            class="progress mb-2"
+                            role="progressbar"
+                            aria-label="Example with label"
+                            aria-valuenow="25"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                          >
+                            <div
+                              class="progress-bar bg-danger fw-bolder"
+                              style="width: 95%"
+                            >
+                              Đang bán chạy
+                            </div>
+                          </div>
+
+                          <a
+                            href="/pages/detailMedicines.html?id="
+                            class="btn btn-primary medical-btn w-100"
+                            >Chọn sản phẩm</a
+                          >
                         </div>
                       </div>
                     </li>
+
+                    <!-- *Item 04* -->
                     <li class="splide__slide">
                       <div class="card overflow-hidden">
-                        <div class="card-img">
+                        <div class="card-img position-relative card__img">
                           <img
-                            data-src="/assets/images/Shop/Medical/medical01.avif"
+                            data-src="/assets/images/Shop/Medical/medical04.avif"
                             alt=""
                             class="img-fluid lazyload w-100"
                           />
+                          <div class="card__wrap">
+                            <div class="card__wrap--icon">
+                              <i class="ri-heart-line"></i>
+                            </div>
+                            <div class="card__wrap--icon">
+                              <i class="ri-shopping-cart-line"></i>
+                            </div>
+                            <div class="card__wrap--icon">
+                              <i class="ri-eye-line"></i>
+                            </div>
+                          </div>
                         </div>
                         <div class="card-body">
                           <span
-                            class="badge bg-danger badge-discount position-absolute"
+                            class="badge bg-danger position-absolute badge-discount"
                             >Giảm 30%</span
                           >
                           <h5 class="card-title text-truncate--ellipse">
-                            Kem Chống Nắng Make p:rem Vật Lý Kiềm Dầu Khô Ráo Uv
-                            Defense Me. No Sebum (Tuýp 50ml)
+                            Tinh dầu hoa anh thảo Blackmores Evening Primrose
+                            Oil hỗ trợ nội tiết tố nữ (Chai 190 viên)
                           </h5>
                           <p class="card-price d-flex flex-column">
                             <span
                               class="card-price--old text-decoration-line-through opacity-50 text-primary"
-                              >480.000đ</span
+                              >980.000đ</span
+                            >
+                            <span
+                              class="card-price--new fw-semibold text-primary"
+                              >679.000đ</span
+                            >
+                          </p>
+                          <div
+                            class="progress mb-2"
+                            role="progressbar"
+                            aria-label="Example with label"
+                            aria-valuenow="25"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                          >
+                            <div
+                              class="progress-bar bg-danger fw-bolder"
+                              style="width: 95%"
+                            >
+                              Đang bán chạy
+                            </div>
+                          </div>
+
+                          <a
+                            href="/pages/detailMedicines.html?id="
+                            class="btn btn-primary medical-btn w-100"
+                            >Chọn sản phẩm</a
+                          >
+                        </div>
+                      </div>
+                    </li>
+
+                    <!-- *Item 05* -->
+                    <li class="splide__slide">
+                      <div class="card overflow-hidden">
+                        <div class="card-img position-relative card__img">
+                          <img
+                            data-src="/assets/images/Shop/Medical/medical05.avif"
+                            alt=""
+                            class="img-fluid lazyload w-100"
+                          />
+                          <div class="card__wrap">
+                            <div class="card__wrap--icon">
+                              <i class="ri-heart-line"></i>
+                            </div>
+                            <div class="card__wrap--icon">
+                              <i class="ri-shopping-cart-line"></i>
+                            </div>
+                            <div class="card__wrap--icon">
+                              <i class="ri-eye-line"></i>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card-body">
+                          <span
+                            class="badge bg-danger position-absolute badge-discount"
+                            >Giảm 30%</span
+                          >
+                          <h5 class="card-title text-truncate--ellipse">
+                            Viên uống Nature Gift Fish Oil Omega 369 hỗ trợ bổ
+                            não, mắt và tim (Hộp 100 viên)
+                          </h5>
+                          <p class="card-price d-flex flex-column">
+                            <span
+                              class="card-price--old text-decoration-line-through opacity-50 text-primary"
+                              >425.000đ</span
                             >
                             <span
                               class="card-price--new fw-semibold text-primary"
                               >297.000đ</span
                             >
                           </p>
-                          <progress
-                            value="90"
-                            max="100"
-                            class="py-1"
-                          ></progress>
-                          <a href="#" class="btn btn-primary">Chọn sản phẩm</a>
+                          <div
+                            class="progress mb-2"
+                            role="progressbar"
+                            aria-label="Example with label"
+                            aria-valuenow="25"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                          >
+                            <div
+                              class="progress-bar bg-danger fw-bolder"
+                              style="width: 95%"
+                            >
+                              Đang bán chạy
+                            </div>
+                          </div>
+
+                          <a
+                            href="/pages/detailMedicines.html?id="
+                            class="btn btn-primary medical-btn w-100"
+                            >Chọn sản phẩm</a
+                          >
                         </div>
                       </div>
                     </li>
+
+                    <!-- *Item 06* -->
                     <li class="splide__slide">
                       <div class="card overflow-hidden">
-                        <div class="card-img">
+                        <div class="card-img position-relative card__img">
                           <img
-                            data-src="/assets/images/Shop/Medical/medical01.avif"
+                            data-src="/assets/images/Shop/Medical/medical06.avif"
                             alt=""
                             class="img-fluid lazyload w-100"
                           />
+                          <div class="card__wrap">
+                            <div class="card__wrap--icon">
+                              <i class="ri-heart-line"></i>
+                            </div>
+                            <div class="card__wrap--icon">
+                              <i class="ri-shopping-cart-line"></i>
+                            </div>
+                            <div class="card__wrap--icon">
+                              <i class="ri-eye-line"></i>
+                            </div>
+                          </div>
                         </div>
                         <div class="card-body">
                           <span
-                            class="badge bg-danger badge-discount position-absolute"
+                            class="badge bg-danger position-absolute badge-discount"
                             >Giảm 30%</span
                           >
                           <h5 class="card-title text-truncate--ellipse">
-                            Kem Chống Nắng Make p:rem Vật Lý Kiềm Dầu Khô Ráo Uv
-                            Defense Me. No Sebum (Tuýp 50ml)
+                            Kem dưỡng siêu cấp ẩm căng mịn da L'oreal Revitalift
+                            Hyaluronic Acid Plumping Cream Day (Hộp 50ml)
                           </h5>
                           <p class="card-price d-flex flex-column">
                             <span
                               class="card-price--old text-decoration-line-through opacity-50 text-primary"
-                              >480.000đ</span
+                              >399.000đ</span
                             >
                             <span
                               class="card-price--new fw-semibold text-primary"
-                              >297.000đ</span
+                              >281.000đ</span
                             >
                           </p>
-                          <progress
-                            value="90"
-                            max="100"
-                            class="py-1"
-                          ></progress>
-                          <a href="#" class="btn btn-primary">Chọn sản phẩm</a>
+                          <div
+                            class="progress mb-2"
+                            role="progressbar"
+                            aria-label="Example with label"
+                            aria-valuenow="25"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                          >
+                            <div
+                              class="progress-bar bg-danger fw-bolder"
+                              style="width: 95%"
+                            >
+                              Đang bán chạy
+                            </div>
+                          </div>
+
+                          <a
+                            href="/pages/detailMedicines.html?id="
+                            class="btn btn-primary medical-btn w-100"
+                            >Chọn sản phẩm</a
+                          >
                         </div>
                       </div>
                     </li>
+
+                    <!-- *Item 07* -->
                     <li class="splide__slide">
                       <div class="card overflow-hidden">
-                        <div class="card-img">
+                        <div class="card-img position-relative card__img">
                           <img
-                            data-src="/assets/images/Shop/Medical/medical01.avif"
+                            data-src="/assets/images/Shop/Medical/medical07.avif"
                             alt=""
                             class="img-fluid lazyload w-100"
                           />
+                          <div class="card__wrap">
+                            <div class="card__wrap--icon">
+                              <i class="ri-heart-line"></i>
+                            </div>
+                            <div class="card__wrap--icon">
+                              <i class="ri-shopping-cart-line"></i>
+                            </div>
+                            <div class="card__wrap--icon">
+                              <i class="ri-eye-line"></i>
+                            </div>
+                          </div>
                         </div>
                         <div class="card-body">
                           <span
-                            class="badge bg-danger badge-discount position-absolute"
+                            class="badge bg-danger position-absolute badge-discount"
                             >Giảm 30%</span
                           >
                           <h5 class="card-title text-truncate--ellipse">
-                            Kem Chống Nắng Make p:rem Vật Lý Kiềm Dầu Khô Ráo Uv
-                            Defense Me. No Sebum (Tuýp 50ml)
+                            Nước Uống Hồng Sâm Đông Trùng Hạ Thảo Hàn Quốc -
+                            Welson Cordyceps Gold (Hộp 10 chai)
                           </h5>
                           <p class="card-price d-flex flex-column">
                             <span
                               class="card-price--old text-decoration-line-through opacity-50 text-primary"
-                              >480.000đ</span
+                              >780.000đ</span
                             >
                             <span
                               class="card-price--new fw-semibold text-primary"
-                              >297.000đ</span
+                              >395.000đ</span
                             >
                           </p>
-                          <progress
-                            value="90"
-                            max="100"
-                            class="py-1"
-                          ></progress>
-                          <a href="#" class="btn btn-primary">Chọn sản phẩm</a>
+                          <div
+                            class="progress mb-2"
+                            role="progressbar"
+                            aria-label="Example with label"
+                            aria-valuenow="25"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                          >
+                            <div
+                              class="progress-bar bg-danger fw-bolder"
+                              style="width: 95%"
+                            >
+                              Đang bán chạy
+                            </div>
+                          </div>
+
+                          <a
+                            href="/pages/detailMedicines.html?id="
+                            class="btn btn-primary medical-btn w-100"
+                            >Chọn sản phẩm</a
+                          >
                         </div>
                       </div>
                     </li>
+
+                    <!-- *Item 08* -->
                     <li class="splide__slide">
                       <div class="card overflow-hidden">
-                        <div class="card-img">
+                        <div class="card-img position-relative card__img">
                           <img
-                            data-src="/assets/images/Shop/Medical/medical01.avif"
+                            data-src="/assets/images/Shop/Medical/medical08.avif"
                             alt=""
                             class="img-fluid lazyload w-100"
                           />
+                          <div class="card__wrap">
+                            <div class="card__wrap--icon">
+                              <i class="ri-heart-line"></i>
+                            </div>
+                            <div class="card__wrap--icon">
+                              <i class="ri-shopping-cart-line"></i>
+                            </div>
+                            <div class="card__wrap--icon">
+                              <i class="ri-eye-line"></i>
+                            </div>
+                          </div>
                         </div>
                         <div class="card-body">
                           <span
-                            class="badge bg-danger badge-discount position-absolute"
+                            class="badge bg-danger position-absolute badge-discount"
                             >Giảm 30%</span
                           >
                           <h5 class="card-title text-truncate--ellipse">
-                            Kem Chống Nắng Make p:rem Vật Lý Kiềm Dầu Khô Ráo Uv
-                            Defense Me. No Sebum (Tuýp 50ml)
+                            Viên uống VITABIOTICS Visionace Original hỗ trợ cải
+                            thiện thị lực (Hộp 2 vỉ x 15 viên)
                           </h5>
                           <p class="card-price d-flex flex-column">
                             <span
                               class="card-price--old text-decoration-line-through opacity-50 text-primary"
-                              >480.000đ</span
+                              >780.000đ</span
                             >
                             <span
                               class="card-price--new fw-semibold text-primary"
-                              >297.000đ</span
+                              >423.000đ</span
                             >
                           </p>
-                          <progress
-                            value="90"
-                            max="100"
-                            class="py-1"
-                          ></progress>
-                          <a href="#" class="btn btn-primary">Chọn sản phẩm</a>
+                          <div
+                            class="progress mb-2"
+                            role="progressbar"
+                            aria-label="Example with label"
+                            aria-valuenow="25"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                          >
+                            <div
+                              class="progress-bar bg-danger fw-bolder"
+                              style="width: 95%"
+                            >
+                              Đang bán chạy
+                            </div>
+                          </div>
+
+                          <a
+                            href="/pages/detailMedicines.html?id="
+                            class="btn btn-primary medical-btn w-100"
+                            >Chọn sản phẩm</a
+                          >
                         </div>
                       </div>
                     </li>
+
+                    <!-- *Item 09* -->
                     <li class="splide__slide">
                       <div class="card overflow-hidden">
-                        <div class="card-img">
+                        <div class="card-img position-relative card__img">
                           <img
-                            data-src="/assets/images/Shop/Medical/medical01.avif"
+                            data-src="/assets/images/Shop/Medical/medical09.avif"
                             alt=""
                             class="img-fluid lazyload w-100"
                           />
+                          <div class="card__wrap">
+                            <div class="card__wrap--icon">
+                              <i class="ri-heart-line"></i>
+                            </div>
+                            <div class="card__wrap--icon">
+                              <i class="ri-shopping-cart-line"></i>
+                            </div>
+                            <div class="card__wrap--icon">
+                              <i class="ri-eye-line"></i>
+                            </div>
+                          </div>
                         </div>
                         <div class="card-body">
                           <span
-                            class="badge bg-danger badge-discount position-absolute"
+                            class="badge bg-danger position-absolute badge-discount"
                             >Giảm 30%</span
                           >
                           <h5 class="card-title text-truncate--ellipse">
-                            Kem Chống Nắng Make p:rem Vật Lý Kiềm Dầu Khô Ráo Uv
-                            Defense Me. No Sebum (Tuýp 50ml)
+                            Viên uống Healthy Life Celery hỗ trợ điều trị gout
+                            (Hộp 60 viên)
                           </h5>
                           <p class="card-price d-flex flex-column">
                             <span
                               class="card-price--old text-decoration-line-through opacity-50 text-primary"
-                              >480.000đ</span
+                              >625.000đ</span
                             >
                             <span
                               class="card-price--new fw-semibold text-primary"
-                              >297.000đ</span
+                              >437.000đ</span
                             >
                           </p>
-                          <progress
-                            value="90"
-                            max="100"
-                            class="py-1"
-                          ></progress>
-                          <a href="#" class="btn btn-primary">Chọn sản phẩm</a>
+                          <div
+                            class="progress mb-2"
+                            role="progressbar"
+                            aria-label="Example with label"
+                            aria-valuenow="25"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                          >
+                            <div
+                              class="progress-bar bg-danger fw-bolder"
+                              style="width: 95%"
+                            >
+                              Đang bán chạy
+                            </div>
+                          </div>
+
+                          <a
+                            href="/pages/detailMedicines.html?id="
+                            class="btn btn-primary medical-btn w-100"
+                            >Chọn sản phẩm</a
+                          >
+                        </div>
+                      </div>
+                    </li>
+
+                    <!-- *Item 10* -->
+                    <li class="splide__slide">
+                      <div class="card overflow-hidden">
+                        <div class="card-img position-relative card__img">
+                          <img
+                            data-src="/assets/images/Shop/Medical/medical10.avif"
+                            alt=""
+                            class="img-fluid lazyload w-100"
+                          />
+                          <div class="card__wrap">
+                            <div class="card__wrap--icon">
+                              <i class="ri-heart-line"></i>
+                            </div>
+                            <div class="card__wrap--icon">
+                              <i class="ri-shopping-cart-line"></i>
+                            </div>
+                            <div class="card__wrap--icon">
+                              <i class="ri-eye-line"></i>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card-body">
+                          <span
+                            class="badge bg-danger position-absolute badge-discount"
+                            >Giảm 30%</span
+                          >
+                          <h5 class="card-title text-truncate--ellipse">
+                            Viên đông trùng hạ thảo Wellness Nutrition tăng
+                            cường sức khỏe (Hộp 90 viên)
+                          </h5>
+                          <p class="card-price d-flex flex-column">
+                            <span
+                              class="card-price--old text-decoration-line-through opacity-50 text-primary"
+                              >1480.000đ</span
+                            >
+                            <span
+                              class="card-price--new fw-semibold text-primary"
+                              >785.000đ</span
+                            >
+                          </p>
+                          <div
+                            class="progress mb-2"
+                            role="progressbar"
+                            aria-label="Example with label"
+                            aria-valuenow="25"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                          >
+                            <div
+                              class="progress-bar bg-danger fw-bolder"
+                              style="width: 95%"
+                            >
+                              Đang bán chạy
+                            </div>
+                          </div>
+
+                          <a
+                            href="/pages/detailMedicines.html?id="
+                            class="btn btn-primary medical-btn w-100"
+                            >Chọn sản phẩm</a
+                          >
                         </div>
                       </div>
                     </li>
@@ -831,7 +1096,7 @@
     document.addEventListener("DOMContentLoaded", function () {
       new Splide(".splide-medical", {
         type: "loop",
-        perPage: 6, // Hiển thị 4 sản phẩm trên mỗi slide
+        perPage: 5, // Hiển thị 4 sản phẩm trên mỗi slide
         perMove: 1,
         gap: "20px", // Khoảng cách giữa các item
         padding: "1rem",
