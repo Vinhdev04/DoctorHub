@@ -1,5 +1,13 @@
 {
   "test": [],
   "users": [],
-  "doctors": []
+  "doctors": [],
+  "medicine": [
+    {
+      "name": "Ibuprofen",
+      "description": "Ibuprofen is a nonsteroidal anti-inflammatory drug (NSAID) used to reduce inflammation, pain, and swelling in the body. It is typically taken orally by mouth and may be given in a tablet, capsule, or pill form.",
+      "price": 10.99,
+      "stock": 500
+    }
+  ]
 }
