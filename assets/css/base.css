@@ -1,4 +1,13 @@
 /* ====================== Base ======================*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
 :root {
   --primary-color: #0d6efd;
   --secondary-color: #21b0bd;
@@ -49,11 +58,10 @@
   width: 100%;
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
+.footer__item a {
+  transition: 0.3s ease-in-out;
+}
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Montserrat", sans-serif;
+.footer__item a:hover {
+  color: var(--primary-color) !important;
 }

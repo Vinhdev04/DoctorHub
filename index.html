@@ -763,9 +763,9 @@
             <div class="d-flex align-items-center mb-3">
               <img
                 alt="Profile picture of Brad Smith"
-                class="rounded-circle me-3"
+                class="rounded-circle me-3 lazyload"
                 height="50"
-                src="/gay.jpg"
+                data-src="/gay.jpg"
                 width="50"
               />
               <div>
@@ -793,9 +793,9 @@
             <div class="d-flex align-items-center mb-3">
               <img
                 alt="Profile picture of Lacy Smith"
-                class="rounded-circle me-3"
+                class="rounded-circle me-3 lazyload"
                 height="50"
-                src="/gay.jpg"
+                data-src="/gay.jpg"
                 width="50"
               />
               <div>
@@ -822,9 +822,9 @@
             <div class="d-flex align-items-center mb-3">
               <img
                 alt="Profile picture of John Doe"
-                class="rounded-circle me-3"
+                class="rounded-circle me-3 lazyload"
                 height="50"
-                src="/gay.jpg"
+                data-src="/gay.jpg"
                 width="50"
               />
               <div>
@@ -866,30 +866,38 @@
       </h1>
       <div class="row">
         <div class="col-md-3 col-sm-6 mb-4">
-          <img src="/call-icons.png" alt="Phone icon" class="contact-icon" />
+          <img
+            data-src="/call-icons.png"
+            alt="Phone icon"
+            class="contact-icon"
+          />
           <p class="contact-title">Call Us</p>
           <p class="contact-text">0834571574</p>
         </div>
         <div class="col-md-3 col-sm-6 mb-4">
           <img
-            src="/chat-icons.png"
+            data-src="/chat-icons.png"
             alt="Text message icon"
-            class="contact-icon"
+            class="contact-icon lazyload"
           />
           <p class="contact-title">Text Us</p>
           <p class="contact-text">0834571574</p>
         </div>
         <div class="col-md-3 col-sm-6 mb-4">
           <img
-            src="/live-icons.png"
+            data-src="/live-icons.png"
             alt="Live chat icon"
-            class="contact-icon"
+            class="contact-icon lazyload"
           />
           <p class="contact-title">Live Chat</p>
           <p class="contact-link">Click Here</p>
         </div>
         <div class="col-md-3 col-sm-6 mb-4">
-          <img src="/email-icons.png" alt="Email icon" class="contact-icon" />
+          <img
+            data-src="/email-icons.png"
+            alt="Email icon"
+            class="contact-icon lazyload"
+          />
           <p class="contact-title">Email Us</p>
           <p class="contact-text">baoldz3009@gmail.com</p>
         </div>
@@ -901,170 +909,223 @@
 
       <div class="row">
         <div class="col-6 col-sm-4 col-md-3 mb-3">
-          <div class="category-card">
-            <img alt="Reproductive health icon" src="/img/icons/sinhsan.avif" />
+          <div class="category-card animate-on-scroll">
+            <img
+              alt="Reproductive health icon"
+              data-src="/assets/images/Icon/sinhsan.avif"
+              class="lazyload"
+            />
             <span>Sức khỏe sinh sản</span>
           </div>
         </div>
 
         <div class="col-6 col-sm-4 col-md-3 mb-3">
-          <div class="category-card">
-            <img alt="Eye health icon" src="/img/icons/mat.avif" />
+          <div class="category-card animate-on-scroll">
+            <img
+              alt="Eye health icon"
+              data-src="/assets/images/Icon/mat.avif"
+              class="lazyload"
+            />
             <span>Mắt</span>
           </div>
         </div>
 
         <div class="col-6 col-sm-4 col-md-3 mb-3">
-          <div class="category-card">
+          <div class="category-card animate-on-scroll">
             <img
               alt="Ear, nose, and throat health icon"
-              src="img/icons/taimuihong.avif"
+              data-src="/assets/images/Icon/taimuihong.avif"
+              class="lazyload"
             />
             <span>Tai - Mũi - Họng</span>
           </div>
         </div>
 
         <div class="col-6 col-sm-4 col-md-3 mb-3">
-          <div class="category-card">
-            <img alt="Respiratory health icon" src="/img/icons/hohap.avif" />
+          <div class="category-card animate-on-scroll">
+            <img
+              alt="Respiratory health icon"
+              data-src="/assets/images/Icon/hohap.avif"
+              class="lazyload"
+            />
             <span>Hô hấp</span>
           </div>
         </div>
 
         <div class="col-6 col-sm-4 col-md-3 mb-3">
-          <div class="category-card">
+          <div class="category-card animate-on-scroll">
             <img
               alt="Parasitic treatment icon"
-              src="/img/icons/kysinhtrung.avif"
+              data-src="/assets/images/Icon/kysinhtrung.avif"
+              class="lazyload"
             />
             <span>Thuốc trị ký sinh trùng</span>
           </div>
         </div>
 
         <div class="col-6 col-sm-4 col-md-3 mb-3">
-          <div class="category-card">
-            <img alt="Mental health icon" src="/img/icons/kysinhtrung.avif" />
+          <div class="category-card animate-on-scroll">
+            <img
+              alt="Mental health icon"
+              data-src="/assets/images/Icon/tamthan.avif"
+              class="lazyload"
+            />
             <span>Tâm thần</span>
           </div>
         </div>
 
         <div class="col-6 col-sm-4 col-md-3 mb-3">
-          <div class="category-card">
+          <div class="category-card animate-on-scroll">
             <img
               alt="Bone and joint health icon"
-              src="/img/icons/coxuongkhop.avif"
+              data-src="/assets/images/Icon/coxuongkhop.avif"
+              class="lazyload"
             />
             <span>Cơ - Xương - Khớp</span>
           </div>
         </div>
 
         <div class="col-6 col-sm-4 col-md-3 mb-3">
-          <div class="category-card">
-            <img alt="Cancer icon" src="img/icons/ungthu.avif" />
+          <div class="category-card animate-on-scroll">
+            <img
+              alt="Cancer icon"
+              data-src="/assets/images/Icon/ungthu.avif"
+              class="lazyload"
+            />
             <span>Ung thư</span>
           </div>
         </div>
 
         <div class="col-6 col-sm-4 col-md-3 mb-3">
-          <div class="category-card">
+          <div class="category-card animate-on-scroll">
             <img
               alt="Infectious diseases icon"
-              src="img/icons/truyennhiem.avif"
+              data-src="/assets/images/Icon/truyennhiem.avif"
+              class="lazyload"
             />
             <span>Truyền nhiễm</span>
           </div>
         </div>
 
         <div class="col-6 col-sm-4 col-md-3 mb-3">
-          <div class="category-card">
+          <div class="category-card animate-on-scroll">
             <img
               alt="Endocrine and metabolic health icon"
-              src="/img/icons/noitiet-chuyenhoa.avif"
+              data-src="/assets/images/Icon/noitiet-chuyenhoa.avif"
+              class="lazyload"
             />
             <span>Nội tiết - Chuyển hóa</span>
           </div>
         </div>
 
         <div class="col-6 col-sm-4 col-md-3 mb-3">
-          <div class="category-card">
+          <div class="category-card animate-on-scroll">
             <img
               alt="Kidney and urinary health icon"
-              src="img/icons/than.avif"
+              data-src="/assets/images/Icon/than.avif"
+              class="lazyload"
             />
             <span>Thận - Tiết niệu</span>
           </div>
         </div>
 
         <div class="col-6 col-sm-4 col-md-3 mb-3">
-          <div class="category-card">
-            <img alt="Allergy icon" src="img/icons/diung.avif" />
+          <div class="category-card animate-on-scroll">
+            <img
+              alt="Allergy icon"
+              data-src="/assets/images/Icon/diung.avif"
+              class="lazyload"
+            />
             <span>Dị ứng</span>
           </div>
         </div>
 
         <div class="col-6 col-sm-4 col-md-3 mb-3">
-          <div class="category-card">
+          <div class="category-card animate-on-scroll">
             <img
               alt="Skin, hair, and nail health icon"
               height="40"
-              src="/img/icons/da-toc-mong.avif"
+              data-src="/assets/images/Icon/da-toc-mong.avif"
               width="40"
+              class="lazyload"
             />
             <span>Da - Tóc - Móng</span>
           </div>
         </div>
 
         <div class="col-6 col-sm-4 col-md-3 mb-3">
-          <div class="category-card">
+          <div class="category-card animate-on-scroll">
             <img
               alt="Cardiovascular health icon"
-              src="/img/icons/timmach.avif"
+              data-src="/assets/images/Icon/timmach.avif"
+              class="lazyload"
             />
             <span>Tim mạch</span>
           </div>
         </div>
 
         <div class="col-6 col-sm-4 col-md-3 mb-3">
-          <div class="category-card">
-            <img alt="Blood health icon" src="/img/icons/mau.avif" />
+          <div class="category-card animate-on-scroll">
+            <img
+              alt="Blood health icon"
+              data-src="/assets/images/Icon/mau.avif"
+              class="lazyload"
+            />
             <span>Máu</span>
           </div>
         </div>
 
         <div class="col-6 col-sm-4 col-md-3 mb-3">
-          <div class="category-card">
+          <div class="category-card animate-on-scroll">
             <img
               alt="Vitamin and mineral supplements icon"
-              src="/img/icons/vitamin.avif"
+              data-src="/assets/images/Icon/vitamin.avif"
+              class="lazyload"
             />
             <span>Vitamin - khoáng chất</span>
           </div>
         </div>
 
         <div class="col-6 col-sm-4 col-md-3 mb-3">
-          <div class="category-card">
-            <img alt="Diabetes icon" src="img/icons/tieuduong.avif" />
+          <div class="category-card animate-on-scroll">
+            <img
+              alt="Diabetes icon"
+              data-src="/assets/images/Icon/tieuduong.avif"
+              class="lazyload"
+            />
             <span>Tiểu đường</span>
           </div>
         </div>
 
         <div class="col-6 col-sm-4 col-md-3 mb-3">
-          <div class="category-card">
-            <img alt="Dental health icon" src="img/icons/rang-ham-mat.avif" />
+          <div class="category-card animate-on-scroll">
+            <img
+              alt="Dental health icon"
+              data-src="/assets/images/Icon/rang-ham-mat.avif"
+              class="lazyload"
+            />
             <span>Răng - Hàm - Mặt</span>
           </div>
         </div>
 
         <div class="col-6 col-sm-4 col-md-3 mb-3">
-          <div class="category-card">
-            <img alt="Liver health icon" src="img/icons/gan.avif" />
+          <div class="category-card animate-on-scroll">
+            <img
+              alt="Liver health icon"
+              data-src="/assets/images/Icon/gan.avif"
+              class="lazyload"
+            />
             <span>Gan</span>
           </div>
         </div>
 
         <div class="col-6 col-sm-4 col-md-3 mb-3">
-          <div class="category-card">
-            <img alt="Digestive health icon" src="img/icons/tieuhoa.avif" />
+          <div class="category-card animate-on-scroll">
+            <img
+              alt="Digestive health icon"
+              data-src="/assets/images/Icon/tieuhoa.avif"
+              class="lazyload"
+            />
             <span>Tiêu hóa</span>
           </div>
         </div>
@@ -1085,9 +1146,9 @@
               <div class="card blog-card">
                 <img
                   alt="A person using a laptop with a stethoscope on the table"
-                  class="card-img-top"
+                  class="card-img-top lazyload"
                   height="400"
-                  src="https://storage.googleapis.com/a1aa/image/coH_lckQlpq9nkS2zKGsyInG1kfBgBUfIXID49FsSIg.jpg"
+                  data-src="https://storage.googleapis.com/a1aa/image/coH_lckQlpq9nkS2zKGsyInG1kfBgBUfIXID49FsSIg.jpg"
                   width="600"
                 />
                 <div class="card-body d-flex flex-column">
@@ -1112,9 +1173,9 @@
               <div class="card blog-card">
                 <img
                   alt="A doctor smiling in a park"
-                  class="card-img-top"
+                  class="card-img-top lazyload"
                   height="400"
-                  src="https://storage.googleapis.com/a1aa/image/5BpaXVfLi4qkdZAvARLvtpISDRCdOoNZ8uLyY_PlOOs.jpg"
+                  data-src="https://storage.googleapis.com/a1aa/image/5BpaXVfLi4qkdZAvARLvtpISDRCdOoNZ8uLyY_PlOOs.jpg"
                   width="600"
                 />
                 <div class="card-body d-flex flex-column">
@@ -1139,9 +1200,9 @@
               <div class="card blog-card">
                 <img
                   alt="A laptop, coffee cup, and phone on a wooden table"
-                  class="card-img-top"
+                  class="card-img-top lazyload"
                   height="400"
-                  src="https://storage.googleapis.com/a1aa/image/7mTsoDQV8K88r_BMpoxnb9fMVbRmgvc_l6dyB0cUIwY.jpg"
+                  data-src="https://storage.googleapis.com/a1aa/image/7mTsoDQV8K88r_BMpoxnb9fMVbRmgvc_l6dyB0cUIwY.jpg"
                   width="600"
                 />
                 <div class="card-body d-flex flex-column">
@@ -1229,54 +1290,189 @@
     <footer class="bg-light pt-5 pb-3 border-top">
       <div class="container">
         <div class="row">
-          <!-- Cột 1 -->
           <div class="col-md-3 col-sm-6 mb-4">
             <h5 class="fw-bold mb-3">LIÊN KẾT WEB</h5>
             <ul class="list-unstyled text-muted">
-              <li>Bộ y tế</li>
-              <li>Tổ chức y tế thế giới</li>
-              <li>Viện vệ sinh dịch tễ TW</li>
-              <li>Hội nghị bệnh viện Châu Á</li>
-              <li>Bảo hiểm y tế ở nước ngoài</li>
-              <li>Bảo hiểm y tế quốc tế</li>
+              <li class="text-decoration-none footer__item">
+                <a href="" class="text-decoration-none text-secondary"
+                  >Bộ y tế</a
+                >
+              </li>
+              <li class="text-decoration-none footer__item">
+                <a href="" class="text-decoration-none text-secondary"
+                  >Tổ chức y tế thế giới</a
+                >
+              </li>
+              <li class="text-decoration-none footer__item">
+                <a href="" class="text-decoration-none text-secondary"
+                  >Viện vệ sinh dịch tễ TW</a
+                >
+              </li>
+              <li class="text-decoration-none footer__item">
+                <a href="" class="text-decoration-none text-secondary"
+                  >Hội nghị bệnh viện Châu Á</a
+                >
+              </li>
+              <li class="text-decoration-none footer__item">
+                <a href="" class="text-decoration-none text-secondary"
+                  >Bảo hiểm y tế ở nước ngoài</a
+                >
+              </li>
+              <li class="text-decoration-none footer__item">
+                <a href="" class="text-decoration-none text-secondary"
+                  >Bảo hiểm y tế quốc tế</a
+                >
+              </li>
             </ul>
           </div>
 
-          <!-- Cột 2 -->
           <div class="col-md-3 col-sm-6 mb-4">
             <h5 class="fw-bold mb-3">HỎI BÁC SĨ</h5>
             <ul class="list-unstyled text-muted">
-              <li>Chuyên mục Hỏi bác sĩ</li>
-              <li>Gửi câu hỏi</li>
-              <li>Câu hỏi đã trả lời</li>
-              <li>Câu hỏi đáng chú ý</li>
-              <li>Tra cứu</li>
-              <li>Tra cứu bệnh</li>
+              <li class="text-decoration-none footer__item">
+                <a href="" class="text-decoration-none text-secondary"
+                  >Chuyên mục Hỏi bác sĩ</a
+                >
+              </li>
+              <li class="text-decoration-none footer__item">
+                <a href="" class="text-decoration-none text-secondary"
+                  >Gửi câu hỏi</a
+                >
+              </li>
+              <li class="text-decoration-none footer__item">
+                <a href="" class="text-decoration-none text-secondary"
+                  >Câu hỏi đã trả lời</a
+                >
+              </li>
+              <li class="text-decoration-none footer__item">
+                <a href="" class="text-decoration-none text-secondary"
+                  >Câu hỏi đáng chú ý</a
+                >
+              </li>
+              <li class="text-decoration-none footer__item">
+                <a href="" class="text-decoration-none text-secondary"
+                  >Tra cứu</a
+                >
+              </li>
+              <li class="text-decoration-none footer__item">
+                <a href="" class="text-decoration-none text-secondary"
+                  >Tra cứu bệnh</a
+                >
+              </li>
             </ul>
           </div>
 
-          <!-- Cột 3 -->
           <div class="col-md-3 col-sm-6 mb-4">
             <h5 class="fw-bold mb-3">MEDICAL CARE</h5>
             <ul class="list-unstyled text-muted">
-              <li>Về chúng tôi</li>
-              <li>Tuyển dụng</li>
-              <li>Liên hệ</li>
-              <li>Quy trình giải quyết tranh chấp</li>
-              <li>Chính sách bảo mật thông tin</li>
+              <li class="text-decoration-none footer__item">
+                <a href="" class="text-decoration-none text-secondary"
+                  >Về chúng tôi</a
+                >
+              </li>
+              <li class="text-decoration-none footer__item">
+                <a href="" class="text-decoration-none text-secondary"
+                  >Tuyển dụng</a
+                >
+              </li>
+              <li class="text-decoration-none footer__item">
+                <a href="" class="text-decoration-none text-secondary"
+                  >Liên hệ</a
+                >
+              </li>
+              <li class="text-decoration-none footer__item">
+                <a href="" class="text-decoration-none text-secondary"
+                  >Quy trình giải quyết tranh chấp</a
+                >
+              </li>
+              <li class="text-decoration-none footer__item">
+                <a href="" class="text-decoration-none text-secondary"
+                  >Chính sách bảo mật thông tin</a
+                >
+              </li>
             </ul>
           </div>
 
-          <!-- Cột 4 -->
           <div class="col-md-3 col-sm-6 mb-4">
-            <h5 class="fw-bold mb-3">FACEBOOK</h5>
-            <ul class="list-unstyled text-muted">
-              <li>Trang chủ</li>
-              <li>Sản phẩm</li>
-              <li>Giới thiệu</li>
-              <li>Tin tức</li>
-              <li>Liên hệ</li>
+            <h5 class="fw-bold mb-3">THEO DÕI CHÚNG TÔI TRÊN</h5>
+            <ul class="list-unstyled">
+              <li class="text-decoration-none footer__item">
+                <i class="fab fa-facebook-square me-2 text-primary"></i>
+                Facebook
+              </li>
+              <li class="text-decoration-none footer__item">
+                <i class="fab fa-youtube me-2 text-primary"></i> Youtube
+              </li>
+              <li class="text-decoration-none footer__item">
+                <i class="fab fa-telegram-plane me-2 text-primary"></i> Zalo
+              </li>
             </ul>
+            <h5 class="fw-bold mt-4 mb-3">CHỨNG NHẬN BỞI</h5>
+            <div class="d-flex align-items-center">
+              <img
+                data-src="/assets/images/Icon/20240706162441-0-BCT.png"
+                alt="Chứng nhận 1"
+                class="me-2 lazyload"
+                style="height: 30px"
+              />
+              <img
+                data-src="/assets/images/Icon/20240706162441-0-DMCA.png"
+                alt="Chứng nhận 2"
+                style="height: 30px"
+                class="lazyload"
+              />
+            </div>
+            <h5 class="fw-bold mt-4 mb-3">HỖ TRỢ THANH TOÁN</h5>
+            <div class="d-flex flex-wrap">
+              <img
+                data-src="/assets/images/Icon/20240706162440-0-COD.png"
+                alt="COD"
+                class="me-2 mb-2 lazyload"
+                style="height: 30px"
+              />
+              <img
+                data-src="/assets/images/Icon/20240706162441-0-Visa.png"
+                alt="VISA"
+                class="me-2 mb-2 lazyload"
+                style="height: 30px"
+              />
+              <img
+                data-src="/assets/images/Icon/20240706162441-0-MasterCard.png"
+                alt="Mastercard"
+                class="me-2 mb-2 lazyload"
+                style="height: 30px"
+              />
+              <img
+                data-src="/assets/images/Icon/20240706162441-0-JCB.png"
+                alt="JCB"
+                class="me-2 mb-2 lazyload"
+                style="height: 30px"
+              />
+              <img
+                data-src="/assets/images/Icon/20240706162441-0-Momo.png"
+                alt="MoMo"
+                class="me-2 mb-2 lazyload"
+                style="height: 30px"
+              />
+              <img
+                data-src="/assets/images/Icon/20240706162729-0-ZaloPay.png"
+                alt="ZaloPay"
+                class="me-2 mb-2 lazyload"
+                style="height: 30px"
+              />
+              <img
+                data-src="/assets/images/Icon/20241122062454-0-napas.png"
+                alt="Napas"
+                class="me-2 mb-2 lazyload"
+                style="height: 30px"
+              />
+              <img
+                data-src="/assets/images/Icon/20241122063240-0-apple-pay.png"
+                alt="Apple Pay"
+                class="me-2 mb-2 lazyload"
+                style="height: 30px"
+              />
+            </div>
           </div>
         </div>
 
