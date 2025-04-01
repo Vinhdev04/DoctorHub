@@ -30,6 +30,8 @@ cd DOCTORHUB
 open index.html
 ```
 
-## Công Nghệ Sư Dụng:
+## Tài Nguyên Và Công Nghệ Sư Dụng:
 
 **API Vietnam Open Data** `để tự động tải tỉnh/thành, quận/huyện và phường/xã`
+<br>
+**Uiverse use UI** `https://uiverse.io/ ->  tận dụng một số components UI sẵn`

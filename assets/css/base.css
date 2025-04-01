@@ -601,3 +601,65 @@
   padding: 0;
   background: transparent;
 }
+
+/* From Uiverse.io by Randdose */
+.btn__search {
+  all: unset;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border-radius: 0.25em;
+  color: var(--text-white);
+  font-size: 17px;
+  padding: 6px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: border 300ms, color 300ms;
+  user-select: none;
+  background-color: var(--primary-color);
+}
+
+.btn__search p {
+  z-index: 1;
+  margin: 0;
+}
+
+.btn__search:hover {
+  color: #fff;
+}
+
+.btn__search::after,
+.btn__search::before {
+  content: "";
+  position: absolute;
+  width: 9em;
+  aspect-ratio: 1;
+  background: var(--primary-color);
+  opacity: 50%;
+  border-radius: 50%;
+  transition: transform 500ms, background 300ms;
+}
+
+.btn__search::before {
+  left: 0;
+  transform: translateX(-8em);
+}
+
+.btn__search::after {
+  right: 0;
+  transform: translateX(8em);
+}
+
+.btn__search:hover:before {
+  transform: translateX(-1em);
+}
+
+.btn__search:hover:after {
+  transform: translateX(1em);
+}
+
+.btn__search:active:before,
+.btn__search:active:after {
+  background: teal;
+}

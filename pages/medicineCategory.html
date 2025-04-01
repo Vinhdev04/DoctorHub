@@ -246,7 +246,7 @@
                 <div class="d-flex align-items-center w-50">
                   <span class="me-2">Sắp xếp theo:</span>
                   <button
-                    class="btn btn-outline-secondary me-2 btnDesc"
+                    class="btn btn-primary me-2 btnDesc"
                     id="filterDecrease"
                   >
                     Giá giảm dần
@@ -264,7 +264,10 @@
                     class="form-control me-2 w-50 input"
                     placeholder="Tìm kiếm sản phẩm"
                   />
-                  <button class="btn btn-primary">Tìm kiếm</button>
+
+                  <button class="btn btn__search">
+                    <p>Tìm kiếm</p>
+                  </button>
                 </div>
               </div>
             </div>
@@ -296,6 +299,69 @@
         </div>
       </div>
     </section>
+
+    <!-- Button trigger modal (Hidden by default) -->
+    <button
+      type="button"
+      class="btn btn-primary"
+      data-bs-toggle="modal"
+      data-bs-target="#doctorHubModal"
+      style="display: none"
+    >
+      Mở Modal
+    </button>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="doctorHubModal"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="doctorHubModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="doctorHubModalLabel">
+              Chào mừng đến với DoctorHub
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <img
+              src="/assets/images/Banner/bannerModal.png"
+              class="img-fluid"
+              alt="DoctorHub Image"
+            />
+            <p>
+              DoctorHub là nơi cung cấp thông tin sức khỏe và kết nối với các
+              chuyên gia y tế. Hãy đăng ký ngay để nhận các lời khuyên hữu ích!
+            </p>
+            <p>
+              Chúng tôi cung cấp các dịch vụ tư vấn trực tuyến với các bác sĩ
+              chuyên khoa hàng đầu.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Đóng
+            </button>
+            <button type="button" class="btn btn-primary">Đăng ký ngay</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- *Footer* -->
     <footer class="bg-light pt-5 pb-3 border-top">
@@ -499,21 +565,7 @@
       </div>
     </footer>
   </body>
-  <script>
-    // Cuộn lên đầu trang
-    function scrollToTop() {
-      window.scrollTo({ top: 0, behavior: "smooth" });
-    }
-    const scrollTopBtn = document.getElementById("scrollTopBtn");
 
-    window.addEventListener("scroll", function () {
-      if (window.scrollY > 100) {
-        scrollTopBtn.classList.remove("d-none");
-      } else {
-        scrollTopBtn.classList.add("d-none");
-      }
-    });
-  </script>
   <!-- *SplideJS Scripts* -->
   <link
     rel="stylesheet"
@@ -534,6 +586,7 @@
   ></script>
   <!-- *Javascript* -->
   <script src="/assets/javascript/main.js" type="module"></script>
+  <script src="/services/handleModal.js"></script>
   <!-- *Lazysizes* -->
   <script
     src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.2.0/lazysizes.min.js"
