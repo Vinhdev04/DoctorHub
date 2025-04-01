@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -36,7 +36,8 @@
       content="Đặt lịch khám bệnh và tư vấn sức khỏe trực tuyến với DoctorHub, giúp bạn chăm sóc sức khỏe dễ dàng và hiệu quả."
     />
     <meta name="twitter:image" content="URL_of_image_for_twitter_card" />
-    <title>Chi tiết sản phẩm</title>
+    <!-- *Title* -->
+    <title>DoctorHub - Đặt Lịch Khám và Tư Vấn Sức Khỏe</title>
     <!-- *Favicon* -->
     <link
       rel="icon"
@@ -65,11 +66,6 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     />
-    <!-- *RemixIcon* -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"
-    />
     <!-- *LazySizes* -->
     <link
       rel="stylesheet"
@@ -84,127 +80,224 @@
     <!-- *Mobile Optimization* -->
     <meta name="mobile-web-app-capable" content="yes" />
     <meta name="theme-color" content="#0d6efd" />
+
+    <style>
+      /* From Uiverse.io by alexruix */
+      .input {
+        background-color: #f5f5f5;
+        color: #242424;
+        padding: 0.15rem 0.5rem;
+        min-height: 40px;
+        border-radius: 4px;
+        outline: none;
+        border: none;
+        line-height: 1.15;
+        box-shadow: 0px 10px 20px -18px;
+      }
+
+      input:focus {
+        border-bottom: 2px solid #5b5fc7;
+        border-radius: 4px 4px 2px 2px;
+      }
+
+      input:hover {
+        outline: 1px solid lightgrey;
+      }
+    </style>
   </head>
   <body>
-    <div class="container mt-4">
-      <div class="row">
-        <!-- Cột Hình ảnh sản phẩm -->
-        <div class="col-md-5">
-          <div class="card">
-            <img
-              src="/assets/images/Shop/Medical/medical01.avif"
-              class="card-img-top"
-              alt="Sản phẩm"
-            />
+    <!-- *Navbar* -->
+    <header class="header">
+      <div class="topbar py-3 border-bottom bg-white">
+        <div
+          class="container d-flex justify-content-between align-items-center"
+        >
+          <div class="contact-info small text-muted d-flex">
+            <strong>Email:</strong>
+            <a
+              href="mailto:vaniizit.work@gmail.com?subject=Yêu%20cầu%20được%20hỗ%20trợ%20từ%20website%20DoctorHub"
+              class="topbar__mail"
+              >vaniizit.work@gmail.com</a
+            >
+            |
+            <strong class="ms-1 d-none d-md-flex"
+              >Hotline:
+              <a
+                href="tel:+84 252 032 375"
+                class="text-decoration-none cart__home--phone text-dark fw-bold"
+                >+84 252 032 375</a
+              >
+            </strong>
           </div>
-          <div class="d-flex mt-3">
-            <img
-              src="/assets/images/Shop/Medical/medical01.01.avif"
-              class="img-thumbnail me-2"
-              width="70"
-            />
-            <img
-              src="/assets/images/Shop/Medical/medical01.02.avif"
-              class="img-thumbnail me-2"
-              width="70"
-            />
-            <img
-              src="/assets/images/Shop/Medical/medical01.03.avif"
-              class="img-thumbnail me-2"
-              width="70"
-            />
+          <div class="user-actions d-flex align-items-center gap-3">
+            <a
+              href="/pages/login.html"
+              class="topbar__home--login text-dark small d-none d-md-block"
+              >Đăng nhập</a
+            >
+            <a
+              href="/pages/login.html"
+              class="topbar__home--register text-dark small d-none d-md-block"
+              >Đăng ký</a
+            >
+            <a
+              href="/pages/cart.html"
+              class="position-relative text-dark small topbar__home--cart"
+            >
+              <i class="fas fa-shopping-cart"></i>
+              <span
+                class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-info"
+              >
+                0
+              </span>
+              <div class="cart__home--message shadow rounded-2">
+                Hiện tại chưa có sản phẩm ở trong giỏ hàng
+              </div>
+            </a>
           </div>
         </div>
+      </div>
 
-        <!-- Cột Thông tin sản phẩm -->
-        <div class="col-md-4">
-          <h4 class="fw-bold">
-            Viên đông trùng hạ thảo Wellness Nutrition (Hộp 90 viên)
-          </h4>
-          <p class="text-muted">
-            Mã sản phẩm: P16618 • Thương hiệu: Nature Gift
-          </p>
-          <h3 class="text-danger">785.000 đ/Hộp</h3>
-          <p class="text-success">Tích lũy từ 7.850 P-Xu vàng</p>
-          <p>
-            <strong>56.9k</strong> lượt thích • <strong>10.5k</strong> đã bán
-          </p>
-
-          <div class="mb-3">
-            <span class="badge bg-success">Khuyến mãi</span>
-            <span>Mua 1 Tặng 1 (01-31/3)</span>
-          </div>
-
-          <div class="mb-3">
-            <h6>Phân loại sản phẩm</h6>
-            <button class="btn btn-outline-primary">Hộp</button>
-          </div>
-
-          <!-- Số lượng -->
-          <div class="d-flex align-items-center mb-3">
-            <h6 class="me-3">Số lượng:</h6>
-            <button class="btn btn-outline-secondary btn-sm">-</button>
-            <input
-              type="text"
-              value="1"
-              class="form-control mx-2 text-center"
-              style="width: 50px"
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <a
+            class="navbar-brand navbar__link d-flex align-items-center"
+            href="index.html"
+          >
+            <img
+              src="/assets/images/Logo/DoctorHub.png"
+              alt="Logo"
+              width="30"
+              height="24"
+              class="d-inline-block align-text-top img-fluid navbar__logo"
             />
-            <button class="btn btn-outline-secondary btn-sm">+</button>
+            DoctorHub
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">Trang Chủ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/pages/book.html">Đặt Lịch Khám</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/pages/consultation.html"
+                  >Tư Vấn Sức Khỏe</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/pages/services.html">Dịch Vụ Y Tế</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/pages/contact.html">Liên Hệ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/pages/blog.html">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/pages/test.html">Bài Test</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/pages/shop.html">Shop</a>
+              </li>
+            </ul>
+
+            <!-- Search Form -->
+            <form class="d-flex ms-3" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
           </div>
+        </nav>
+      </div>
+    </header>
 
-          <!-- Nút thao tác -->
-          <div class="d-flex">
-            <button class="btn buy-now me-2">
-              <i class="bi bi-cart"></i> Mua ngay
-            </button>
-
-            <button class="btn btn-addCart">
-              <div class="svg-wrapper-1">
-                <div class="svg-wrapper">
-                  <i class="bi bi-bag"></i>
+    <section class="py-4">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="d-flex flex-column justify-content-between mb-4">
+              <h2 class="mb-0">Deal Đỉnh Rinh Ngay</h2>
+              <div
+                class="d-flex align-items-center justify-content-between mt-3"
+              >
+                <div class="d-flex align-items-center w-50">
+                  <span class="me-2">Sắp xếp theo:</span>
+                  <button
+                    class="btn btn-outline-secondary me-2 btnDesc"
+                    id="filterDecrease"
+                  >
+                    Giá giảm dần
+                  </button>
+                  <button
+                    class="btn btn-outline-secondary btnInsc"
+                    id="filterIncrease"
+                  >
+                    Giá tăng dần
+                  </button>
+                </div>
+                <div class="d-flex align-items-center w-50 justify-content-end">
+                  <input
+                    type="text"
+                    class="form-control me-2 w-50 input"
+                    placeholder="Tìm kiếm sản phẩm"
+                  />
+                  <button class="btn btn-primary">Tìm kiếm</button>
                 </div>
               </div>
-              <span>Thêm vào giỏ</span>
-            </button>
+            </div>
           </div>
         </div>
 
-        <!-- Cột Phương thức thanh toán -->
-        <div class="col-md-3">
-          <div class="card p-3">
-            <h6>Phương thức thanh toán</h6>
-            <ul class="list-unstyled">
-              <li><i class="bi bi-credit-card"></i> Thanh toán bằng thẻ</li>
-              <li><i class="bi bi-wallet2"></i> Ví điện tử (Momo, ZaloPay)</li>
-              <li><i class="bi bi-cash"></i> Thanh toán khi nhận hàng (COD)</li>
-              <li><i class="bi bi-bank"></i> Chuyển khoản ngân hàng</li>
-            </ul>
+        <div class="row">
+          <div
+            class="col-md-4 col-lg-3 col-sm-6"
+            v-for="product in products"
+            :key="product.id"
+          >
+            <div class="product-card position-relative">
+              <span class="discount-badge">Giảm {{ product.discount }}%</span>
+              <img
+                :src="product.image"
+                class="img-fluid mb-2"
+                alt="{{ product.name }}"
+              />
+              <h5 class="product-title">{{ product.name }}</h5>
+              <p class="text-danger fw-bold">{{ product.price }} đ</p>
+              <button class="btn btn-primary">Chọn sản phẩm</button>
+            </div>
           </div>
         </div>
-      </div>
 
-      <!-- Mô tả sản phẩm -->
-      <div class="row mt-4">
-        <div class="col-md-12">
-          <h5>Thông tin sản phẩm</h5>
-          <table class="table">
-            <tr>
-              <th>Tên sản phẩm</th>
-              <td>Thực phẩm bảo vệ sức khỏe Wellness Nutrition</td>
-            </tr>
-            <tr>
-              <th>Danh mục</th>
-              <td>Vitamin và khoáng chất</td>
-            </tr>
-            <tr>
-              <th>Công dụng</th>
-              <td>Hỗ trợ tăng cường sức khỏe, bồi bổ cơ thể</td>
-            </tr>
-          </table>
+        <div class="text-center mt-3">
+          <button class="btn btn-outline-primary">Xem thêm</button>
         </div>
       </div>
-    </div>
+    </section>
+
+    <!-- *Footer* -->
     <footer class="bg-light pt-5 pb-3 border-top">
       <div class="container">
         <div class="row">
@@ -405,10 +498,48 @@
         </div>
       </div>
     </footer>
-    <!-- Bootstrap Icons -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
-    />
   </body>
+  <script>
+    // Cuộn lên đầu trang
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+    const scrollTopBtn = document.getElementById("scrollTopBtn");
+
+    window.addEventListener("scroll", function () {
+      if (window.scrollY > 100) {
+        scrollTopBtn.classList.remove("d-none");
+      } else {
+        scrollTopBtn.classList.add("d-none");
+      }
+    });
+  </script>
+  <!-- *SplideJS Scripts* -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@splidejs/splide/dist/css/splide.min.css"
+  />
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide/dist/js/splide.min.js"></script>
+  <!-- *Popper* -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
+    integrity="sha384-JGLZOLoMCs5hQdIb2Rlp+vgbp7NjPR8tW3mv4TqRfj7sG04O1LYljX29lvH9acX7"
+    crossorigin="anonymous"
+  ></script>
+  <!-- *Bootstrap* -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"
+  ></script>
+  <!-- *Javascript* -->
+  <script src="/assets/javascript/main.js" type="module"></script>
+  <!-- *Lazysizes* -->
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.2.0/lazysizes.min.js"
+    async=""
+  ></script>
+  <!-- *Splide JS* -->
+
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
 </html>

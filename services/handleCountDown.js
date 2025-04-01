@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
   new Splide(".splide-shop", {
     type: "loop",
-    autoplay: true,
-    interval: 4000,
+    // autoplay: true,
+    interval: 3000,
     speed: 1000,
     perPage: 1,
     focus: "center",
@@ -60,19 +60,19 @@ startCountdown();
 document.addEventListener("DOMContentLoaded", function () {
   new Splide(".splide-medical", {
     type: "loop",
-    perPage: 5, // Hiển thị 4 sản phẩm trên mỗi slide
+    perPage: 5,
     perMove: 1,
-    gap: "20px", // Khoảng cách giữa các item
+    gap: "20px",
     padding: "1rem",
-    // autoplay: true, badge-discount
-    interval: 3000, // Chuyển slide mỗi 3 giây
+    // autoplay: true,
+    interval: 2000,
     pagination: false,
     arrows: true,
     breakpoints: {
-      1200: { perPage: 4 }, // Màn hình nhỏ hơn 1200px hiển thị 3 sản phẩm
-      992: { perPage: 2 }, // Màn hình nhỏ hơn 992px hiển thị 2 sản phẩm
-      768: { perPage: 2 }, // Màn hình nhỏ hơn 768px hiển thị 1 sản phẩm
-      576: { perPage: 1 }, // Màn hình nhỏ  hơn 576px hiển thị 1 sản phẩm
+      1200: { perPage: 4 },
+      992: { perPage: 2 },
+      768: { perPage: 2 },
+      576: { perPage: 1 },
     },
   }).mount();
 });
@@ -80,19 +80,19 @@ document.addEventListener("DOMContentLoaded", function () {
 document.addEventListener("DOMContentLoaded", function () {
   new Splide(".splide-deals", {
     type: "loop",
-    perPage: 5, // Hiển thị 4 sản phẩm trên mỗi slide
+    perPage: 5,
     perMove: 1,
-    gap: "20px", // Khoảng cách giữa các item
+    gap: "20px",
     padding: "1rem",
-    // autoplay: true, badge-discount
-    interval: 3000, // Chuyển slide mỗi 3 giây
+    autoplay: true,
+    interval: 3000,
     pagination: false,
     arrows: true,
     breakpoints: {
-      1200: { perPage: 4 }, // Màn hình nhỏ hơn 1200px hiển thị 3 sản phẩm
-      992: { perPage: 2 }, // Màn hình nhỏ hơn 992px hiển thị 2 sản phẩm
-      768: { perPage: 2 }, // Màn hình nhỏ hơn 768px hiển thị 1 sản phẩm
-      576: { perPage: 1 }, // Màn hình nhỏ  hơn 576px hiển thị 1 sản phẩm
+      1200: { perPage: 4 },
+      992: { perPage: 2 },
+      768: { perPage: 2 },
+      576: { perPage: 1 },
     },
   }).mount();
 });
@@ -100,19 +100,19 @@ document.addEventListener("DOMContentLoaded", function () {
 document.addEventListener("DOMContentLoaded", function () {
   new Splide(".splide-family", {
     type: "loop",
-    perPage: 5, // Hiển thị 4 sản phẩm trên mỗi slide
+    perPage: 5,
     perMove: 1,
-    gap: "20px", // Khoảng cách giữa các item
+    gap: "20px",
     padding: "1rem",
-    // autoplay: true, badge-discount
-    interval: 3000, // Chuyển slide mỗi 3 giây
+    autoplay: true,
+    interval: 3000,
     pagination: false,
     arrows: true,
     breakpoints: {
-      1200: { perPage: 4 }, // Màn hình nhỏ hơn 1200px hiển thị 3 sản phẩm
-      992: { perPage: 2 }, // Màn hình nhỏ hơn 992px hiển thị 2 sản phẩm
-      768: { perPage: 2 }, // Màn hình nhỏ hơn 768px hiển thị 1 sản phẩm
-      576: { perPage: 1 }, // Màn hình nhỏ  hơn 576px hiển thị 1 sản phẩm
+      1200: { perPage: 4 },
+      992: { perPage: 2 },
+      768: { perPage: 2 },
+      576: { perPage: 1 },
     },
   }).mount();
 });

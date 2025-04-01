@@ -1,39 +1,74 @@
-<div class="splide splide-shop" aria-label="Banner chính">
-  <div class="splide__track">
-    <ul class="splide__list">
-      <li class="splide__slide">
-        <div class="card rounded-2 d-flex shadow card-medical">
-          <div class="card-img overflow-hidden">
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Deal Đỉnh Rinh Ngay</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      .product-card {
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        padding: 15px;
+        text-align: center;
+        background: #fff;
+        margin-bottom: 20px;
+      }
+      .discount-badge {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        background: red;
+        color: white;
+        padding: 5px 10px;
+        border-radius: 5px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container py-4">
+      <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2 class="mb-0">Deal Đỉnh Rinh Ngay</h2>
+        <div class="d-flex align-items-center">
+          <span class="me-2">Sắp xếp theo:</span>
+          <button class="btn btn-outline-secondary me-2">Giá giảm dần</button>
+          <button class="btn btn-outline-secondary me-3">Giá tăng dần</button>
+          <input
+            type="text"
+            class="form-control me-2"
+            placeholder="Tìm kiếm sản phẩm"
+          />
+          <button class="btn btn-primary">Tìm kiếm</button>
+        </div>
+      </div>
+      <div class="row">
+        <div
+          class="col-md-4 col-lg-3 col-sm-6"
+          v-for="product in products"
+          :key="product.id"
+        >
+          <div class="product-card position-relative">
+            <span class="discount-badge">Giảm {{ product.discount }}%</span>
             <img
-              data-src="/assets/images/Shop/Medical/medical01.avif"
-              alt=""
-              class="img-fluid lazyload"
+              :src="product.image"
+              class="img-fluid mb-2"
+              alt="{{ product.name }}"
             />
-          </div>
-          <div class="card-body card-medical--body d-flex flex-column">
-            <h5 class="card-title text-truncate--ellipse">
-              Kem Chống Nắng Make p:rem Vật Lý Kiềm Dầu Khô Ráo Uv Defense Me.
-              No Sebum (Tuýp 50ml)
-            </h5>
-            <div class="card-price mb-2">
-              <span
-                class="d-flex flex-column card-text card-price--old text-decoration-line-through opacity-50"
-              >
-                480.000đ
-              </span>
-              <span class="card-text card-price--new text-primary fw-bold">
-                297.000đ
-              </span>
-            </div>
-            <a
-              href="#"
-              class="btn btn-primary text-decoration-none fw-bolder"
-              id="btn-buy"
-              >Mua sản phẩm</a
-            >
+            <h5 class="product-title">{{ product.name }}</h5>
+            <p class="text-danger fw-bold">{{ product.price }} đ</p>
+            <button class="btn btn-primary">Chọn sản phẩm</button>
           </div>
         </div>
-      </li>
-    </ul>
-  </div>
-</div>
+      </div>
+      <div class="text-center mt-3">
+        <button class="btn btn-outline-primary">Xem thêm</button>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
