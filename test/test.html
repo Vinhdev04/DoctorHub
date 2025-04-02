@@ -1,74 +1,317 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Deal Đỉnh Rinh Ngay</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animated Timeline</title>
+    <link rel="stylesheet" href="styles.css" />
     <style>
-      .product-card {
-        border: 1px solid #ddd;
-        border-radius: 10px;
-        padding: 15px;
-        text-align: center;
-        background: #fff;
-        margin-bottom: 20px;
+      * {
+        box-sizing: border-box;
       }
-      .discount-badge {
+      html {
+        font-size: 14px;
+      }
+      body {
+        background: #f6f9fc;
+        font-family: "Open Sans", sans-serif;
+        color: #525f7f;
+      }
+      h2 {
+        margin: 5%;
+        text-align: center;
+        font-size: 2rem;
+        font-weight: 100;
+      }
+      .timeline {
+        display: flex;
+        flex-direction: column;
+        margin: 20px auto;
+        position: relative;
+      }
+      .timeline__event {
+        margin-bottom: 20px;
+        position: relative;
+        display: flex;
+        margin: 20px 0;
+        border-radius: 6px;
+        align-self: center;
+        width: 50vw;
+      }
+      .timeline__event:nth-child(2n + 1) {
+        flex-direction: row-reverse;
+      }
+      .timeline__event:nth-child(2n + 1) .timeline__event__date {
+        border-radius: 0 6px 6px 0;
+      }
+      .timeline__event:nth-child(2n + 1) .timeline__event__content {
+        border-radius: 6px 0 0 6px;
+      }
+      .timeline__event:nth-child(2n + 1) .timeline__event__icon:before {
+        content: "";
+        width: 2px;
+        height: 100%;
+        background: #f6a4ec;
         position: absolute;
-        top: 10px;
-        left: 10px;
-        background: red;
-        color: white;
-        padding: 5px 10px;
-        border-radius: 5px;
-        font-weight: bold;
+        top: 0%;
+        left: 50%;
+        right: auto;
+        z-index: -1;
+        transform: translateX(-50%);
+        animation: fillTop 2s forwards 4s ease-in-out;
+      }
+      .timeline__event:nth-child(2n + 1) .timeline__event__icon:after {
+        content: "";
+        width: 100%;
+        height: 2px;
+        background: #f6a4ec;
+        position: absolute;
+        right: 0;
+        z-index: -1;
+        top: 50%;
+        left: auto;
+        transform: translateY(-50%);
+        animation: fillLeft 2s forwards 4s ease-in-out;
+      }
+      .timeline__event__title {
+        font-size: 1.2rem;
+        line-height: 1.4;
+        text-transform: uppercase;
+        font-weight: 600;
+        color: #9251ac;
+        letter-spacing: 1.5px;
+      }
+      .timeline__event__content {
+        padding: 20px;
+        box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25),
+          0 18px 36px -18px rgba(0, 0, 0, 0.3),
+          0 -12px 36px -8px rgba(0, 0, 0, 0.025);
+        background: #fff;
+        width: calc(40vw - 84px);
+        border-radius: 0 6px 6px 0;
+      }
+      .timeline__event__date {
+        color: #f6a4ec;
+        font-size: 1.5rem;
+        font-weight: 600;
+        background: #9251ac;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        white-space: nowrap;
+        padding: 0 20px;
+        border-radius: 6px 0 0 6px;
+      }
+      .timeline__event__icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #9251ac;
+        padding: 20px;
+        align-self: center;
+        margin: 0 20px;
+        background: #f6a4ec;
+        border-radius: 100%;
+        width: 40px;
+        box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25),
+          0 18px 36px -18px rgba(0, 0, 0, 0.3),
+          0 -12px 36px -8px rgba(0, 0, 0, 0.025);
+        padding: 40px;
+        height: 40px;
+        position: relative;
+      }
+      .timeline__event__icon i {
+        font-size: 32px;
+      }
+      .timeline__event__icon:before {
+        content: "";
+        width: 2px;
+        height: 100%;
+        background: #f6a4ec;
+        position: absolute;
+        top: 0%;
+        z-index: -1;
+        left: 50%;
+        transform: translateX(-50%);
+        animation: fillTop 2s forwards 4s ease-in-out;
+      }
+      .timeline__event__icon:after {
+        content: "";
+        width: 100%;
+        height: 2px;
+        background: #f6a4ec;
+        position: absolute;
+        left: 0%;
+        z-index: -1;
+        top: 50%;
+        transform: translateY(-50%);
+        animation: fillLeftOdd 2s forwards 4s ease-in-out;
+      }
+      .timeline__event__description {
+        flex-basis: 60%;
+      }
+      .timeline__event--type2:after {
+        background: #555ac0;
+      }
+      .timeline__event--type2 .timeline__event__date {
+        color: #87bbfe;
+        background: #555ac0;
+      }
+      .timeline__event--type2:nth-child(2n + 1) .timeline__event__icon:before,
+      .timeline__event--type2:nth-child(2n + 1) .timeline__event__icon:after {
+        background: #87bbfe;
+      }
+      .timeline__event--type2 .timeline__event__icon {
+        background: #87bbfe;
+        color: #555ac0;
+      }
+      .timeline__event--type2 .timeline__event__icon:before,
+      .timeline__event--type2 .timeline__event__icon:after {
+        background: #87bbfe;
+      }
+      .timeline__event--type2 .timeline__event__title {
+        color: #555ac0;
+      }
+      .timeline__event--type3:after {
+        background: #24b47e;
+      }
+      .timeline__event--type3 .timeline__event__date {
+        color: #aff1b6;
+        background-color: #24b47e;
+      }
+      .timeline__event--type3:nth-child(2n + 1) .timeline__event__icon:before,
+      .timeline__event--type3:nth-child(2n + 1) .timeline__event__icon:after {
+        background: #aff1b6;
+      }
+      .timeline__event--type3 .timeline__event__icon {
+        background: #aff1b6;
+        color: #24b47e;
+      }
+      .timeline__event--type3 .timeline__event__icon:before,
+      .timeline__event--type3 .timeline__event__icon:after {
+        background: #aff1b6;
+      }
+      .timeline__event--type3 .timeline__event__title {
+        color: #24b47e;
+      }
+      .timeline__event:last-child .timeline__event__icon:before {
+        content: none;
+      }
+      @media (max-width: 786px) {
+        .timeline__event {
+          flex-direction: column;
+          align-self: center;
+        }
+        .timeline__event__content {
+          width: 100%;
+        }
+        .timeline__event__icon {
+          border-radius: 6px 6px 0 0;
+          width: 100%;
+          margin: 0;
+          box-shadow: none;
+        }
+        .timeline__event__icon:before,
+        .timeline__event__icon:after {
+          display: none;
+        }
+        .timeline__event__date {
+          border-radius: 0;
+          padding: 20px;
+        }
+        .timeline__event:nth-child(2n + 1) {
+          flex-direction: column;
+          align-self: center;
+        }
+        .timeline__event:nth-child(2n + 1) .timeline__event__date {
+          border-radius: 0;
+          padding: 20px;
+        }
+        .timeline__event:nth-child(2n + 1) .timeline__event__icon {
+          border-radius: 6px 6px 0 0;
+          margin: 0;
+        }
+      }
+      @keyframes fillLeft {
+        100% {
+          right: 100%;
+        }
+      }
+      @keyframes fillTop {
+        100% {
+          top: 100%;
+        }
+      }
+      @keyframes fillLeftOdd {
+        100% {
+          left: 100%;
+        }
       }
     </style>
   </head>
   <body>
-    <div class="container py-4">
-      <div class="d-flex justify-content-between align-items-center mb-4">
-        <h2 class="mb-0">Deal Đỉnh Rinh Ngay</h2>
-        <div class="d-flex align-items-center">
-          <span class="me-2">Sắp xếp theo:</span>
-          <button class="btn btn-outline-secondary me-2">Giá giảm dần</button>
-          <button class="btn btn-outline-secondary me-3">Giá tăng dần</button>
-          <input
-            type="text"
-            class="form-control me-2"
-            placeholder="Tìm kiếm sản phẩm"
-          />
-          <button class="btn btn-primary">Tìm kiếm</button>
-        </div>
-      </div>
-      <div class="row">
-        <div
-          class="col-md-4 col-lg-3 col-sm-6"
-          v-for="product in products"
-          :key="product.id"
-        >
-          <div class="product-card position-relative">
-            <span class="discount-badge">Giảm {{ product.discount }}%</span>
-            <img
-              :src="product.image"
-              class="img-fluid mb-2"
-              alt="{{ product.name }}"
-            />
-            <h5 class="product-title">{{ product.name }}</h5>
-            <p class="text-danger fw-bold">{{ product.price }} đ</p>
-            <button class="btn btn-primary">Chọn sản phẩm</button>
+    <h2>Các Bước Đặt Lịch Hẹn Trên DoctorHub</h2>
+    <div class="timeline">
+      <div class="timeline__event timeline__event--type1">
+        <div class="timeline__event__icon">📝</div>
+        <div class="timeline__event__date">Bước 1</div>
+        <div class="timeline__event__content">
+          <div class="timeline__event__title">Tạo Tài Khoản</div>
+          <div class="timeline__event__description">
+            <p>
+              Đăng ký trên DoctorHub bằng email và thông tin cơ bản để sử dụng
+              dịch vụ.
+            </p>
           </div>
         </div>
       </div>
-      <div class="text-center mt-3">
-        <button class="btn btn-outline-primary">Xem thêm</button>
+      <div class="timeline__event timeline__event--type2">
+        <div class="timeline__event__icon">🔍</div>
+        <div class="timeline__event__date">Bước 2</div>
+        <div class="timeline__event__content">
+          <div class="timeline__event__title">Tìm Bác Sĩ</div>
+          <div class="timeline__event__description">
+            <p>
+              Tìm kiếm bác sĩ dựa trên chuyên khoa, vị trí và thời gian có sẵn.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="timeline__event timeline__event--type3">
+        <div class="timeline__event__icon">📅</div>
+        <div class="timeline__event__date">Bước 3</div>
+        <div class="timeline__event__content">
+          <div class="timeline__event__title">Đặt Lịch Hẹn</div>
+          <div class="timeline__event__description">
+            <p>Chọn khung giờ thuận tiện và xác nhận lịch hẹn với bác sĩ.</p>
+          </div>
+        </div>
+      </div>
+      <div class="timeline__event timeline__event--type1">
+        <div class="timeline__event__icon">💳</div>
+        <div class="timeline__event__date">Bước 4</div>
+        <div class="timeline__event__content">
+          <div class="timeline__event__title">Thanh Toán</div>
+          <div class="timeline__event__description">
+            <p>
+              Hoàn tất thanh toán một cách an toàn qua nền tảng của chúng tôi.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="timeline__event timeline__event--type2">
+        <div class="timeline__event__icon">👩‍⚕️</div>
+        <div class="timeline__event__date">Bước 5</div>
+        <div class="timeline__event__content">
+          <div class="timeline__event__title">Tham Gia Cuộc Hẹn</div>
+          <div class="timeline__event__description">
+            <p>
+              Đến gặp bác sĩ vào thời gian đã đặt hoặc tham gia tư vấn trực
+              tuyến.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

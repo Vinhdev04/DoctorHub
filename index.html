@@ -267,23 +267,24 @@
       </div>
     </div>
 
-    <!-- *About-home* -->
+    <!-- *about-home* -->
     <section class="about py-5 bg-light">
       <div class="container text-center">
         <div class="about__icon mb-3">
           <img
             data-src="/assets/images/Icon/doctornurse-svgrepo-com.svg"
             alt=""
-            class="img-fluid lazyload"
+            class="img-fluid lazyloaded"
             style="width: 50px"
+            src="/assets/images/Icon/doctornurse-svgrepo-com.svg"
           />
         </div>
         <h2
-          class="mb-3 text-primary position-relative section-title-underline animate-on-scroll"
+          class="mb-3 text-primary position-relative section-title-underline animate-on-scroll visible"
         >
           Về DoctorHub
         </h2>
-        <p class="text-muted animate-on-scroll about__desc">
+        <p class="text-muted animate-on-scroll about__desc visible">
           DoctorHub là nền tảng kết nối giữa bệnh nhân và bác sĩ uy tín trên
           toàn quốc. Với sứ mệnh nâng cao trải nghiệm chăm sóc sức khỏe hiện
           đại, tiện lợi và nhanh chóng.
@@ -291,11 +292,11 @@
       </div>
     </section>
 
-    <!-- *Fetures-home* -->
+    <!-- *features-home* -->
     <section class="features py-5 bg-white">
       <div class="container">
         <div class="row text-center">
-          <div class="col-md-4 mb-4 animate-on-scroll">
+          <div class="col-md-4 mb-4 animate-on-scroll visible">
             <a
               href="/pages/book.html"
               class="d-flex flex-column align-items-center text-decoration-none feature-card p-4 rounded shadow-sm h-100"
@@ -303,7 +304,8 @@
               <img
                 data-src="/assets/images/Icon/appointment-dentist-svgrepo-com.svg"
                 alt=""
-                class="lazyload features__icon"
+                class="features__icon lazyloaded"
+                src="/assets/images/Icon/appointment-dentist-svgrepo-com.svg"
               />
               <h5 class="features-title fw-semibold mt-1">Đặt lịch dễ dàng</h5>
               <p class="text-secondary">
@@ -311,7 +313,7 @@
               </p>
             </a>
           </div>
-          <div class="col-md-4 mb-4 animate-on-scroll">
+          <div class="col-md-4 mb-4 animate-on-scroll visible">
             <a
               href="/pages/consultation.html"
               class="d-flex flex-column align-items-center text-decoration-none feature-card p-4 rounded shadow-sm h-100"
@@ -319,7 +321,8 @@
               <img
                 data-src="/assets/images/Icon/doctor-files-medical-svgrepo-com.svg"
                 alt=""
-                class="lazyload features__icon"
+                class="features__icon lazyloaded"
+                src="/assets/images/Icon/doctor-files-medical-svgrepo-com.svg"
               />
               <h5 class="features-title fw-semibold mt-1">
                 Tư vấn cùng bác sĩ
@@ -329,7 +332,7 @@
               </p>
             </a>
           </div>
-          <div class="col-md-4 mb-4 animate-on-scroll">
+          <div class="col-md-4 mb-4 animate-on-scroll visible">
             <a
               href="/pages/services.html"
               class="d-flex flex-column align-items-center text-decoration-none feature-card p-4 rounded shadow-sm h-100"
@@ -337,13 +340,245 @@
               <img
                 data-src="/assets/images/Icon/security-shield-svgrepo-com.svg"
                 alt=""
-                class="lazyload features__icon"
+                class="features__icon lazyloaded"
+                src="/assets/images/Icon/security-shield-svgrepo-com.svg"
               />
               <h5 class="features-title fw-semibold mt-1">Bảo mật thông tin</h5>
               <p class="text-secondary">
                 Cam kết bảo vệ dữ liệu sức khỏe của bạn tuyệt đối.
               </p>
             </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- *Category-home* -->
+    <section class="py-5 border-bottom animate-on-scroll">
+      <div class="container mt-4">
+        <h1 class="mb-4">Danh mục nổi bật</h1>
+
+        <div class="row">
+          <div class="col-6 col-sm-4 col-md-3 mb-3">
+            <div class="category-card animate-on-scroll">
+              <img
+                alt="Reproductive health icon"
+                data-src="/assets/images/Icon/sinhsan.avif"
+                class="lazyload"
+              />
+              <span>Sức khỏe sinh sản</span>
+            </div>
+          </div>
+
+          <div class="col-6 col-sm-4 col-md-3 mb-3">
+            <div class="category-card animate-on-scroll">
+              <img
+                alt="Eye health icon"
+                data-src="/assets/images/Icon/mat.avif"
+                class="lazyload"
+              />
+              <span>Mắt</span>
+            </div>
+          </div>
+
+          <div class="col-6 col-sm-4 col-md-3 mb-3">
+            <div class="category-card animate-on-scroll">
+              <img
+                alt="Ear, nose, and throat health icon"
+                data-src="/assets/images/Icon/taimuihong.avif"
+                class="lazyload"
+              />
+              <span>Tai - Mũi - Họng</span>
+            </div>
+          </div>
+
+          <div class="col-6 col-sm-4 col-md-3 mb-3">
+            <div class="category-card animate-on-scroll">
+              <img
+                alt="Respiratory health icon"
+                data-src="/assets/images/Icon/hohap.avif"
+                class="lazyload"
+              />
+              <span>Hô hấp</span>
+            </div>
+          </div>
+
+          <div class="col-6 col-sm-4 col-md-3 mb-3">
+            <div class="category-card animate-on-scroll">
+              <img
+                alt="Parasitic treatment icon"
+                data-src="/assets/images/Icon/kysinhtrung.avif"
+                class="lazyload"
+              />
+              <span>Thuốc trị ký sinh trùng</span>
+            </div>
+          </div>
+
+          <div class="col-6 col-sm-4 col-md-3 mb-3">
+            <div class="category-card animate-on-scroll">
+              <img
+                alt="Mental health icon"
+                data-src="/assets/images/Icon/tamthan.avif"
+                class="lazyload"
+              />
+              <span>Tâm thần</span>
+            </div>
+          </div>
+
+          <div class="col-6 col-sm-4 col-md-3 mb-3">
+            <div class="category-card animate-on-scroll">
+              <img
+                alt="Bone and joint health icon"
+                data-src="/assets/images/Icon/coxuongkhop.avif"
+                class="lazyload"
+              />
+              <span>Cơ - Xương - Khớp</span>
+            </div>
+          </div>
+
+          <div class="col-6 col-sm-4 col-md-3 mb-3">
+            <div class="category-card animate-on-scroll">
+              <img
+                alt="Cancer icon"
+                data-src="/assets/images/Icon/ungthu.avif"
+                class="lazyload"
+              />
+              <span>Ung thư</span>
+            </div>
+          </div>
+
+          <div class="col-6 col-sm-4 col-md-3 mb-3">
+            <div class="category-card animate-on-scroll">
+              <img
+                alt="Infectious diseases icon"
+                data-src="/assets/images/Icon/truyennhiem.avif"
+                class="lazyload"
+              />
+              <span>Truyền nhiễm</span>
+            </div>
+          </div>
+
+          <div class="col-6 col-sm-4 col-md-3 mb-3">
+            <div class="category-card animate-on-scroll">
+              <img
+                alt="Endocrine and metabolic health icon"
+                data-src="/assets/images/Icon/noitiet-chuyenhoa.avif"
+                class="lazyload"
+              />
+              <span>Nội tiết - Chuyển hóa</span>
+            </div>
+          </div>
+
+          <div class="col-6 col-sm-4 col-md-3 mb-3">
+            <div class="category-card animate-on-scroll">
+              <img
+                alt="Kidney and urinary health icon"
+                data-src="/assets/images/Icon/than.avif"
+                class="lazyload"
+              />
+              <span>Thận - Tiết niệu</span>
+            </div>
+          </div>
+
+          <div class="col-6 col-sm-4 col-md-3 mb-3">
+            <div class="category-card animate-on-scroll">
+              <img
+                alt="Allergy icon"
+                data-src="/assets/images/Icon/diung.avif"
+                class="lazyload"
+              />
+              <span>Dị ứng</span>
+            </div>
+          </div>
+
+          <div class="col-6 col-sm-4 col-md-3 mb-3">
+            <div class="category-card animate-on-scroll">
+              <img
+                alt="Skin, hair, and nail health icon"
+                height="40"
+                data-src="/assets/images/Icon/da-toc-mong.avif"
+                width="40"
+                class="lazyload"
+              />
+              <span>Da - Tóc - Móng</span>
+            </div>
+          </div>
+
+          <div class="col-6 col-sm-4 col-md-3 mb-3">
+            <div class="category-card animate-on-scroll">
+              <img
+                alt="Cardiovascular health icon"
+                data-src="/assets/images/Icon/timmach.avif"
+                class="lazyload"
+              />
+              <span>Tim mạch</span>
+            </div>
+          </div>
+
+          <div class="col-6 col-sm-4 col-md-3 mb-3">
+            <div class="category-card animate-on-scroll">
+              <img
+                alt="Blood health icon"
+                data-src="/assets/images/Icon/mau.avif"
+                class="lazyload"
+              />
+              <span>Máu</span>
+            </div>
+          </div>
+
+          <div class="col-6 col-sm-4 col-md-3 mb-3">
+            <div class="category-card animate-on-scroll">
+              <img
+                alt="Vitamin and mineral supplements icon"
+                data-src="/assets/images/Icon/vitamin.avif"
+                class="lazyload"
+              />
+              <span>Vitamin - khoáng chất</span>
+            </div>
+          </div>
+
+          <div class="col-6 col-sm-4 col-md-3 mb-3">
+            <div class="category-card animate-on-scroll">
+              <img
+                alt="Diabetes icon"
+                data-src="/assets/images/Icon/tieuduong.avif"
+                class="lazyload"
+              />
+              <span>Tiểu đường</span>
+            </div>
+          </div>
+
+          <div class="col-6 col-sm-4 col-md-3 mb-3">
+            <div class="category-card animate-on-scroll">
+              <img
+                alt="Dental health icon"
+                data-src="/assets/images/Icon/rang-ham-mat.avif"
+                class="lazyload"
+              />
+              <span>Răng - Hàm - Mặt</span>
+            </div>
+          </div>
+
+          <div class="col-6 col-sm-4 col-md-3 mb-3">
+            <div class="category-card animate-on-scroll">
+              <img
+                alt="Liver health icon"
+                data-src="/assets/images/Icon/gan.avif"
+                class="lazyload"
+              />
+              <span>Gan</span>
+            </div>
+          </div>
+
+          <div class="col-6 col-sm-4 col-md-3 mb-3">
+            <div class="category-card animate-on-scroll">
+              <img
+                alt="Digestive health icon"
+                data-src="/assets/images/Icon/tieuhoa.avif"
+                class="lazyload"
+              />
+              <span>Tiêu hóa</span>
+            </div>
           </div>
         </div>
       </div>
@@ -403,112 +638,99 @@
       </button>
     </div>
 
-    <section class="features py-5 bg-light">
+    <!-- *Timeline-home* -->
+    <section class="home__booking py-5 border-bottom">
       <div class="container">
-        <div class="text-center mb-4 animate-on-scroll">
-          <h2 class="fw-bold text-primary">Tính Năng Nổi Bật</h2>
-          <p class="text-muted">
-            DoctorHub mang đến trải nghiệm chăm sóc sức khỏe toàn diện
-          </p>
-        </div>
-        <div class="row g-4">
-          <div
-            class="col-md-4 text-center animate-on-scroll"
-            style="transition-delay: 0.2s"
-          >
-            <i class="ri-calendar-check-line fs-1 text-success mb-3"></i>
-            <h5 class="fw-bold">Đặt lịch khám nhanh chóng</h5>
+        <div class="row">
+          <div class="text-center mb-5 animate-on-scroll visible">
+            <h2
+              class="mb-3 text-primary position-relative section-title-underline animate-on-scroll fw-bold visible text-capitalize"
+            >
+              Quy Trình Đặt Lịch Khám
+            </h2>
             <p class="text-muted">
-              Lựa chọn bác sĩ, khung giờ và đặt lịch chỉ trong vài bước.
+              Chỉ với 5 bước đơn giản để chăm sóc sức khỏe của bạn
             </p>
           </div>
-          <div
-            class="col-md-4 text-center animate-on-scroll"
-            style="transition-delay: 0.4s"
-          >
-            <i class="ri-chat-3-line fs-1 text-info mb-3"></i>
-            <h5 class="fw-bold">Tư vấn sức khỏe trực tuyến</h5>
-            <p class="text-muted">
-              Gặp gỡ và trò chuyện với bác sĩ mọi lúc, mọi nơi.
-            </p>
-          </div>
-          <div
-            class="col-md-4 text-center animate-on-scroll"
-            style="transition-delay: 0.6s"
-          >
-            <i class="ri-file-list-3-line fs-1 text-warning mb-3"></i>
-            <h5 class="fw-bold">Quản lý hồ sơ bệnh án</h5>
-            <p class="text-muted">
-              Lưu trữ & tra cứu lịch sử khám bệnh dễ dàng, bảo mật.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="how-it-works py-5">
-      <div class="container">
-        <div class="text-center mb-5 animate-on-scroll">
-          <h2 class="fw-bold text-primary">Quy Trình Đặt Lịch Khám</h2>
-          <p class="text-muted">
-            Chỉ với 4 bước đơn giản để chăm sóc sức khỏe của bạn
-          </p>
-        </div>
-        <div class="row text-center g-4">
-          <div
-            class="col-md-3 animate-on-scroll"
-            style="transition-delay: 0.2s"
-          >
-            <div class="step p-3 shadow-sm rounded bg-white">
-              <div class="fs-1 text-primary mb-2">1️⃣</div>
-              <h6 class="fw-bold">Đăng ký tài khoản</h6>
-              <p class="text-muted">Tạo tài khoản miễn phí để bắt đầu.</p>
+          <div class="timeline">
+            <div class="timeline__event timeline__event--type1">
+              <div class="timeline__event__icon">📝</div>
+              <div class="timeline__event__date">Bước 1</div>
+              <div class="timeline__event__content">
+                <div class="timeline__event__title">Tạo Tài Khoản</div>
+                <div class="timeline__event__description">
+                  <p>
+                    Đăng ký trên DoctorHub bằng email và thông tin cơ bản để sử
+                    dụng dịch vụ.
+                  </p>
+                </div>
+              </div>
             </div>
-          </div>
-          <div
-            class="col-md-3 animate-on-scroll"
-            style="transition-delay: 0.4s"
-          >
-            <div class="step p-3 shadow-sm rounded bg-white">
-              <div class="fs-1 text-primary mb-2">2️⃣</div>
-              <h6 class="fw-bold">Chọn bác sĩ & dịch vụ</h6>
-              <p class="text-muted">
-                Tìm kiếm bác sĩ theo chuyên khoa hoặc nhu cầu.
-              </p>
+            <div class="timeline__event timeline__event--type2">
+              <div class="timeline__event__icon">🔍</div>
+              <div class="timeline__event__date">Bước 2</div>
+              <div class="timeline__event__content">
+                <div class="timeline__event__title">Tìm Bác Sĩ</div>
+                <div class="timeline__event__description">
+                  <p>
+                    Tìm kiếm bác sĩ dựa trên chuyên khoa, vị trí và thời gian có
+                    sẵn.
+                  </p>
+                </div>
+              </div>
             </div>
-          </div>
-          <div
-            class="col-md-3 animate-on-scroll"
-            style="transition-delay: 0.6s"
-          >
-            <div class="step p-3 shadow-sm rounded bg-white">
-              <div class="fs-1 text-primary mb-2">3️⃣</div>
-              <h6 class="fw-bold">Đặt lịch khám</h6>
-              <p class="text-muted">
-                Chọn thời gian phù hợp và xác nhận đặt lịch.
-              </p>
+            <div class="timeline__event timeline__event--type3">
+              <div class="timeline__event__icon">📅</div>
+              <div class="timeline__event__date">Bước 3</div>
+              <div class="timeline__event__content">
+                <div class="timeline__event__title">Đặt Lịch Hẹn</div>
+                <div class="timeline__event__description">
+                  <p>
+                    Chọn khung giờ thuận tiện và xác nhận lịch hẹn với bác sĩ.
+                  </p>
+                </div>
+              </div>
             </div>
-          </div>
-          <div
-            class="col-md-3 animate-on-scroll"
-            style="transition-delay: 0.8s"
-          >
-            <div class="step p-3 shadow-sm rounded bg-white">
-              <div class="fs-1 text-primary mb-2">4️⃣</div>
-              <h6 class="fw-bold">Khám bệnh trực tuyến</h6>
-              <p class="text-muted">
-                Tham gia buổi tư vấn qua video call hoặc gặp trực tiếp.
-              </p>
+            <div class="timeline__event timeline__event--type1">
+              <div class="timeline__event__icon">💳</div>
+              <div class="timeline__event__date">Bước 4</div>
+              <div class="timeline__event__content">
+                <div class="timeline__event__title">Thanh Toán</div>
+                <div class="timeline__event__description">
+                  <p>
+                    Hoàn tất thanh toán một cách an toàn qua nền tảng của chúng
+                    tôi.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="timeline__event timeline__event--type2">
+              <div class="timeline__event__icon">👩‍⚕️</div>
+              <div class="timeline__event__date">Bước 5</div>
+              <div class="timeline__event__content">
+                <div class="timeline__event__title">Tham Gia Cuộc Hẹn</div>
+                <div class="timeline__event__description">
+                  <p>
+                    Đến gặp bác sĩ vào thời gian đã đặt hoặc tham gia tư vấn
+                    trực tuyến.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- *Services-home* -->
     <section class="services py-5">
       <div class="container">
         <div class="text-center mb-4 animate-on-scroll">
-          <h2 class="fw-bold text-primary">Dịch Vụ Y Tế</h2>
+          <h2
+            class="mb-3 text-primary position-relative section-title-underline animate-on-scroll fw-bold visible text-capitalize"
+          >
+            Dịch Vụ Y Tế
+          </h2>
           <p class="text-muted">
             Đáp ứng mọi nhu cầu chăm sóc sức khỏe của bạn
           </p>
@@ -552,6 +774,31 @@
       </div>
     </section>
 
+    <!-- *About-home* -->
+    <section class="about py-5 bg-light animate-on-scroll">
+      <div class="container text-center">
+        <div class="about__icon mb-3">
+          <img
+            data-src="/assets/images/Icon/doctornurse-svgrepo-com.svg"
+            alt=""
+            class="img-fluid lazyload"
+            style="width: 50px"
+          />
+        </div>
+        <h2
+          class="mb-3 text-primary position-relative section-title-underline animate-on-scroll fw-bold"
+        >
+          Về DoctorHub
+        </h2>
+        <p class="text-muted animate-on-scroll about__desc">
+          DoctorHub là nền tảng kết nối giữa bệnh nhân và bác sĩ uy tín trên
+          toàn quốc. Với sứ mệnh nâng cao trải nghiệm chăm sóc sức khỏe hiện
+          đại, tiện lợi và nhanh chóng.
+        </p>
+      </div>
+    </section>
+
+    <!-- ** -->
     <div class="container search-box bg-white shadow rounded p-4">
       <div class="row">
         <div class="col-md-4 mb-3 mb-md-0">
@@ -599,496 +846,7 @@
       </div>
     </div>
 
-    <section class="services py-5">
-      <div class="container">
-        <h2 class="text-center fw-bold" style="margin-top: 30px">
-          Our Services
-        </h2>
-        <p
-          class="text-center"
-          style="max-width: 700px; margin: auto; margin-bottom: 50px"
-        >
-          We are Certified Covered VietNam agents with 1000's of clients
-          enrolled. We have no complaints with the Department of Insurance.
-        </p>
-        <div class="row g-4">
-          <!-- First Card -->
-          <div class="col-12">
-            <div class="card h-100" style="--bs-card-border-width: none">
-              <div class="row g-0">
-                <div class="col-md-6">
-                  <img
-                    data-src="/assets/images/Banner/4.png"
-                    class="img-fluid rounded-start lazyload"
-                    alt="A family discussing with a professional"
-                  />
-                </div>
-                <div class="col-md-6 d-flex flex-column justify-content-center">
-                  <div class="card-body">
-                    <h5 class="card-title">
-                      Exactly &amp; timely disposition of the disputes
-                    </h5>
-                    <p class="card-text">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Nullam non urna vitae nisi aliquet laoreet. Integer nec
-                      libero vel turpis consectetur condimentum.
-                    </p>
-                    <a
-                      href="#"
-                      class="btn btn-primary"
-                      style="background-color: #276c98"
-                      >Learn More</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Second Card -->
-          <div class="col-12">
-            <div
-              class="card h-100"
-              style="--bs-card-border-width: none; margin-top: 30px"
-            >
-              <div class="row g-0">
-                <div class="col-md-6 d-flex flex-column justify-content-center">
-                  <div class="card-body">
-                    <h5 class="card-title">
-                      We plan &amp; help you manage your health plans
-                    </h5>
-                    <p class="card-text">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Nullam non urna vitae nisi aliquet laoreet. Integer nec
-                      libero vel turpis consectetur condimentum.
-                    </p>
-                    <a
-                      href="#"
-                      class="btn btn-primary"
-                      style="background-color: #276c98"
-                      >Learn More</a
-                    >
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <img
-                    data-src="/assets/images/Banner/4.png"
-                    class="img-fluid rounded-end lazyload"
-                    alt="Doctors discussing a health plan"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Third Card -->
-          <!-- First Card -->
-          <div class="col-12">
-            <div
-              class="card h-100"
-              style="--bs-card-border-width: none; margin-top: 30px"
-            >
-              <div class="row g-0">
-                <div class="col-md-6">
-                  <img
-                    data-src="/assets/images/Banner/4.png"
-                    class="img-fluid rounded-start lazyload"
-                    alt="A family discussing with a professional"
-                  />
-                </div>
-                <div class="col-md-6 d-flex flex-column justify-content-center">
-                  <div class="card-body">
-                    <h5 class="card-title">
-                      Exactly &amp; timely disposition of the disputes
-                    </h5>
-                    <p class="card-text">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Nullam non urna vitae nisi aliquet laoreet. Integer nec
-                      libero vel turpis consectetur condimentum.
-                    </p>
-                    <a
-                      href="#"
-                      class="btn btn-primary"
-                      style="background-color: #276c98"
-                      >Learn More</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="features py-5 bg-light">
-      <div class="container">
-        <div class="text-center mb-4 animate-on-scroll">
-          <h2 class="fw-bold text-primary">Tính Năng Nổi Bật</h2>
-          <p class="text-muted">
-            DoctorHub mang đến trải nghiệm chăm sóc sức khỏe toàn diện
-          </p>
-        </div>
-        <div class="row g-4">
-          <div
-            class="col-md-4 text-center animate-on-scroll"
-            style="transition-delay: 0.2s"
-          >
-            <i class="ri-calendar-check-line fs-1 text-success mb-3"></i>
-            <h5 class="fw-bold">Đặt lịch khám nhanh chóng</h5>
-            <p class="text-muted">
-              Lựa chọn bác sĩ, khung giờ và đặt lịch chỉ trong vài bước.
-            </p>
-          </div>
-          <div
-            class="col-md-4 text-center animate-on-scroll"
-            style="transition-delay: 0.4s"
-          >
-            <i class="ri-chat-3-line fs-1 text-info mb-3"></i>
-            <h5 class="fw-bold">Tư vấn sức khỏe trực tuyến</h5>
-            <p class="text-muted">
-              Gặp gỡ và trò chuyện với bác sĩ mọi lúc, mọi nơi.
-            </p>
-          </div>
-          <div
-            class="col-md-4 text-center animate-on-scroll"
-            style="transition-delay: 0.6s"
-          >
-            <i class="ri-file-list-3-line fs-1 text-warning mb-3"></i>
-            <h5 class="fw-bold">Quản lý hồ sơ bệnh án</h5>
-            <p class="text-muted">
-              Lưu trữ & tra cứu lịch sử khám bệnh dễ dàng, bảo mật.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <div class="container mt-4">
-      <h1 class="mb-4">Danh mục nổi bật</h1>
-
-      <div class="row">
-        <div class="col-6 col-sm-4 col-md-3 mb-3">
-          <div class="category-card animate-on-scroll">
-            <img
-              alt="Reproductive health icon"
-              data-src="/assets/images/Icon/sinhsan.avif"
-              class="lazyload"
-            />
-            <span>Sức khỏe sinh sản</span>
-          </div>
-        </div>
-
-        <div class="col-6 col-sm-4 col-md-3 mb-3">
-          <div class="category-card animate-on-scroll">
-            <img
-              alt="Eye health icon"
-              data-src="/assets/images/Icon/mat.avif"
-              class="lazyload"
-            />
-            <span>Mắt</span>
-          </div>
-        </div>
-
-        <div class="col-6 col-sm-4 col-md-3 mb-3">
-          <div class="category-card animate-on-scroll">
-            <img
-              alt="Ear, nose, and throat health icon"
-              data-src="/assets/images/Icon/taimuihong.avif"
-              class="lazyload"
-            />
-            <span>Tai - Mũi - Họng</span>
-          </div>
-        </div>
-
-        <div class="col-6 col-sm-4 col-md-3 mb-3">
-          <div class="category-card animate-on-scroll">
-            <img
-              alt="Respiratory health icon"
-              data-src="/assets/images/Icon/hohap.avif"
-              class="lazyload"
-            />
-            <span>Hô hấp</span>
-          </div>
-        </div>
-
-        <div class="col-6 col-sm-4 col-md-3 mb-3">
-          <div class="category-card animate-on-scroll">
-            <img
-              alt="Parasitic treatment icon"
-              data-src="/assets/images/Icon/kysinhtrung.avif"
-              class="lazyload"
-            />
-            <span>Thuốc trị ký sinh trùng</span>
-          </div>
-        </div>
-
-        <div class="col-6 col-sm-4 col-md-3 mb-3">
-          <div class="category-card animate-on-scroll">
-            <img
-              alt="Mental health icon"
-              data-src="/assets/images/Icon/tamthan.avif"
-              class="lazyload"
-            />
-            <span>Tâm thần</span>
-          </div>
-        </div>
-
-        <div class="col-6 col-sm-4 col-md-3 mb-3">
-          <div class="category-card animate-on-scroll">
-            <img
-              alt="Bone and joint health icon"
-              data-src="/assets/images/Icon/coxuongkhop.avif"
-              class="lazyload"
-            />
-            <span>Cơ - Xương - Khớp</span>
-          </div>
-        </div>
-
-        <div class="col-6 col-sm-4 col-md-3 mb-3">
-          <div class="category-card animate-on-scroll">
-            <img
-              alt="Cancer icon"
-              data-src="/assets/images/Icon/ungthu.avif"
-              class="lazyload"
-            />
-            <span>Ung thư</span>
-          </div>
-        </div>
-
-        <div class="col-6 col-sm-4 col-md-3 mb-3">
-          <div class="category-card animate-on-scroll">
-            <img
-              alt="Infectious diseases icon"
-              data-src="/assets/images/Icon/truyennhiem.avif"
-              class="lazyload"
-            />
-            <span>Truyền nhiễm</span>
-          </div>
-        </div>
-
-        <div class="col-6 col-sm-4 col-md-3 mb-3">
-          <div class="category-card animate-on-scroll">
-            <img
-              alt="Endocrine and metabolic health icon"
-              data-src="/assets/images/Icon/noitiet-chuyenhoa.avif"
-              class="lazyload"
-            />
-            <span>Nội tiết - Chuyển hóa</span>
-          </div>
-        </div>
-
-        <div class="col-6 col-sm-4 col-md-3 mb-3">
-          <div class="category-card animate-on-scroll">
-            <img
-              alt="Kidney and urinary health icon"
-              data-src="/assets/images/Icon/than.avif"
-              class="lazyload"
-            />
-            <span>Thận - Tiết niệu</span>
-          </div>
-        </div>
-
-        <div class="col-6 col-sm-4 col-md-3 mb-3">
-          <div class="category-card animate-on-scroll">
-            <img
-              alt="Allergy icon"
-              data-src="/assets/images/Icon/diung.avif"
-              class="lazyload"
-            />
-            <span>Dị ứng</span>
-          </div>
-        </div>
-
-        <div class="col-6 col-sm-4 col-md-3 mb-3">
-          <div class="category-card animate-on-scroll">
-            <img
-              alt="Skin, hair, and nail health icon"
-              height="40"
-              data-src="/assets/images/Icon/da-toc-mong.avif"
-              width="40"
-              class="lazyload"
-            />
-            <span>Da - Tóc - Móng</span>
-          </div>
-        </div>
-
-        <div class="col-6 col-sm-4 col-md-3 mb-3">
-          <div class="category-card animate-on-scroll">
-            <img
-              alt="Cardiovascular health icon"
-              data-src="/assets/images/Icon/timmach.avif"
-              class="lazyload"
-            />
-            <span>Tim mạch</span>
-          </div>
-        </div>
-
-        <div class="col-6 col-sm-4 col-md-3 mb-3">
-          <div class="category-card animate-on-scroll">
-            <img
-              alt="Blood health icon"
-              data-src="/assets/images/Icon/mau.avif"
-              class="lazyload"
-            />
-            <span>Máu</span>
-          </div>
-        </div>
-
-        <div class="col-6 col-sm-4 col-md-3 mb-3">
-          <div class="category-card animate-on-scroll">
-            <img
-              alt="Vitamin and mineral supplements icon"
-              data-src="/assets/images/Icon/vitamin.avif"
-              class="lazyload"
-            />
-            <span>Vitamin - khoáng chất</span>
-          </div>
-        </div>
-
-        <div class="col-6 col-sm-4 col-md-3 mb-3">
-          <div class="category-card animate-on-scroll">
-            <img
-              alt="Diabetes icon"
-              data-src="/assets/images/Icon/tieuduong.avif"
-              class="lazyload"
-            />
-            <span>Tiểu đường</span>
-          </div>
-        </div>
-
-        <div class="col-6 col-sm-4 col-md-3 mb-3">
-          <div class="category-card animate-on-scroll">
-            <img
-              alt="Dental health icon"
-              data-src="/assets/images/Icon/rang-ham-mat.avif"
-              class="lazyload"
-            />
-            <span>Răng - Hàm - Mặt</span>
-          </div>
-        </div>
-
-        <div class="col-6 col-sm-4 col-md-3 mb-3">
-          <div class="category-card animate-on-scroll">
-            <img
-              alt="Liver health icon"
-              data-src="/assets/images/Icon/gan.avif"
-              class="lazyload"
-            />
-            <span>Gan</span>
-          </div>
-        </div>
-
-        <div class="col-6 col-sm-4 col-md-3 mb-3">
-          <div class="category-card animate-on-scroll">
-            <img
-              alt="Digestive health icon"
-              data-src="/assets/images/Icon/tieuhoa.avif"
-              class="lazyload"
-            />
-            <span>Tiêu hóa</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="container py-5">
-        <h1 class="mb-5" style="text-align: center; color: #0f766e">
-          Our Blogs
-        </h1>
-
-        <div class="d-flex justify-content-center align-items-center mb-4">
-          <button class="btn btn-link text-secondary">
-            <i class="fas fa-chevron-left"></i>
-          </button>
-
-          <div class="row w-100">
-            <div class="col-md-4 mb-4">
-              <div class="card blog-card">
-                <img
-                  alt="A person using a laptop with a stethoscope on the table"
-                  class="card-img-top lazyload"
-                  height="400"
-                  data-src="https://storage.googleapis.com/a1aa/image/coH_lckQlpq9nkS2zKGsyInG1kfBgBUfIXID49FsSIg.jpg"
-                  width="600"
-                />
-                <div class="card-body d-flex flex-column">
-                  <h5 class="card-title" style="color: #0f766e">
-                    How to Compare the Covered Ca plans?
-                  </h5>
-                  <p class="card-text text-secondary flex-grow-1">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut. incididunt ut.
-                  </p>
-                  <a
-                    class="btn"
-                    style="background-color: #0f766e; color: white"
-                    href="#"
-                    >READ MORE</a
-                  >
-                </div>
-              </div>
-            </div>
-
-            <div class="col-md-4 mb-4">
-              <div class="card blog-card">
-                <img
-                  alt="A doctor smiling in a park"
-                  class="card-img-top lazyload"
-                  height="400"
-                  data-src="https://storage.googleapis.com/a1aa/image/5BpaXVfLi4qkdZAvARLvtpISDRCdOoNZ8uLyY_PlOOs.jpg"
-                  width="600"
-                />
-                <div class="card-body d-flex flex-column">
-                  <h5 class="card-title" style="color: #0f766e">
-                    How to Pick The Best Health Plan?
-                  </h5>
-                  <p class="card-text text-secondary flex-grow-1">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut. incididunt ut.
-                  </p>
-                  <a
-                    class="btn"
-                    style="background-color: #0f766e; color: white"
-                    href="#"
-                    >READ MORE</a
-                  >
-                </div>
-              </div>
-            </div>
-
-            <div class="col-md-4 mb-4">
-              <div class="card blog-card">
-                <img
-                  alt="A laptop, coffee cup, and phone on a wooden table"
-                  class="card-img-top lazyload"
-                  height="400"
-                  data-src="https://storage.googleapis.com/a1aa/image/7mTsoDQV8K88r_BMpoxnb9fMVbRmgvc_l6dyB0cUIwY.jpg"
-                  width="600"
-                />
-                <div class="card-body d-flex flex-column">
-                  <h5 class="card-title" style="color: #0f766e">
-                    Health insurance between jobs
-                  </h5>
-                  <p class="card-text text-secondary flex-grow-1">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut. incididunt ut.
-                  </p>
-                  <a
-                    class="btn"
-                    style="background-color: #0f766e; color: white"
-                    href="#"
-                    >READ MORE</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <button class="btn btn-link text-secondary">
-            <i class="fas fa-chevron-right"></i>
-          </button>
-        </div>
-      </div>
-    </div>
-
+    <!-- ** -->
     <section class="contact__section">
       <div class="container-fluid">
         <div class="row">
@@ -1206,6 +964,127 @@
         </div>
       </div>
     </div>
+
+    <!-- *Blog-home* -->
+    <section class="blog-home">
+      <div class="container py-5 text-center">
+        <h2
+          class="mb-5 text-primary position-relative section-title-underline animate-on-scroll fw-bold visible text-capitalize"
+        >
+          Tin tức
+        </h2>
+
+        <div class="splide animate-on-scroll" id="blog-slider">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">
+                <a href="#!" class="text-decoration-none">
+                  <div class="card blog-card">
+                    <img
+                      alt="A person using a laptop with a stethoscope on the table"
+                      class="card-img-top lazyload"
+                      height="400"
+                      data-src="/assets/images/Blog/LBr7jLZR-Thuoc-Cum-tamiflu-768x403.jpg"
+                      width="600"
+                    />
+                    <div class="card-body d-flex flex-column">
+                      <h5 class="card-title text-primary-emphasis">
+                        Có nên mua thuốc Tamiflu để điều trị cúm A tại nhà
+                        không?
+                      </h5>
+                      <p class="card-text text-secondary flex-grow-1 mb-2">
+                        Cúm A là một bệnh truyền nhiễm phổ biến, đặc biệt trong
+                        mùa lạnh. Nhiều người tự hỏi liệu có nên mua thuốc
+                        Tamiflu để điều trị cúm A tại nhà hay không.
+                      </p>
+
+                      <a
+                        href="#"
+                        class="btn button learn-more text-decoration-none"
+                      >
+                        <span class="circle" aria-hidden="true">
+                          <span class="icon arrow"></span>
+                        </span>
+                        <span class="button-text">Xem Thêm</span>
+                      </a>
+                    </div>
+                  </div>
+                </a>
+              </li>
+
+              <li class="splide__slide">
+                <a href="#!" class="text-decoration-none">
+                  <div class="card blog-card">
+                    <img
+                      alt="A doctor smiling in a park"
+                      class="card-img-top lazyload"
+                      height="400"
+                      data-src="/assets/images/Blog/cum-mua-768x456.jpg"
+                      width="600"
+                    />
+                    <div class="card-body d-flex flex-column">
+                      <h5 class="card-title text-primary-emphasis">
+                        Cúm mùa: Triệu chứng, cách phòng ngừa và điều trị hiệu
+                        quả
+                      </h5>
+                      <p class="card-text text-secondary flex-grow-1 mb-2">
+                        Cúm mùa (hay còn gọi là influenza) là một bệnh nhiễm
+                        trùng đường hô hấp cấp tính do virus cúm gây ra. Bệnh
+                        lây lan rất nhanh chóng và có thể gây ra các triệu chứng
+                        từ nhẹ đến nặng
+                      </p>
+                      <a
+                        href="#"
+                        class="btn button learn-more text-decoration-none"
+                      >
+                        <span class="circle" aria-hidden="true">
+                          <span class="icon arrow"></span>
+                        </span>
+                        <span class="button-text">Xem Thêm</span>
+                      </a>
+                    </div>
+                  </div>
+                </a>
+              </li>
+
+              <li class="splide__slide">
+                <a href="#!" class="text-decoration-none">
+                  <div class="card blog-card">
+                    <img
+                      alt="A laptop, coffee cup, and phone on a wooden table"
+                      class="card-img-top lazyload"
+                      height="400"
+                      data-src="/assets/images/Blog/20210318_030801_537597_che_do_an_uong_can_max_1800x1800_jpg_e73157190b-768x480.jpg"
+                      width="600"
+                    />
+                    <div class="card-body d-flex flex-column">
+                      <h5 class="card-title text-primary-emphasis">
+                        10 Bí Quyết Chăm Sóc Sức Khỏe Toàn Diện: Hành Trình Đến
+                        Sự Khỏe Mạnh
+                      </h5>
+                      <p class="card-text text-secondary flex-grow-1 mb-2">
+                        Sống khỏe không chỉ là ước mơ, mà là điều bạn có thể đạt
+                        được. Chăm sóc sức khỏe toàn diện giúp bạn tràn đầy năng
+                        lượng, tinh thần thoải mái và cơ thể bền bỉ.
+                      </p>
+                      <a
+                        href="#"
+                        class="btn button learn-more text-decoration-none"
+                      >
+                        <span class="circle" aria-hidden="true">
+                          <span class="icon arrow"></span>
+                        </span>
+                        <span class="button-text">Xem Thêm</span>
+                      </a>
+                    </div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- *Footer* -->
     <footer class="bg-light pt-5 pb-3 border-top">
@@ -1431,6 +1310,7 @@
   <!-- *Javascript* -->
   <script src="/assets/javascript/main.js" type="module"></script>
   <script src="/services/handleModal.js"></script>
+  <script src="/services/handleSlider.js"></script>
   <!-- *Lazysizes* -->
   <script
     src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.2.0/lazysizes.min.js"

@@ -2,7 +2,20 @@
   "test": [],
   "users": [],
   "doctors": [],
-  "blog": [],
+  "blog": [
+    {
+      "id": 1,
+      "title": "10 Bí Quyết Chăm Sóc Sức Khỏe Toàn Diện: Hành Trình Đến Sự Khỏe Mạnh",
+      "date": "27/03/2025",
+      "author": "John Doe",
+      "category": "Dinh dưỡng",
+      "image": [
+        "https://example.com/image1.jpg",
+        "https://example.com/image2.jpg"
+      ],
+      "contents": [""]
+    }
+  ],
   "medicines": [
     {
       "id": 1,

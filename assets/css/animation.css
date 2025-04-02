@@ -80,3 +80,19 @@
     transform: translateX(0px);
   }
 }
+
+@keyframes fillLeft {
+  100% {
+    right: 100%;
+  }
+}
+@keyframes fillTop {
+  100% {
+    top: 100%;
+  }
+}
+@keyframes fillLeftOdd {
+  100% {
+    left: 100%;
+  }
+}

@@ -55,10 +55,12 @@
 .topbar a {
   text-decoration: none;
 }
+
 .topbar .badge {
   font-size: 0.6rem;
   padding: 3px 6px;
 }
+
 .topbar__home--cart {
   position: relative;
 }
@@ -120,7 +122,6 @@
   object-fit: cover;
   border-radius: 12px;
 }
-
 
 .contact-sidebar {
   position: fixed;
