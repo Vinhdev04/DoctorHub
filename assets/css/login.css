@@ -3,7 +3,11 @@
 ====================== */
 body {
   background-color: #c9d6ff;
-  background: linear-gradient(to right, #e2e2e2, #c9d6ff);
+  /* background: linear-gradient(to right, #e2e2e2, #c9d6ff); */
+  background-image: url(/assets/images/Banner/bannerLogin04.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -19,7 +23,7 @@ body {
   overflow: hidden;
   width: 768px;
   max-width: 100%;
-  min-height: 480px;
+  min-height: 580px;
 }
 
 .container.container-login p {
@@ -62,7 +66,7 @@ body {
 .container.container-login form {
   background-color: #fff;
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   justify-content: center;
   flex-direction: column;
   padding: 0 40px;
@@ -160,7 +164,10 @@ body {
 }
 
 .toggle-panel {
-  background-image: url(/gay.jpg);
+  background-image: url(/assets/images/Doctors/vd7gc7zr.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   position: absolute;
   width: 50%;
   height: 100%;
