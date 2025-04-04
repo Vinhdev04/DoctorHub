@@ -1,6 +1,13 @@
 {
   "test": [],
-  "users": [],
+  "users": [
+    {
+      "id": 1,
+      "firstName": "Mr An",
+      "email": "pcv.fed@gmail.com",
+      "password": "123456@Vinh"
+    }
+  ],
   "doctors": [],
   "blog": [
     {

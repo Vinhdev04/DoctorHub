@@ -36,6 +36,11 @@
       content="Đặt lịch khám bệnh và tư vấn sức khỏe trực tuyến với DoctorHub, giúp bạn chăm sóc sức khỏe dễ dàng và hiệu quả."
     />
     <meta name="twitter:image" content="URL_of_image_for_twitter_card" />
+    <meta
+      name="60552469035-27c42t2tcr98qbmp27b6r2tti6b8vvql.apps.googleusercontent.com"
+      content="YOUR_GOOGLE_CLIENT_ID"
+    />
+
     <!-- *Title* -->
     <title>DoctorHub - Đặt Lịch Khám và Tư Vấn Sức Khỏe</title>
     <!-- *Favicon* -->
@@ -80,6 +85,13 @@
     <!-- *Mobile Optimization* -->
     <meta name="mobile-web-app-capable" content="yes" />
     <meta name="theme-color" content="#0d6efd" />
+    <style>
+      .user-profile {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+    </style>
   </head>
   <body>
     <!-- *Navbar* -->
@@ -106,107 +118,51 @@
             </strong>
           </div>
           <div class="user-actions d-flex align-items-center gap-3">
+            <!-- Nút đăng nhập Google -->
+            <div class="g-signin2" data-onsuccess="onSignIn"></div>
+
+            <!-- Các nút đăng nhập và đăng ký -->
             <a
-              href="/pages/login.html"
+              href="/pages/signUp.html"
               class="topbar__home--login text-dark small d-none d-md-block"
               >Đăng nhập</a
             >
             <a
-              href="/pages/login.html"
+              href="/pages/signIn.html"
               class="topbar__home--register text-dark small d-none d-md-block"
               >Đăng ký</a
             >
-            <a
-              href="/pages/cart.html"
-              class="position-relative text-dark small topbar__home--cart"
-            >
-              <i class="fas fa-shopping-cart"></i>
-              <span
-                class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-info"
-              >
-                0
-              </span>
-              <div class="cart__home--message shadow rounded-2">
-                Hiện tại chưa có sản phẩm ở trong giỏ hàng
+
+            <!-- Phần avatar người dùng và đăng xuất (ẩn khi chưa đăng nhập) -->
+            <div id="user-profile" class="user-profile d-none">
+              <img
+                id="user-avatar"
+                src=""
+                alt="User Avatar"
+                class="rounded-circle"
+                width="40"
+                height="40"
+              />
+              <div class="dropdown">
+                <button
+                  class="btn btn-secondary dropdown-toggle"
+                  type="button"
+                  id="dropdownUser"
+                  data-bs-toggle="dropdown"
+                >
+                  <span id="user-name">User</span>
+                </button>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="#" id="logout-btn"
+                      >Đăng xuất</a
+                    >
+                  </li>
+                </ul>
               </div>
-            </a>
+            </div>
           </div>
         </div>
-      </div>
-
-      <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-light">
-          <a
-            class="navbar-brand navbar__link d-flex align-items-center"
-            href="index.html"
-          >
-            <img
-              src="/assets/images/Logo/DoctorHub.png"
-              alt="Logo"
-              width="30"
-              height="24"
-              class="d-inline-block align-text-top img-fluid navbar__logo"
-            />
-            DoctorHub
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div
-            class="collapse navbar-collapse justify-content-end"
-            id="navbarNav"
-          >
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="index.html">Trang Chủ</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/pages/book.html">Đặt Lịch Khám</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/pages/consultation.html"
-                  >Tư Vấn Sức Khỏe</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/pages/services.html">Dịch Vụ Y Tế</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/pages/contact.html">Liên Hệ</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/pages/blog.html">Blog</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/pages/test.html">Bài Test</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/pages/shop.html">Shop</a>
-              </li>
-            </ul>
-
-            <!-- Search Form -->
-            <form class="d-flex ms-3" role="search">
-              <input
-                class="form-control me-2"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              />
-              <button class="btn btn-outline-success" type="submit">
-                Search
-              </button>
-            </form>
-          </div>
-        </nav>
       </div>
     </header>
 
@@ -1319,4 +1275,53 @@
   <!-- *Splide JS* -->
 
   <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+  <script>
+    function onSignIn(googleUser) {
+      // Lấy thông tin người dùng sau khi đăng nhập thành công
+      var profile = googleUser.getBasicProfile();
+      var user = {
+        name: profile.getName(),
+        avatar: profile.getImageUrl(),
+        email: profile.getEmail(),
+      };
+
+      // Lưu thông tin người dùng vào localStorage
+      localStorage.setItem("user", JSON.stringify(user));
+
+      // Điều hướng về trang chủ (hoặc trang bạn muốn)
+      window.location.href = "index.html";
+    }
+
+    document.addEventListener("DOMContentLoaded", function () {
+      const loginBtn = document.querySelector(".topbar__home--login");
+      const registerBtn = document.querySelector(".topbar__home--register");
+      const userProfile = document.getElementById("user-profile");
+      const userAvatar = document.getElementById("user-avatar");
+      const userName = document.getElementById("user-name");
+      const logoutBtn = document.getElementById("logout-btn");
+
+      // Kiểm tra xem người dùng có đăng nhập không
+      const user = JSON.parse(localStorage.getItem("user"));
+
+      if (user) {
+        // Nếu đã đăng nhập, ẩn nút Đăng nhập & Đăng ký, hiển thị Avatar
+        loginBtn.style.display = "none";
+        registerBtn.style.display = "none";
+        userProfile.classList.remove("d-none");
+
+        // Hiển thị thông tin người dùng
+        userAvatar.src = user.avatar;
+        userName.textContent = user.name;
+      }
+
+      // Xử lý khi người dùng đăng xuất
+      logoutBtn.addEventListener("click", function () {
+        localStorage.removeItem("user");
+        window.location.reload(); // Reload lại trang
+      });
+    });
+  </script>
+  <!-- * Google API* -->
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
 </html>

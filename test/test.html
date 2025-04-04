@@ -1,317 +1,173 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Animated Timeline</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Đăng Nhập Bằng Google</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Google Identity Services -->
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+
+    <!-- File CSS tùy chỉnh -->
     <link rel="stylesheet" href="styles.css" />
     <style>
-      * {
-        box-sizing: border-box;
-      }
-      html {
-        font-size: 14px;
-      }
       body {
-        background: #f6f9fc;
-        font-family: "Open Sans", sans-serif;
-        color: #525f7f;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f8f9fa;
       }
-      h2 {
-        margin: 5%;
+      .card {
+        padding: 20px;
         text-align: center;
-        font-size: 2rem;
-        font-weight: 100;
+        border-radius: 10px;
       }
-      .timeline {
-        display: flex;
-        flex-direction: column;
-        margin: 20px auto;
-        position: relative;
+      #profile {
+        display: none;
+        text-align: center;
+        margin-top: 20px;
       }
-      .timeline__event {
-        margin-bottom: 20px;
-        position: relative;
-        display: flex;
-        margin: 20px 0;
-        border-radius: 6px;
-        align-self: center;
-        width: 50vw;
-      }
-      .timeline__event:nth-child(2n + 1) {
-        flex-direction: row-reverse;
-      }
-      .timeline__event:nth-child(2n + 1) .timeline__event__date {
-        border-radius: 0 6px 6px 0;
-      }
-      .timeline__event:nth-child(2n + 1) .timeline__event__content {
-        border-radius: 6px 0 0 6px;
-      }
-      .timeline__event:nth-child(2n + 1) .timeline__event__icon:before {
-        content: "";
-        width: 2px;
-        height: 100%;
-        background: #f6a4ec;
-        position: absolute;
-        top: 0%;
-        left: 50%;
-        right: auto;
-        z-index: -1;
-        transform: translateX(-50%);
-        animation: fillTop 2s forwards 4s ease-in-out;
-      }
-      .timeline__event:nth-child(2n + 1) .timeline__event__icon:after {
-        content: "";
-        width: 100%;
-        height: 2px;
-        background: #f6a4ec;
-        position: absolute;
-        right: 0;
-        z-index: -1;
-        top: 50%;
-        left: auto;
-        transform: translateY(-50%);
-        animation: fillLeft 2s forwards 4s ease-in-out;
-      }
-      .timeline__event__title {
-        font-size: 1.2rem;
-        line-height: 1.4;
-        text-transform: uppercase;
-        font-weight: 600;
-        color: #9251ac;
-        letter-spacing: 1.5px;
-      }
-      .timeline__event__content {
-        padding: 20px;
-        box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25),
-          0 18px 36px -18px rgba(0, 0, 0, 0.3),
-          0 -12px 36px -8px rgba(0, 0, 0, 0.025);
-        background: #fff;
-        width: calc(40vw - 84px);
-        border-radius: 0 6px 6px 0;
-      }
-      .timeline__event__date {
-        color: #f6a4ec;
-        font-size: 1.5rem;
-        font-weight: 600;
-        background: #9251ac;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        white-space: nowrap;
-        padding: 0 20px;
-        border-radius: 6px 0 0 6px;
-      }
-      .timeline__event__icon {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: #9251ac;
-        padding: 20px;
-        align-self: center;
-        margin: 0 20px;
-        background: #f6a4ec;
-        border-radius: 100%;
-        width: 40px;
-        box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25),
-          0 18px 36px -18px rgba(0, 0, 0, 0.3),
-          0 -12px 36px -8px rgba(0, 0, 0, 0.025);
-        padding: 40px;
-        height: 40px;
-        position: relative;
-      }
-      .timeline__event__icon i {
-        font-size: 32px;
-      }
-      .timeline__event__icon:before {
-        content: "";
-        width: 2px;
-        height: 100%;
-        background: #f6a4ec;
-        position: absolute;
-        top: 0%;
-        z-index: -1;
-        left: 50%;
-        transform: translateX(-50%);
-        animation: fillTop 2s forwards 4s ease-in-out;
-      }
-      .timeline__event__icon:after {
-        content: "";
-        width: 100%;
-        height: 2px;
-        background: #f6a4ec;
-        position: absolute;
-        left: 0%;
-        z-index: -1;
-        top: 50%;
-        transform: translateY(-50%);
-        animation: fillLeftOdd 2s forwards 4s ease-in-out;
-      }
-      .timeline__event__description {
-        flex-basis: 60%;
-      }
-      .timeline__event--type2:after {
-        background: #555ac0;
-      }
-      .timeline__event--type2 .timeline__event__date {
-        color: #87bbfe;
-        background: #555ac0;
-      }
-      .timeline__event--type2:nth-child(2n + 1) .timeline__event__icon:before,
-      .timeline__event--type2:nth-child(2n + 1) .timeline__event__icon:after {
-        background: #87bbfe;
-      }
-      .timeline__event--type2 .timeline__event__icon {
-        background: #87bbfe;
-        color: #555ac0;
-      }
-      .timeline__event--type2 .timeline__event__icon:before,
-      .timeline__event--type2 .timeline__event__icon:after {
-        background: #87bbfe;
-      }
-      .timeline__event--type2 .timeline__event__title {
-        color: #555ac0;
-      }
-      .timeline__event--type3:after {
-        background: #24b47e;
-      }
-      .timeline__event--type3 .timeline__event__date {
-        color: #aff1b6;
-        background-color: #24b47e;
-      }
-      .timeline__event--type3:nth-child(2n + 1) .timeline__event__icon:before,
-      .timeline__event--type3:nth-child(2n + 1) .timeline__event__icon:after {
-        background: #aff1b6;
-      }
-      .timeline__event--type3 .timeline__event__icon {
-        background: #aff1b6;
-        color: #24b47e;
-      }
-      .timeline__event--type3 .timeline__event__icon:before,
-      .timeline__event--type3 .timeline__event__icon:after {
-        background: #aff1b6;
-      }
-      .timeline__event--type3 .timeline__event__title {
-        color: #24b47e;
-      }
-      .timeline__event:last-child .timeline__event__icon:before {
-        content: none;
-      }
-      @media (max-width: 786px) {
-        .timeline__event {
-          flex-direction: column;
-          align-self: center;
-        }
-        .timeline__event__content {
-          width: 100%;
-        }
-        .timeline__event__icon {
-          border-radius: 6px 6px 0 0;
-          width: 100%;
-          margin: 0;
-          box-shadow: none;
-        }
-        .timeline__event__icon:before,
-        .timeline__event__icon:after {
-          display: none;
-        }
-        .timeline__event__date {
-          border-radius: 0;
-          padding: 20px;
-        }
-        .timeline__event:nth-child(2n + 1) {
-          flex-direction: column;
-          align-self: center;
-        }
-        .timeline__event:nth-child(2n + 1) .timeline__event__date {
-          border-radius: 0;
-          padding: 20px;
-        }
-        .timeline__event:nth-child(2n + 1) .timeline__event__icon {
-          border-radius: 6px 6px 0 0;
-          margin: 0;
-        }
-      }
-      @keyframes fillLeft {
-        100% {
-          right: 100%;
-        }
-      }
-      @keyframes fillTop {
-        100% {
-          top: 100%;
-        }
-      }
-      @keyframes fillLeftOdd {
-        100% {
-          left: 100%;
-        }
+      img {
+        border-radius: 50%;
+        width: 80px;
+        height: 80px;
       }
     </style>
   </head>
   <body>
-    <h2>Các Bước Đặt Lịch Hẹn Trên DoctorHub</h2>
-    <div class="timeline">
-      <div class="timeline__event timeline__event--type1">
-        <div class="timeline__event__icon">📝</div>
-        <div class="timeline__event__date">Bước 1</div>
-        <div class="timeline__event__content">
-          <div class="timeline__event__title">Tạo Tài Khoản</div>
-          <div class="timeline__event__description">
-            <p>
-              Đăng ký trên DoctorHub bằng email và thông tin cơ bản để sử dụng
-              dịch vụ.
-            </p>
-          </div>
-        </div>
+    <div class="card">
+      <h2>Đăng Nhập Bằng Google</h2>
+
+      <!-- Nút đăng nhập Google -->
+      <div
+        id="g_id_onload"
+        data-client_id="60552469035-27c42t2tcr98qbmp27b6r2tti6b8vvql.apps.googleusercontent.com"
+        data-context="signin"
+        data-ux_mode="popup"
+        data-callback="handleCredentialResponse"
+        data-auto_prompt="false"
+      ></div>
+      <div class="g_id_signin" data-type="standard"></div>
+
+      <!-- Hiển thị thông tin user sau khi đăng nhập -->
+      <div id="profile">
+        <h3>Chào, <span id="userName"></span>!</h3>
+        <img id="userImage" src="" alt="User Image" />
+        <p>Email: <span id="userEmail"></span></p>
+        <button onclick="logout()" class="btn btn-danger">Đăng Xuất</button>
       </div>
-      <div class="timeline__event timeline__event--type2">
-        <div class="timeline__event__icon">🔍</div>
-        <div class="timeline__event__date">Bước 2</div>
-        <div class="timeline__event__content">
-          <div class="timeline__event__title">Tìm Bác Sĩ</div>
-          <div class="timeline__event__description">
-            <p>
-              Tìm kiếm bác sĩ dựa trên chuyên khoa, vị trí và thời gian có sẵn.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="timeline__event timeline__event--type3">
-        <div class="timeline__event__icon">📅</div>
-        <div class="timeline__event__date">Bước 3</div>
-        <div class="timeline__event__content">
-          <div class="timeline__event__title">Đặt Lịch Hẹn</div>
-          <div class="timeline__event__description">
-            <p>Chọn khung giờ thuận tiện và xác nhận lịch hẹn với bác sĩ.</p>
-          </div>
-        </div>
-      </div>
-      <div class="timeline__event timeline__event--type1">
-        <div class="timeline__event__icon">💳</div>
-        <div class="timeline__event__date">Bước 4</div>
-        <div class="timeline__event__content">
-          <div class="timeline__event__title">Thanh Toán</div>
-          <div class="timeline__event__description">
-            <p>
-              Hoàn tất thanh toán một cách an toàn qua nền tảng của chúng tôi.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="timeline__event timeline__event--type2">
-        <div class="timeline__event__icon">👩‍⚕️</div>
-        <div class="timeline__event__date">Bước 5</div>
-        <div class="timeline__event__content">
-          <div class="timeline__event__title">Tham Gia Cuộc Hẹn</div>
-          <div class="timeline__event__description">
-            <p>
-              Đến gặp bác sĩ vào thời gian đã đặt hoặc tham gia tư vấn trực
-              tuyến.
-            </p>
-          </div>
-        </div>
-      </div>
+      <div
+        class="fb-login-button"
+        data-width=""
+        data-size="large"
+        data-button-type="continue_with"
+        data-layout="default"
+        data-auto-logout-link="false"
+        data-use-continue-as="false"
+        data-onlogin="checkLoginState();"
+      ></div>
     </div>
+
+    <!-- Import file JavaScript -->
+    <script src="test.js"></script>
+    <!-- Facebook SDK -->
+    <script>
+      window.fbAsyncInit = function () {
+        FB.init({
+          appId: "1367117671289744", // Thay 'YOUR_APP_ID' bằng App ID của bạn
+          cookie: true, // Cho phép cookie để Facebook xác thực
+          xfbml: true, // Cho phép khả năng nhúng (dùng cho iframe)
+          version: "v15.0", // Phiên bản của API
+        });
+
+        // Kiểm tra xem người dùng đã đăng nhập hay chưa
+        FB.getLoginStatus(function (response) {
+          statusChangeCallback(response);
+        });
+      };
+
+      (function (d, s, id) {
+        var js,
+          fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) {
+          return;
+        }
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "https://connect.facebook.net/en_US/sdk.js";
+        fjs.parentNode.insertBefore(js, fjs);
+      })(document, "script", "facebook-jssdk"); // Hàm này được gọi khi người dùng đăng nhập Facebook
+      function checkLoginState() {
+        FB.getLoginStatus(function (response) {
+          statusChangeCallback(response);
+        });
+      }
+
+      // Hàm này xử lý phản hồi sau khi đăng nhập
+      function statusChangeCallback(response) {
+        console.log("Facebook login response:", response);
+
+        // Nếu đăng nhập thành công
+        if (response.status === "connected") {
+          // Lấy thông tin người dùng
+          FB.api("/me", { fields: "name,email,picture" }, function (response) {
+            console.log("Thông tin người dùng Facebook:", response);
+
+            // Lưu thông tin người dùng vào localStorage
+            var user = {
+              name: response.name,
+              email: response.email,
+              avatar: response.picture.data.url,
+            };
+            localStorage.setItem("user", JSON.stringify(user));
+
+            // Cập nhật giao diện (hiển thị avatar, tên người dùng)
+            document.getElementById("user-avatar").src = user.avatar;
+            document.getElementById("user-name").innerText = user.name;
+
+            // Ẩn nút đăng nhập, đăng ký
+            document
+              .querySelector(".topbar__home--login")
+              .classList.add("d-none");
+            document
+              .querySelector(".topbar__home--register")
+              .classList.add("d-none");
+
+            // Hiển thị phần người dùng (avatar và tên)
+            document.getElementById("user-profile").classList.remove("d-none");
+
+            // Gửi thông tin lên API để lưu trữ
+            fetch("https://your-api-endpoint.com/users", {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json",
+              },
+              body: JSON.stringify({
+                name: user.name,
+                email: user.email,
+                avatar: user.avatar,
+              }),
+            })
+              .then((response) => response.json())
+              .then((data) => {
+                console.log("Dữ liệu người dùng đã được lưu:", data);
+                window.location.href = "index.html"; // Chuyển hướng sau khi đăng nhập thành công
+              })
+              .catch((error) => {
+                console.error("Có lỗi xảy ra khi gửi dữ liệu:", error);
+              });
+          });
+        } else {
+          console.log("User is not logged in or not authorized");
+        }
+      }
+    </script>
   </body>
 </html>

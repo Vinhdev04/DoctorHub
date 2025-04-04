@@ -198,3 +198,152 @@ body {
 .container.container-login.active .toggle-right {
   transform: translateX(200%);
 }
+
+.input-group label i {
+  width: 50px;
+  height: 50px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #8672ff;
+  color: white;
+  fill: white;
+  border-radius: 10px 0 0 10px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.container form .input-group input {
+  flex-grow: 1;
+  min-width: 0;
+  height: 50px;
+  padding: 10px;
+  font: inherit;
+  border-radius: 0 10px 10px 0;
+  border: 2px solid #f3f0ff;
+  border-left: none;
+  background-color: #f3f0ff;
+  transition: border 350ms ease-in;
+  font-size: 14px;
+}
+
+form .input-group input:hover {
+  border-color: #8672ff;
+}
+
+form .input-group input:focus {
+  outline: none;
+  border-color: #2e2b41;
+}
+
+form div:has(input:focus) > label i {
+  background-color: #2e2b41;
+}
+
+form .input-group::placeholder {
+  color: #2e2b41;
+}
+
+form button {
+  text-transform: uppercase;
+  color: white;
+  border-radius: 10px;
+  background-color: #8672ff;
+  transition: 0.15s ease;
+  cursor: pointer;
+}
+
+form button.signUp:hover {
+  background-color: #343435;
+}
+
+form button.signUp:active {
+  outline: none;
+  background-color: #343435;
+}
+
+form p a.form__desc {
+  color: #8672ff !important;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+form p a.form__desc:hover {
+  text-decoration: underline;
+}
+form .input-group.incorrect label i {
+  background-color: #f06272;
+}
+
+form .input-group.incorrect input {
+  border-color: #f06272;
+}
+
+form .input-group.incorrect:hover label i {
+  background-color: #2e2b41;
+}
+
+form .input-group.incorrect:hover input {
+  border-color: #2e2b41;
+}
+
+#error-message {
+  color: #f06272;
+}
+
+.line {
+  position: relative;
+  margin: 10px;
+  text-align: center;
+}
+
+.line span {
+  display: inline-block;
+  padding: 0 8px;
+  background: #fff;
+  position: relative;
+  z-index: 1;
+}
+
+.line::before {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 1px;
+  background: #cfcfcf;
+  margin: auto;
+}
+
+.control__group {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 50%;
+  height: 42px;
+  border: 0;
+  outline: 0;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.control__group--google {
+  background-color: #df4a32;
+}
+
+.control__group--facebook {
+  background: #3b5998;
+}
+
+form .form-group.control__group a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+}
