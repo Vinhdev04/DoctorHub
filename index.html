@@ -96,73 +96,146 @@
   <body>
     <!-- *Navbar* -->
     <header class="header">
-      <div class="topbar py-3 border-bottom bg-white">
-        <div
-          class="container d-flex justify-content-between align-items-center"
-        >
-          <div class="contact-info small text-muted d-flex">
-            <strong>Email:</strong>
-            <a
-              href="mailto:vaniizit.work@gmail.com?subject=Yêu%20cầu%20được%20hỗ%20trợ%20từ%20website%20DoctorHub"
-              class="topbar__mail"
-              >vaniizit.work@gmail.com</a
-            >
-            |
-            <strong class="ms-1 d-none d-md-flex"
-              >Hotline:
+      <div class="container">
+        <div class="topbar py-3 border-bottom bg-white">
+          <div
+            class="container d-flex justify-content-between align-items-center"
+          >
+            <div class="contact-info small text-muted d-flex">
+              <strong>Email:</strong>
               <a
-                href="tel:+84 252 032 375"
-                class="text-decoration-none cart__home--phone text-dark fw-bold"
-                >+84 252 032 375</a
+                href="mailto:vaniizit.work@gmail.com?subject=Yêu%20cầu%20được%20hỗ%20trợ%20từ%20website%20DoctorHub"
+                class="topbar__mail"
+                >vaniizit.work@gmail.com</a
               >
-            </strong>
-          </div>
-          <div class="user-actions d-flex align-items-center gap-3">
-            <!-- Nút đăng nhập Google -->
-            <div class="g-signin2" data-onsuccess="onSignIn"></div>
-
-            <!-- Các nút đăng nhập và đăng ký -->
-            <a
-              href="/pages/signUp.html"
-              class="topbar__home--login text-dark small d-none d-md-block"
-              >Đăng nhập</a
-            >
-            <a
-              href="/pages/signIn.html"
-              class="topbar__home--register text-dark small d-none d-md-block"
-              >Đăng ký</a
-            >
-
-            <!-- Phần avatar người dùng và đăng xuất (ẩn khi chưa đăng nhập) -->
-            <div id="user-profile" class="user-profile d-none">
-              <img
-                id="user-avatar"
-                src=""
-                alt="User Avatar"
-                class="rounded-circle"
-                width="40"
-                height="40"
-              />
-              <div class="dropdown">
-                <button
-                  class="btn btn-secondary dropdown-toggle"
-                  type="button"
-                  id="dropdownUser"
-                  data-bs-toggle="dropdown"
+              |
+              <strong class="ms-1 d-none d-md-flex"
+                >Hotline:
+                <a
+                  href="tel:+84 252 032 375"
+                  class="text-decoration-none cart__home--phone text-dark fw-bold"
+                  >+84 252 032 375</a
                 >
-                  <span id="user-name">User</span>
-                </button>
-                <ul class="dropdown-menu">
-                  <li>
-                    <a class="dropdown-item" href="#" id="logout-btn"
-                      >Đăng xuất</a
-                    >
-                  </li>
-                </ul>
+              </strong>
+            </div>
+            <div class="user-actions d-flex align-items-center gap-3">
+              <!-- Nút đăng nhập Google -->
+              <div class="g-signin2" data-onsuccess="onSignIn"></div>
+
+              <!-- Các nút đăng nhập và đăng ký -->
+              <a
+                href="/pages/signUp.html"
+                class="topbar__home--login text-dark small d-none d-md-block"
+                >Đăng nhập</a
+              >
+              <a
+                href="/pages/signIn.html"
+                class="topbar__home--register text-dark small d-none d-md-block"
+                >Đăng ký</a
+              >
+
+              <!-- Phần avatar người dùng và đăng xuất (ẩn khi chưa đăng nhập) -->
+              <div id="user-profile" class="user-profile d-none">
+                <img
+                  id="user-avatar"
+                  src=""
+                  alt="User Avatar"
+                  class="rounded-circle"
+                  width="40"
+                  height="40"
+                />
+                <div class="dropdown">
+                  <button
+                    class="btn btn-secondary dropdown-toggle"
+                    type="button"
+                    id="dropdownUser"
+                    data-bs-toggle="dropdown"
+                  >
+                    <span id="user-name">User</span>
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="#" id="logout-btn"
+                        >Đăng xuất</a
+                      >
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
         </div>
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <a
+            class="navbar-brand navbar__link d-flex align-items-center"
+            href="/index.html"
+          >
+            <img
+              src="/assets/images/Logo/DoctorHub.png"
+              alt="Logo"
+              width="30"
+              height="24"
+              class="d-inline-block align-text-top img-fluid navbar__logo"
+            />
+            DoctorHub
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse"
+            id="navbarNav"
+            style="justify-content: end"
+          >
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="/index.html">Trang Chủ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/pages/book.html">Đặt Lịch Khám</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/pages/consultation.html"
+                  >Tư Vấn Sức Khỏe</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/pages/services.html">Dịch Vụ Y Tế</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/pages/contact.html">Liên Hệ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/pages/blog.html">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/pages/shop.html">Shop</a>
+              </li>
+              <!-- Search Form -->
+              <form class="d-flex ms-md-3 ms-0" role="search">
+                <div class="me-2">
+                  <input
+                    class="form-control me-2 w-100"
+                    type="search"
+                    placeholder="Search"
+                    aria-label="Search"
+                  />
+                </div>
+                <button class="btn btn-outline-success" type="submit">
+                  Search
+                </button>
+              </form>
+            </ul>
+          </div>
+        </nav>
       </div>
     </header>
 
@@ -802,63 +875,1334 @@
       </div>
     </div>
 
-    <!-- ** -->
-    <section class="contact__section">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col">
-            <!-- Icon Message (Hiển thị mặc định) -->
-            <div class="contact__message">
-              <img
-                src="/assets/images/Logo/message.svg"
-                alt="Message"
-                width="60px"
-                height="60px"
-              />
-            </div>
+    <!-- *Show Doctor * -->
+    <section
+      class="featured-doctors py-5 border-bottom animate-on-scroll visible"
+    >
+      <div class="container">
+        <div class="col">
+          <div class="d-flex align-items-center justify-content-between mb-3">
+            <h3
+              class="mb-2 text-primary position-relative section-title-underline fw-bold text-capitalize text-center"
+            >
+              Bác sĩ nổi bật
+            </h3>
+            <a
+              href="/pages/doctors.html"
+              class="text-decoration-none btn rounded-pill px-4 fw-medium btn-more"
+              >Xem thêm</a
+            >
+          </div>
+        </div>
 
-            <!-- Box chứa các icon khác (ẩn mặc định) -->
-            <ul class="contact__box">
-              <li>
-                <a
-                  href="#"
-                  class="contact__link"
-                  data-bs-toggle="tooltip"
-                  data-bs-placement="right"
-                  data-bs-title="Liên hệ Instagram"
-                >
-                  <i class="fa-brands fa-instagram"></i>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="contact__link"
-                  data-bs-toggle="tooltip"
-                  data-bs-placement="right"
-                  data-bs-title="Liên hệ facebook"
-                >
-                  <i class="fa-brands fa-facebook"></i>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="contact__link"
-                  data-bs-toggle="tooltip"
-                  data-bs-placement="right"
-                  data-bs-title="Liên hệ Số điện thoại"
-                >
-                  <i class="fa-solid fa-phone"></i>
-                </a>
-              </li>
-            </ul>
+        <div class="col-md-12">
+          <div class="splide home-splide-cotor">
+            <div class="splide__track">
+              <ul class="splide__list">
+                <!-- *Bác sĩ 1* -->
+                <li class="splide__slide">
+                  <a
+                    href="/pages/book.html"
+                    class="doctor-card text-decoration-none text-center"
+                  >
+                    <div class="doctor-avatar">
+                      <img
+                        src="/assets/images/Doctors/032958-bac-si-da-lieu-hoang-hong-manh.jpg"
+                        alt="Bác sĩ Nguyễn Văn A"
+                        class="doctor-img"
+                      />
+                    </div>
+                    <div class="doctor-info">
+                      <h5 class="doctor-name">BS. Hoàng Hồng Mạnh</h5>
+                      <p class="doctor-department">Khoa da liễu</p>
+                      <span
+                        class="btn btn-outline-primary btn-sm rounded-2 text-white fw-bolder"
+                        >Xem chi tiết</span
+                      >
+                    </div>
+                  </a>
+                </li>
+
+                <!-- *Bác sĩ 2* -->
+                <li class="splide__slide">
+                  <a
+                    href="/pages/book.html"
+                    class="doctor-card text-decoration-none text-center"
+                  >
+                    <div class="doctor-avatar">
+                      <img
+                        src="/assets/images/Doctors/045850-bac-si-da-lieu-hoai-thu.jpg"
+                        alt="Bác sĩ Nguyễn Văn A"
+                        class="doctor-img"
+                      />
+                    </div>
+                    <div class="doctor-info">
+                      <h5 class="doctor-name">BS. Hoài Thu</h5>
+                      <p class="doctor-department">Khoa Nội tổng quát</p>
+                      <span
+                        class="btn btn-outline-primary btn-sm rounded-2 text-white fw-bolder"
+                        >Xem chi tiết</span
+                      >
+                    </div>
+                  </a>
+                </li>
+
+                <!-- *Bác sĩ 3* -->
+                <li class="splide__slide">
+                  <a
+                    href="/pages/book.html"
+                    class="doctor-card text-decoration-none text-center"
+                  >
+                    <div class="doctor-avatar">
+                      <img
+                        src="/assets/images/Doctors/avatar-Huynh-Quoc-Hieu.jpg"
+                        alt="Bác sĩ Nguyễn Văn A"
+                        class="doctor-img"
+                      />
+                    </div>
+                    <div class="doctor-info">
+                      <h5 class="doctor-name">BS. Huỳnh Quốc Hiêu</h5>
+                      <p class="doctor-department">Khoa Nội tổng quát</p>
+                      <span
+                        class="btn btn-outline-primary btn-sm rounded-2 text-white fw-bolder"
+                        >Xem chi tiết</span
+                      >
+                    </div>
+                  </a>
+                </li>
+
+                <!-- *Bác sĩ 4* -->
+                <li class="splide__slide">
+                  <a
+                    href="/pages/book.html"
+                    class="doctor-card text-decoration-none text-center"
+                  >
+                    <div class="doctor-avatar">
+                      <img
+                        src="/assets/images/Doctors/avatar-TS.BS_.Chu-Trong-Hiep.webp"
+                        alt="Bác sĩ Nguyễn Văn A"
+                        class="doctor-img"
+                      />
+                    </div>
+                    <div class="doctor-info">
+                      <h5 class="doctor-name">BS. Chu Trọng Hiệp</h5>
+                      <p class="doctor-department">Khoa Nội tổng quát</p>
+                      <span
+                        class="btn btn-outline-primary btn-sm rounded-2 text-white fw-bolder"
+                        >Xem chi tiết</span
+                      >
+                    </div>
+                  </a>
+                </li>
+
+                <!-- *Bác sĩ 5* -->
+                <li class="splide__slide">
+                  <a
+                    href="/pages/book.html"
+                    class="doctor-card text-decoration-none text-center"
+                  >
+                    <div class="doctor-avatar">
+                      <img
+                        src="/assets/images/Doctors/1536566238-bacsy.jpg"
+                        alt="Bác sĩ Nguyễn Văn A"
+                        class="doctor-img"
+                      />
+                    </div>
+                    <div class="doctor-info">
+                      <h5 class="doctor-name">BS. Lê Hoài Thương</h5>
+                      <p class="doctor-department">Khoa Nội tổng quát</p>
+                      <span
+                        class="btn btn-outline-primary btn-sm rounded-2 text-white fw-bolder"
+                        >Xem chi tiết</span
+                      >
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Button trigger modal (Hidden by default) -->
+    <!-- *Show Consultation* -->
+    <section
+      class="health-consult-section py-5 border-bottom animate-on-scroll visible"
+    >
+      <div class="container">
+        <div class="col">
+          <div class="d-flex align-items-center justify-content-between mb-4">
+            <h3
+              class="mb-2 text-primary position-relative section-title-underline animate-on-scroll fw-bold visible text-capitalize text-center"
+            >
+              Tư vấn sức khỏe
+            </h3>
+            <a
+              href="/pages/consultation.html"
+              class="text-decoration-none btn rounded-pill px-4 fw-medium btn-more"
+              >Xem thêm</a
+            >
+          </div>
+        </div>
+
+        <div class="col-md-12">
+          <div class="splide health-slider">
+            <div class="splide__track">
+              <ul class="splide__list">
+                <!-- *Làm bài test* -->
+                <li class="splide__slide">
+                  <a
+                    href="/pages/test.html"
+                    class="health-card text-decoration-none"
+                  >
+                    <div class="health-img-wrapper">
+                      <img
+                        src="/assets/images/Banner/baitest.jpg"
+                        alt="Làm bài test"
+                        class="health-img"
+                      />
+                    </div>
+                    <div class="health-info text-center">
+                      <h5 class="health-title">Làm bài test</h5>
+                      <p class="health-desc">
+                        Đánh giá nhanh tình trạng sức khỏe
+                      </p>
+                    </div>
+                  </a>
+                </li>
+
+                <!-- *Hỏi đáp miễn phí* -->
+                <li class="splide__slide">
+                  <a
+                    href="/pages/faq.html"
+                    class="health-card text-decoration-none"
+                  >
+                    <div class="health-img-wrapper">
+                      <img
+                        src="/assets/images/Banner/BS-tu-van-truc-tuyen-scaled.webp"
+                        alt="Cẩm nang sức khỏe"
+                        class="health-img"
+                      />
+                    </div>
+                    <div class="health-info text-center">
+                      <h5 class="health-title">Hỏi đáp miễn phí</h5>
+                      <p class="health-desc">
+                        Đặt câu hỏi & được bác sĩ giải đáp
+                      </p>
+                    </div>
+                  </a>
+                </li>
+
+                <!-- *Sức khỏe tinh thần* -->
+                <li class="splide__slide">
+                  <a
+                    href="/pages/mental-health.html"
+                    class="health-card text-decoration-none"
+                  >
+                    <div class="health-img-wrapper">
+                      <img
+                        src="/assets/images/Banner/A-120-1024x683.jpg"
+                        alt="Sức khỏe tinh thần"
+                        class="health-img w-100 img-fluid"
+                      />
+                    </div>
+                    <div class="health-info text-center">
+                      <h5 class="health-title">Sức khỏe tinh thần</h5>
+                      <p class="health-desc">
+                        Chăm sóc tâm lý, vượt qua căng thẳng
+                      </p>
+                    </div>
+                  </a>
+                </li>
+
+                <!-- *Cẩm nang sức khỏe* -->
+                <li class="splide__slide">
+                  <a
+                    href="/pages/handbook.html"
+                    class="health-card text-decoration-none"
+                  >
+                    <div class="health-img-wrapper">
+                      <img
+                        src="/assets/images/Banner/15286388737940828273262951986749102473157648n-1-16226320314851228811282-crop-1622632145661774901212.webp"
+                        alt="Hỏi đáp miễn phí"
+                        class="health-img"
+                      />
+                    </div>
+                    <div class="health-info text-center">
+                      <h5 class="health-title">Cẩm nang sức khỏe</h5>
+                      <p class="health-desc">
+                        Kiến thức y tế, lời khuyên bác sĩ
+                      </p>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- *Shop Deal Online * -->
+    <section class="shop-deals py-5 border-bottom animate-on-scroll visible">
+      <div class="container">
+        <div class="col">
+          <div class="d-flex align-items-center justify-content-between mb-3">
+            <h3
+              class="mb-2 text-primary position-relative section-title-underline animate-on-scroll fw-bold visible text-capitalize text-center"
+            >
+              Thực phẩm bổ sung
+            </h3>
+            <a
+              href="/pages/shop.html"
+              class="text-decoration-none btn rounded-pill px-4 fw-medium btn-more"
+              >Xem thêm</a
+            >
+          </div>
+        </div>
+
+        <div class="col-md-12">
+          <div class="row">
+            <div class="splide home-splide-deals">
+              <div class="splide__track">
+                <ul class="splide__list">
+                  <!-- *Item 01* -->
+                  <li class="splide__slide">
+                    <div class="card overflow-hidden">
+                      <div class="card-img position-relative card__img">
+                        <img
+                          data-src="/assets/images/Shop/Medical/medical11.avif"
+                          alt=""
+                          class="img-fluid lazyload w-100"
+                        />
+                        <div class="card__wrap">
+                          <div class="card__wrap--icon">
+                            <i class="ri-heart-line"></i>
+                          </div>
+                          <div class="card__wrap--icon">
+                            <i class="ri-shopping-cart-line"></i>
+                          </div>
+                          <div class="card__wrap--icon">
+                            <i class="ri-eye-line"></i>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card-body">
+                        <span
+                          class="badge bg-danger position-absolute badge-discount"
+                          >Giảm 20%</span
+                        >
+                        <h5 class="card-title text-truncate--ellipse">
+                          Sữa dưỡng thể ban đêm Vaseline Dewy Radiance (Túyp
+                          330ml)
+                        </h5>
+                        <p class="card-price d-flex flex-column">
+                          <span
+                            class="card-price--old text-decoration-line-through opacity-50 text-primary"
+                            >150.000đ</span
+                          >
+                          <span class="card-price--new fw-semibold text-primary"
+                            >120.000đ</span
+                          >
+                        </p>
+                        <div
+                          class="progress mb-2"
+                          role="progressbar"
+                          aria-label="Example with label"
+                          aria-valuenow="25"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                        >
+                          <div
+                            class="progress-bar bg-danger fw-bolder"
+                            style="width: 95%"
+                          >
+                            Đang bán chạy
+                          </div>
+                        </div>
+
+                        <a
+                          class="d-flex justify-content-center align-items-center text-decoration-none w-100 btn-shop"
+                          href="/pages/detailMedicines.html?id="
+                        >
+                          <div class="default-btn btn">
+                            <svg
+                              class="css-i6dzq1"
+                              stroke-linejoin="round"
+                              stroke-linecap="round"
+                              fill="none"
+                              stroke-width="2"
+                              stroke="#FFF"
+                              height="20"
+                              width="20"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"
+                              ></path>
+                              <circle r="3" cy="12" cx="12"></circle>
+                            </svg>
+                            <span>Quick View</span>
+                          </div>
+                          <div class="hover-btn btn">
+                            <svg
+                              class="css-i6dzq1"
+                              stroke-linejoin="round"
+                              stroke-linecap="round"
+                              fill="none"
+                              stroke-width="2"
+                              stroke="#ffd300"
+                              height="20"
+                              width="20"
+                              viewBox="0 0 24 24"
+                            >
+                              <circle r="1" cy="21" cx="9"></circle>
+                              <circle r="1" cy="21" cx="20"></circle>
+                              <path
+                                d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"
+                              ></path>
+                            </svg>
+                            <span>Shop Now</span>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </li>
+
+                  <!-- *Item 02* -->
+                  <li class="splide__slide">
+                    <div class="card overflow-hidden">
+                      <div class="card-img position-relative card__img">
+                        <img
+                          data-src="/assets/images/Shop/Medical/medical12.avif"
+                          alt=""
+                          class="img-fluid lazyload w-100"
+                        />
+                        <div class="card__wrap">
+                          <div class="card__wrap--icon">
+                            <i class="ri-heart-line"></i>
+                          </div>
+                          <div class="card__wrap--icon">
+                            <i class="ri-shopping-cart-line"></i>
+                          </div>
+                          <div class="card__wrap--icon">
+                            <i class="ri-eye-line"></i>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card-body">
+                        <span
+                          class="badge bg-danger position-absolute badge-discount"
+                          >Giảm 15%</span
+                        >
+                        <h5 class="card-title text-truncate--ellipse">
+                          Viên uống Blackmores Multivitamin For Men tăng cường
+                          sinh lý nam (Lọ 50 viên)
+                        </h5>
+                        <p class="card-price d-flex flex-column">
+                          <span
+                            class="card-price--old text-decoration-line-through opacity-50 text-primary"
+                            >561.000đ</span
+                          >
+                          <span class="card-price--new fw-semibold text-primary"
+                            >476.850đ</span
+                          >
+                        </p>
+                        <div
+                          class="progress mb-2"
+                          role="progressbar"
+                          aria-label="Example with label"
+                          aria-valuenow="25"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                        >
+                          <div
+                            class="progress-bar bg-danger fw-bolder"
+                            style="width: 95%"
+                          >
+                            Đang bán chạy
+                          </div>
+                        </div>
+
+                        <a
+                          class="d-flex justify-content-center align-items-center text-decoration-none w-100 btn-shop"
+                          href="/pages/detailMedicines.html?id="
+                        >
+                          <div class="default-btn btn">
+                            <svg
+                              class="css-i6dzq1"
+                              stroke-linejoin="round"
+                              stroke-linecap="round"
+                              fill="none"
+                              stroke-width="2"
+                              stroke="#FFF"
+                              height="20"
+                              width="20"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"
+                              ></path>
+                              <circle r="3" cy="12" cx="12"></circle>
+                            </svg>
+                            <span>Quick View</span>
+                          </div>
+                          <div class="hover-btn btn">
+                            <svg
+                              class="css-i6dzq1"
+                              stroke-linejoin="round"
+                              stroke-linecap="round"
+                              fill="none"
+                              stroke-width="2"
+                              stroke="#ffd300"
+                              height="20"
+                              width="20"
+                              viewBox="0 0 24 24"
+                            >
+                              <circle r="1" cy="21" cx="9"></circle>
+                              <circle r="1" cy="21" cx="20"></circle>
+                              <path
+                                d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"
+                              ></path>
+                            </svg>
+                            <span>Shop Now</span>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </li>
+
+                  <!-- *Item 03* -->
+                  <li class="splide__slide">
+                    <div class="card overflow-hidden">
+                      <div class="card-img position-relative card__img">
+                        <img
+                          data-src="/assets/images/Shop/Medical/medical14.avif"
+                          alt=""
+                          class="img-fluid lazyload w-100"
+                        />
+                        <div class="card__wrap">
+                          <div class="card__wrap--icon">
+                            <i class="ri-heart-line"></i>
+                          </div>
+                          <div class="card__wrap--icon">
+                            <i class="ri-shopping-cart-line"></i>
+                          </div>
+                          <div class="card__wrap--icon">
+                            <i class="ri-eye-line"></i>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card-body">
+                        <span
+                          class="badge bg-danger position-absolute badge-discount"
+                          >Giảm 25%</span
+                        >
+                        <h5 class="card-title text-truncate--ellipse">
+                          Nước uống collagen Nucos Super White hỗ trợ làm sáng
+                          da và chống lão hóa (10 chai)
+                        </h5>
+                        <p class="card-price d-flex flex-column">
+                          <span
+                            class="card-price--old text-decoration-line-through opacity-50 text-primary"
+                            >1.350.000đ</span
+                          >
+                          <span class="card-price--new fw-semibold text-primary"
+                            >1.012.500đ</span
+                          >
+                        </p>
+                        <div
+                          class="progress mb-2"
+                          role="progressbar"
+                          aria-label="Example with label"
+                          aria-valuenow="25"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                        >
+                          <div
+                            class="progress-bar bg-danger fw-bolder"
+                            style="width: 95%"
+                          >
+                            Đang bán chạy
+                          </div>
+                        </div>
+
+                        <a
+                          class="d-flex justify-content-center align-items-center text-decoration-none w-100 btn-shop"
+                          href="/pages/detailMedicines.html?id="
+                        >
+                          <div class="default-btn btn">
+                            <svg
+                              class="css-i6dzq1"
+                              stroke-linejoin="round"
+                              stroke-linecap="round"
+                              fill="none"
+                              stroke-width="2"
+                              stroke="#FFF"
+                              height="20"
+                              width="20"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"
+                              ></path>
+                              <circle r="3" cy="12" cx="12"></circle>
+                            </svg>
+                            <span>Quick View</span>
+                          </div>
+                          <div class="hover-btn btn">
+                            <svg
+                              class="css-i6dzq1"
+                              stroke-linejoin="round"
+                              stroke-linecap="round"
+                              fill="none"
+                              stroke-width="2"
+                              stroke="#ffd300"
+                              height="20"
+                              width="20"
+                              viewBox="0 0 24 24"
+                            >
+                              <circle r="1" cy="21" cx="9"></circle>
+                              <circle r="1" cy="21" cx="20"></circle>
+                              <path
+                                d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"
+                              ></path>
+                            </svg>
+                            <span>Shop Now</span>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </li>
+
+                  <!-- *Item 04* -->
+                  <li class="splide__slide">
+                    <div class="card overflow-hidden">
+                      <div class="card-img position-relative card__img">
+                        <img
+                          data-src="/assets/images/Shop/Medical/medical15.avif"
+                          alt=""
+                          class="img-fluid lazyload w-100"
+                        />
+                        <div class="card__wrap">
+                          <div class="card__wrap--icon">
+                            <i class="ri-heart-line"></i>
+                          </div>
+                          <div class="card__wrap--icon">
+                            <i class="ri-shopping-cart-line"></i>
+                          </div>
+                          <div class="card__wrap--icon">
+                            <i class="ri-eye-line"></i>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card-body">
+                        <span
+                          class="badge bg-danger position-absolute badge-discount"
+                          >Giảm 10%</span
+                        >
+                        <h5 class="card-title text-truncate--ellipse">
+                          Khẩu trang y tế màu đen 3 lớp Pharmacity bảo vệ khỏi
+                          vi khuẩn, khói và bụi mịn (Hộp 50 cái)
+                        </h5>
+                        <p class="card-price d-flex flex-column">
+                          <span
+                            class="card-price--old text-decoration-line-through opacity-50 text-primary"
+                            >135.000đ</span
+                          >
+                          <span class="card-price--new fw-semibold text-primary"
+                            >60.000đ</span
+                          >
+                        </p>
+                        <div
+                          class="progress mb-2"
+                          role="progressbar"
+                          aria-label="Example with label"
+                          aria-valuenow="25"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                        >
+                          <div
+                            class="progress-bar bg-danger fw-bolder"
+                            style="width: 95%"
+                          >
+                            Đang bán chạy
+                          </div>
+                        </div>
+
+                        <a
+                          class="d-flex justify-content-center align-items-center text-decoration-none w-100 btn-shop"
+                          href="/pages/detailMedicines.html?id="
+                        >
+                          <div class="default-btn btn">
+                            <svg
+                              class="css-i6dzq1"
+                              stroke-linejoin="round"
+                              stroke-linecap="round"
+                              fill="none"
+                              stroke-width="2"
+                              stroke="#FFF"
+                              height="20"
+                              width="20"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"
+                              ></path>
+                              <circle r="3" cy="12" cx="12"></circle>
+                            </svg>
+                            <span>Quick View</span>
+                          </div>
+                          <div class="hover-btn btn">
+                            <svg
+                              class="css-i6dzq1"
+                              stroke-linejoin="round"
+                              stroke-linecap="round"
+                              fill="none"
+                              stroke-width="2"
+                              stroke="#ffd300"
+                              height="20"
+                              width="20"
+                              viewBox="0 0 24 24"
+                            >
+                              <circle r="1" cy="21" cx="9"></circle>
+                              <circle r="1" cy="21" cx="20"></circle>
+                              <path
+                                d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"
+                              ></path>
+                            </svg>
+                            <span>Shop Now</span>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </li>
+
+                  <!-- *Item 05* -->
+                  <li class="splide__slide">
+                    <div class="card overflow-hidden">
+                      <div class="card-img position-relative card__img">
+                        <img
+                          data-src="/assets/images/Shop/Medical/medical16.avif"
+                          alt=""
+                          class="img-fluid lazyload w-100"
+                        />
+                        <div class="card__wrap">
+                          <div class="card__wrap--icon">
+                            <i class="ri-heart-line"></i>
+                          </div>
+                          <div class="card__wrap--icon">
+                            <i class="ri-shopping-cart-line"></i>
+                          </div>
+                          <div class="card__wrap--icon">
+                            <i class="ri-eye-line"></i>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card-body">
+                        <span
+                          class="badge bg-danger position-absolute badge-discount"
+                          >Giảm 20%</span
+                        >
+                        <h5 class="card-title text-truncate--ellipse">
+                          Dung dịch nhỏ mắt VROHTO Dryeye bôi trơn mắt và bổ
+                          sung nước mắt nhân tạo (Chai 13ml)
+                        </h5>
+                        <p class="card-price d-flex flex-column">
+                          <span
+                            class="card-price--old text-decoration-line-through opacity-50 text-primary"
+                            >62.000đ</span
+                          >
+                          <span class="card-price--new fw-semibold text-primary"
+                            >49.600đ</span
+                          >
+                        </p>
+                        <div
+                          class="progress mb-2"
+                          role="progressbar"
+                          aria-label="Example with label"
+                          aria-valuenow="25"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                        >
+                          <div
+                            class="progress-bar bg-danger fw-bolder"
+                            style="width: 95%"
+                          >
+                            Đang bán chạy
+                          </div>
+                        </div>
+                        <a
+                          class="d-flex justify-content-center align-items-center text-decoration-none w-100 btn-shop"
+                          href="/pages/detailMedicines.html?id="
+                        >
+                          <div class="default-btn btn">
+                            <svg
+                              class="css-i6dzq1"
+                              stroke-linejoin="round"
+                              stroke-linecap="round"
+                              fill="none"
+                              stroke-width="2"
+                              stroke="#FFF"
+                              height="20"
+                              width="20"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"
+                              ></path>
+                              <circle r="3" cy="12" cx="12"></circle>
+                            </svg>
+                            <span>Quick View</span>
+                          </div>
+                          <div class="hover-btn btn">
+                            <svg
+                              class="css-i6dzq1"
+                              stroke-linejoin="round"
+                              stroke-linecap="round"
+                              fill="none"
+                              stroke-width="2"
+                              stroke="#ffd300"
+                              height="20"
+                              width="20"
+                              viewBox="0 0 24 24"
+                            >
+                              <circle r="1" cy="21" cx="9"></circle>
+                              <circle r="1" cy="21" cx="20"></circle>
+                              <path
+                                d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"
+                              ></path>
+                            </svg>
+                            <span>Shop Now</span>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </li>
+
+                  <!-- *Item 06* -->
+                  <li class="splide__slide">
+                    <div class="card overflow-hidden">
+                      <div class="card-img position-relative card__img">
+                        <img
+                          data-src="/assets/images/Shop/Medical/medical18.avif"
+                          alt=""
+                          class="img-fluid lazyload w-100"
+                        />
+                        <div class="card__wrap">
+                          <div class="card__wrap--icon">
+                            <i class="ri-heart-line"></i>
+                          </div>
+                          <div class="card__wrap--icon">
+                            <i class="ri-shopping-cart-line"></i>
+                          </div>
+                          <div class="card__wrap--icon">
+                            <i class="ri-eye-line"></i>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card-body">
+                        <span
+                          class="badge bg-danger position-absolute badge-discount"
+                          >Giảm 30%</span
+                        >
+                        <h5 class="card-title text-truncate--ellipse">
+                          Tinh dầu hoa anh thảo SWISSE Ultiboost Evening
+                          Primrose Oil (Hộp 200 viên)
+                        </h5>
+                        <p class="card-price d-flex flex-column">
+                          <span
+                            class="card-price--old text-decoration-line-through opacity-50 text-primary"
+                            >1.599.000đ</span
+                          >
+                          <span class="card-price--new fw-semibold text-primary"
+                            >1.119.300đ</span
+                          >
+                        </p>
+                        <div
+                          class="progress mb-2"
+                          role="progressbar"
+                          aria-label="Example with label"
+                          aria-valuenow="25"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                        >
+                          <div
+                            class="progress-bar bg-danger fw-bolder"
+                            style="width: 95%"
+                          >
+                            Đang bán chạy
+                          </div>
+                        </div>
+
+                        <a
+                          class="d-flex justify-content-center align-items-center text-decoration-none w-100 btn-shop"
+                          href="/pages/detailMedicines.html?id="
+                        >
+                          <div class="default-btn btn">
+                            <svg
+                              class="css-i6dzq1"
+                              stroke-linejoin="round"
+                              stroke-linecap="round"
+                              fill="none"
+                              stroke-width="2"
+                              stroke="#FFF"
+                              height="20"
+                              width="20"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"
+                              ></path>
+                              <circle r="3" cy="12" cx="12"></circle>
+                            </svg>
+                            <span>Quick View</span>
+                          </div>
+                          <div class="hover-btn btn">
+                            <svg
+                              class="css-i6dzq1"
+                              stroke-linejoin="round"
+                              stroke-linecap="round"
+                              fill="none"
+                              stroke-width="2"
+                              stroke="#ffd300"
+                              height="20"
+                              width="20"
+                              viewBox="0 0 24 24"
+                            >
+                              <circle r="1" cy="21" cx="9"></circle>
+                              <circle r="1" cy="21" cx="20"></circle>
+                              <path
+                                d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"
+                              ></path>
+                            </svg>
+                            <span>Shop Now</span>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </li>
+
+                  <!-- *Item 07* -->
+                  <li class="splide__slide">
+                    <div class="card overflow-hidden">
+                      <div class="card-img position-relative card__img">
+                        <img
+                          data-src="/assets/images/Shop/Medical/medical07.avif"
+                          alt=""
+                          class="img-fluid lazyload w-100"
+                        />
+                        <div class="card__wrap">
+                          <div class="card__wrap--icon">
+                            <i class="ri-heart-line"></i>
+                          </div>
+                          <div class="card__wrap--icon">
+                            <i class="ri-shopping-cart-line"></i>
+                          </div>
+                          <div class="card__wrap--icon">
+                            <i class="ri-eye-line"></i>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card-body">
+                        <span
+                          class="badge bg-danger position-absolute badge-discount"
+                          >Giảm 30%</span
+                        >
+                        <h5 class="card-title text-truncate--ellipse">
+                          Nước Uống Hồng Sâm Đông Trùng Hạ Thảo Hàn Quốc -
+                          Welson Cordyceps Gold (Hộp 10 chai)
+                        </h5>
+                        <p class="card-price d-flex flex-column">
+                          <span
+                            class="card-price--old text-decoration-line-through opacity-50 text-primary"
+                            >780.000đ</span
+                          >
+                          <span class="card-price--new fw-semibold text-primary"
+                            >395.000đ</span
+                          >
+                        </p>
+                        <div
+                          class="progress mb-2"
+                          role="progressbar"
+                          aria-label="Example with label"
+                          aria-valuenow="25"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                        >
+                          <div
+                            class="progress-bar bg-danger fw-bolder"
+                            style="width: 95%"
+                          >
+                            Đang bán chạy
+                          </div>
+                        </div>
+
+                        <a
+                          class="d-flex justify-content-center align-items-center text-decoration-none w-100 btn-shop"
+                          href="/pages/detailMedicines.html?id="
+                        >
+                          <div class="default-btn btn">
+                            <svg
+                              class="css-i6dzq1"
+                              stroke-linejoin="round"
+                              stroke-linecap="round"
+                              fill="none"
+                              stroke-width="2"
+                              stroke="#FFF"
+                              height="20"
+                              width="20"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"
+                              ></path>
+                              <circle r="3" cy="12" cx="12"></circle>
+                            </svg>
+                            <span>Quick View</span>
+                          </div>
+                          <div class="hover-btn btn">
+                            <svg
+                              class="css-i6dzq1"
+                              stroke-linejoin="round"
+                              stroke-linecap="round"
+                              fill="none"
+                              stroke-width="2"
+                              stroke="#ffd300"
+                              height="20"
+                              width="20"
+                              viewBox="0 0 24 24"
+                            >
+                              <circle r="1" cy="21" cx="9"></circle>
+                              <circle r="1" cy="21" cx="20"></circle>
+                              <path
+                                d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"
+                              ></path>
+                            </svg>
+                            <span>Shop Now</span>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </li>
+
+                  <!-- *Item 08* -->
+                  <li class="splide__slide">
+                    <div class="card overflow-hidden">
+                      <div class="card-img position-relative card__img">
+                        <img
+                          data-src="/assets/images/Shop/Medical/medical08.avif"
+                          alt=""
+                          class="img-fluid lazyload w-100"
+                        />
+                        <div class="card__wrap">
+                          <div class="card__wrap--icon">
+                            <i class="ri-heart-line"></i>
+                          </div>
+                          <div class="card__wrap--icon">
+                            <i class="ri-shopping-cart-line"></i>
+                          </div>
+                          <div class="card__wrap--icon">
+                            <i class="ri-eye-line"></i>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card-body">
+                        <span
+                          class="badge bg-danger position-absolute badge-discount"
+                          >Giảm 30%</span
+                        >
+                        <h5 class="card-title text-truncate--ellipse">
+                          Viên uống VITABIOTICS Visionace Original hỗ trợ cải
+                          thiện thị lực (Hộp 2 vỉ x 15 viên)
+                        </h5>
+                        <p class="card-price d-flex flex-column">
+                          <span
+                            class="card-price--old text-decoration-line-through opacity-50 text-primary"
+                            >780.000đ</span
+                          >
+                          <span class="card-price--new fw-semibold text-primary"
+                            >423.000đ</span
+                          >
+                        </p>
+                        <div
+                          class="progress mb-2"
+                          role="progressbar"
+                          aria-label="Example with label"
+                          aria-valuenow="25"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                        >
+                          <div
+                            class="progress-bar bg-danger fw-bolder"
+                            style="width: 95%"
+                          >
+                            Đang bán chạy
+                          </div>
+                        </div>
+
+                        <a
+                          class="d-flex justify-content-center align-items-center text-decoration-none w-100 btn-shop"
+                          href="/pages/detailMedicines.html?id="
+                        >
+                          <div class="default-btn btn">
+                            <svg
+                              class="css-i6dzq1"
+                              stroke-linejoin="round"
+                              stroke-linecap="round"
+                              fill="none"
+                              stroke-width="2"
+                              stroke="#FFF"
+                              height="20"
+                              width="20"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"
+                              ></path>
+                              <circle r="3" cy="12" cx="12"></circle>
+                            </svg>
+                            <span>Quick View</span>
+                          </div>
+                          <div class="hover-btn btn">
+                            <svg
+                              class="css-i6dzq1"
+                              stroke-linejoin="round"
+                              stroke-linecap="round"
+                              fill="none"
+                              stroke-width="2"
+                              stroke="#ffd300"
+                              height="20"
+                              width="20"
+                              viewBox="0 0 24 24"
+                            >
+                              <circle r="1" cy="21" cx="9"></circle>
+                              <circle r="1" cy="21" cx="20"></circle>
+                              <path
+                                d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"
+                              ></path>
+                            </svg>
+                            <span>Shop Now</span>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </li>
+
+                  <!-- *Item 09* -->
+                  <li class="splide__slide">
+                    <div class="card overflow-hidden">
+                      <div class="card-img position-relative card__img">
+                        <img
+                          data-src="/assets/images/Shop/Medical/medical09.avif"
+                          alt=""
+                          class="img-fluid lazyload w-100"
+                        />
+                        <div class="card__wrap">
+                          <div class="card__wrap--icon">
+                            <i class="ri-heart-line"></i>
+                          </div>
+                          <div class="card__wrap--icon">
+                            <i class="ri-shopping-cart-line"></i>
+                          </div>
+                          <div class="card__wrap--icon">
+                            <i class="ri-eye-line"></i>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card-body">
+                        <span
+                          class="badge bg-danger position-absolute badge-discount"
+                          >Giảm 30%</span
+                        >
+                        <h5 class="card-title text-truncate--ellipse">
+                          Viên uống Healthy Life Celery hỗ trợ điều trị gout
+                          (Hộp 60 viên)
+                        </h5>
+                        <p class="card-price d-flex flex-column">
+                          <span
+                            class="card-price--old text-decoration-line-through opacity-50 text-primary"
+                            >625.000đ</span
+                          >
+                          <span class="card-price--new fw-semibold text-primary"
+                            >437.000đ</span
+                          >
+                        </p>
+                        <div
+                          class="progress mb-2"
+                          role="progressbar"
+                          aria-label="Example with label"
+                          aria-valuenow="25"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                        >
+                          <div
+                            class="progress-bar bg-danger fw-bolder"
+                            style="width: 95%"
+                          >
+                            Đang bán chạy
+                          </div>
+                        </div>
+
+                        <a
+                          class="d-flex justify-content-center align-items-center text-decoration-none w-100 btn-shop"
+                          href="/pages/detailMedicines.html?id="
+                        >
+                          <div class="default-btn btn">
+                            <svg
+                              class="css-i6dzq1"
+                              stroke-linejoin="round"
+                              stroke-linecap="round"
+                              fill="none"
+                              stroke-width="2"
+                              stroke="#FFF"
+                              height="20"
+                              width="20"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"
+                              ></path>
+                              <circle r="3" cy="12" cx="12"></circle>
+                            </svg>
+                            <span>Quick View</span>
+                          </div>
+                          <div class="hover-btn btn">
+                            <svg
+                              class="css-i6dzq1"
+                              stroke-linejoin="round"
+                              stroke-linecap="round"
+                              fill="none"
+                              stroke-width="2"
+                              stroke="#ffd300"
+                              height="20"
+                              width="20"
+                              viewBox="0 0 24 24"
+                            >
+                              <circle r="1" cy="21" cx="9"></circle>
+                              <circle r="1" cy="21" cx="20"></circle>
+                              <path
+                                d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"
+                              ></path>
+                            </svg>
+                            <span>Shop Now</span>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </li>
+
+                  <!-- *Item 10* -->
+                  <li class="splide__slide">
+                    <div class="card overflow-hidden">
+                      <div class="card-img position-relative card__img">
+                        <img
+                          data-src="/assets/images/Shop/Medical/medical10.avif"
+                          alt=""
+                          class="img-fluid lazyload w-100"
+                        />
+                        <div class="card__wrap">
+                          <div class="card__wrap--icon">
+                            <i class="ri-heart-line"></i>
+                          </div>
+                          <div class="card__wrap--icon">
+                            <i class="ri-shopping-cart-line"></i>
+                          </div>
+                          <div class="card__wrap--icon">
+                            <i class="ri-eye-line"></i>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card-body">
+                        <span
+                          class="badge bg-danger position-absolute badge-discount"
+                          >Giảm 30%</span
+                        >
+                        <h5 class="card-title text-truncate--ellipse">
+                          Viên đông trùng hạ thảo Wellness Nutrition tăng cường
+                          sức khỏe (Hộp 90 viên)
+                        </h5>
+                        <p class="card-price d-flex flex-column">
+                          <span
+                            class="card-price--old text-decoration-line-through opacity-50 text-primary"
+                            >1480.000đ</span
+                          >
+                          <span class="card-price--new fw-semibold text-primary"
+                            >785.000đ</span
+                          >
+                        </p>
+                        <div
+                          class="progress mb-2"
+                          role="progressbar"
+                          aria-label="Example with label"
+                          aria-valuenow="25"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                        >
+                          <div
+                            class="progress-bar bg-danger fw-bolder"
+                            style="width: 95%"
+                          >
+                            Đang bán chạy
+                          </div>
+                        </div>
+
+                        <a
+                          class="d-flex justify-content-center align-items-center text-decoration-none w-100 btn-shop"
+                          href="/pages/detailMedicines.html?id="
+                        >
+                          <div class="default-btn btn">
+                            <svg
+                              class="css-i6dzq1"
+                              stroke-linejoin="round"
+                              stroke-linecap="round"
+                              fill="none"
+                              stroke-width="2"
+                              stroke="#FFF"
+                              height="20"
+                              width="20"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"
+                              ></path>
+                              <circle r="3" cy="12" cx="12"></circle>
+                            </svg>
+                            <span>Quick View</span>
+                          </div>
+                          <div class="hover-btn btn">
+                            <svg
+                              class="css-i6dzq1"
+                              stroke-linejoin="round"
+                              stroke-linecap="round"
+                              fill="none"
+                              stroke-width="2"
+                              stroke="#ffd300"
+                              height="20"
+                              width="20"
+                              viewBox="0 0 24 24"
+                            >
+                              <circle r="1" cy="21" cx="9"></circle>
+                              <circle r="1" cy="21" cx="20"></circle>
+                              <path
+                                d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"
+                              ></path>
+                            </svg>
+                            <span>Shop Now</span>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- *Button trigger modal (Hidden by default)* -->
     <button
       type="button"
       class="btn btn-primary"
@@ -869,7 +2213,7 @@
       Mở Modal
     </button>
 
-    <!-- Modal -->
+    <!--* Modal* -->
     <div
       class="modal fade"
       id="doctorHubModal"
@@ -920,6 +2264,160 @@
         </div>
       </div>
     </div>
+
+    <!-- *Cẩm nang Sức khỏe* -->
+    <section class="health-guide-section py-5 border-bottom">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+          <h3
+            class="mb-2 text-primary position-relative section-title-underline fw-bold text-capitalize text-center"
+          >
+            Cẩm nang
+          </h3>
+          <a
+            href="/pages/handbook.html"
+            class="btn rounded-pill px-4 fw-medium btn-more"
+            >Xem thêm</a
+          >
+        </div>
+
+        <div class="splide health-guide-slider">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <!-- *Item 1* -->
+              <li class="splide__slide">
+                <a href="#" class="guide-card text-decoration-none">
+                  <div class="guide-thumb">
+                    <img
+                      data-src="/assets/images/Banner/camnang5.png"
+                      alt="Guide 1"
+                      class="lazyload"
+                    />
+                    <div class="guide-overlay">
+                      <span>News</span>
+                    </div>
+                  </div>
+                  <div class="guide-title">
+                    Chọn bệnh viện thẩm mỹ nào thì uy tín?
+                  </div>
+                </a>
+              </li>
+
+              <!-- *Item 2* -->
+              <li class="splide__slide">
+                <a
+                  href="https://www.vinmec.com/vie/bai-viet/nhung-dieu-phu-nu-sau-sinh-mo-can-biet-vi"
+                  class="guide-card text-decoration-none"
+                >
+                  <div class="guide-thumb">
+                    <img
+                      data-src="/assets/images/Banner/camnang1.png"
+                      alt="Guide 1"
+                      class="lazyload"
+                    />
+                    <div class="guide-overlay">
+                      <span>News</span>
+                    </div>
+                  </div>
+                  <div class="guide-title">
+                    Những điều phụ nữ sau sinh mổ cần biết
+                  </div>
+                </a>
+              </li>
+
+              <!-- *Item 3* -->
+              <li class="splide__slide">
+                <a
+                  href="https://tamanhhospital.vn/suy-giam-tri-nho/"
+                  class="guide-card text-decoration-none"
+                >
+                  <div class="guide-thumb">
+                    <img
+                      data-src="/assets/images/Banner/camnang3.png"
+                      alt="Guide 1"
+                      class="lazyload"
+                    />
+                    <div class="guide-overlay">
+                      <span>News</span>
+                    </div>
+                  </div>
+                  <div class="guide-title">
+                    Suy giảm trí nhớ: Dấu hiệu, nguyên nhân, chẩn đoán và phòng
+                    ngừa
+                  </div>
+                </a>
+              </li>
+
+              <!-- *Item 4* -->
+              <li class="splide__slide">
+                <a
+                  href="https://benhvienthucuc.vn/suy-giam-tri-nho-nen-an-gi-de-cai-thien-hieu-qua/"
+                  class="guide-card text-decoration-none"
+                >
+                  <div class="guide-thumb">
+                    <img
+                      data-src="/assets/images/Banner/camnang2.png"
+                      alt="Guide 1"
+                      class="lazyload"
+                    />
+                    <div class="guide-overlay">
+                      <span>News</span>
+                    </div>
+                  </div>
+                  <div class="guide-title">
+                    Suy giảm trí nhớ nên ăn gì để cải thiện hiệu quả?
+                  </div>
+                </a>
+              </li>
+
+              <!-- *Item 5* -->
+              <li class="splide__slide">
+                <a
+                  href="https://benhvienthucuc.vn/man-duc-nam-lam-mat-ngu-co-che-va-cach-cai-thien/"
+                  class="guide-card text-decoration-none"
+                >
+                  <div class="guide-thumb">
+                    <img
+                      data-src="/assets/images/Banner/camnang4.png"
+                      alt="Guide 1"
+                      class="lazyload"
+                    />
+                    <div class="guide-overlay">
+                      <span>News</span>
+                    </div>
+                  </div>
+                  <div class="guide-title">
+                    Mãn dục nam làm mất ngủ: Cơ chế và cách cải thiện
+                  </div>
+                </a>
+              </li>
+
+              <!-- *Item 6* -->
+              <li class="splide__slide">
+                <a
+                  href="https://benhvienthucuc.vn/benh-roi-loan-tien-dinh-nguyen-nhan-trieu-chung-dieu-tri/"
+                  class="guide-card text-decoration-none"
+                >
+                  <div class="guide-thumb">
+                    <img
+                      data-src="/assets/images/Banner/camnang6.png"
+                      alt="Guide 1"
+                      class="lazyload"
+                    />
+                    <div class="guide-overlay">
+                      <span>News</span>
+                    </div>
+                  </div>
+                  <div class="guide-title">
+                    Bệnh rối loạn tiền đình: Nguyên nhân, triệu chứng, điều trị
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- *Blog-home* -->
     <section class="blog-home">
@@ -1266,6 +2764,7 @@
   <!-- *Javascript* -->
   <script src="/assets/javascript/main.js" type="module"></script>
   <script src="/services/handleModal.js"></script>
+  <script src="/services/handleSlider.js"></script>
   <script src="/services/handleSlider.js"></script>
   <!-- *Lazysizes* -->
   <script

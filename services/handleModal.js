@@ -21,16 +21,15 @@ window.addEventListener("load", function () {
     var myModal = new bootstrap.Modal(
       document.getElementById("doctorHubModal"),
       {
-        keyboard: false, // Modal không bị đóng bằng phím ESC
+        keyboard: true, // Modal  bị đóng bằng phím ESC
       }
     );
     myModal.show(); // Hiển thị modal
 
-    // Đặt timeout để đóng modal sau 3 giây (3000ms)
     setTimeout(function () {
-      myModal.hide(); // Đóng modal sau 3 giây
-    }, 3000); // 3000ms = 3 giây
-  }, 1000); // 1000ms = 1 giây
+      myModal.hide();
+    }, 3000);
+  }, 1000);
 });
 
 // Thêm sự kiện để đóng modal khi người dùng nhấn nút đóng hoặc sau khi modal tự ẩn
